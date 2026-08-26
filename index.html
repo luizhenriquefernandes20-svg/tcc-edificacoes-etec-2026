@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TCC do curso Técnico em Edificações — ETEC 2026. Construção sustentável com aproveitamento de materiais reciclados em habitações de interesse social." />
+  <meta name="theme-color" content="#0f1115" />
+  <title>TCC Edificações · ETEC 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%97%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">▲</span>
+        <span>TCC · Edificações</span>
+      </a>
+      <nav aria-label="principal">
+        <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" id="menuBtn">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="menu" id="menu">
+          <li><a href="#tema">Tema</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#justificativa">Justificativa</a></li>
+          <li><a href="#metodologia">Metodologia</a></li>
+          <li><a href="#cronograma">Cronograma</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato" class="cta">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Trabalho de Conclusão de Curso · 2026</span>
+          <h1>
+            Construção <span class="grad">sustentável</span> com materiais reciclados em habitação de interesse social
+          </h1>
+          <p class="lead">
+            Estudo técnico sobre o uso de agregados reciclados de resíduos da construção civil (RCC) na
+            produção de blocos de vedação para habitações populares — reduzindo custo, impacto ambiental
+            e passivo em aterros.
+          </p>
+          <div class="hero-cta">
+            <a href="#tema" class="btn btn-primary">Ver o projeto</a>
+            <a href="#contato" class="btn btn-ghost">Falar com a equipe</a>
+          </div>
+          <dl class="meta">
+            <div><dt>Curso</dt><dd>Técnico em Edificações</dd></div>
+            <div><dt>Instituição</dt><dd>ETEC — 2026</dd></div>
+            <div><dt>Módulo</dt><dd>3º / Integrador</dd></div>
+          </dl>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="blueprint">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="0.5"/>
+                </pattern>
+              </defs>
+              <rect width="400" height="400" fill="url(#grid)"/>
+              <!-- planta simples -->
+              <g fill="none" stroke="#ffb400" stroke-width="2.5">
+                <rect x="60" y="60" width="280" height="280"/>
+                <line x1="60" y1="200" x2="340" y2="200"/>
+                <line x1="200" y1="60" x2="200" y2="200"/>
+                <line x1="60" y1="270" x2="200" y2="270"/>
+                <!-- portas -->
+                <path d="M120 200 A20 20 0 0 1 140 220" />
+                <path d="M270 200 A20 20 0 0 1 290 220" />
+                <!-- janelas -->
+                <line x1="90" y1="60" x2="150" y2="60" stroke-width="4"/>
+                <line x1="250" y1="60" x2="320" y2="60" stroke-width="4"/>
+              </g>
+              <g fill="#ffb400" font-family="Space Grotesk, sans-serif" font-size="11">
+                <text x="90" y="130">SALA</text>
+                <text x="230" y="130">COZINHA</text>
+                <text x="90" y="240">QUARTO</text>
+                <text x="230" y="240">BANHO</text>
+                <text x="90" y="300">ÁREA SERV.</text>
+              </g>
+              <g fill="rgba(255,255,255,.5)" font-family="Space Grotesk, sans-serif" font-size="9">
+                <text x="60" y="52">6.00m</text>
+                <text x="345" y="205" transform="rotate(90 345 205)">6.00m</text>
+              </g>
+            </svg>
+          </div>
+          <div class="badge floating">
+            <span class="dot"></span> Planta baixa · esquemática
+          </div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>NBR 15.116</span><span>·</span>
+          <span>Agregado reciclado</span><span>·</span>
+          <span>Habitação Popular</span><span>·</span>
+          <span>Sustentabilidade</span><span>·</span>
+          <span>BIM</span><span>·</span>
+          <span>ODS 11</span><span>·</span>
+          <span>Ciclo de vida</span><span>·</span>
+          <span>NBR 6118</span><span>·</span>
+          <span>Steel Frame</span><span>·</span>
+          <span>Resíduos RCC</span><span>·</span>
+          <span>NBR 15.116</span><span>·</span>
+          <span>Agregado reciclado</span><span>·</span>
+          <span>Habitação Popular</span><span>·</span>
+          <span>Sustentabilidade</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEMA -->
+    <section id="tema" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">01 · Tema</span>
+          <h2>O problema em números</h2>
+          <p>O setor da construção civil gera cerca de metade dos resíduos sólidos urbanos do Brasil. Ao mesmo tempo, o país acumula um déficit habitacional histórico. Este trabalho propõe unir os dois problemas em uma solução.</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong>50%</strong>
+            <span>dos resíduos sólidos urbanos vêm da construção civil</span>
+          </div>
+          <div class="stat">
+            <strong>6 mi</strong>
+            <span>moradias faltam no Brasil (déficit habitacional)</span>
+          </div>
+          <div class="stat">
+            <strong>-30%</strong>
+            <span>de custo estimado em blocos com agregado reciclado</span>
+          </div>
+          <div class="stat">
+            <strong>ODS 11</strong>
+            <span>Cidades e Comunidades Sustentáveis (ONU)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBJETIVOS -->
+    <section id="objetivos" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">02 · Objetivos</span>
+          <h2>O que o projeto quer entregar</h2>
+        </div>
+        <div class="two-col">
+          <article class="card">
+            <h3>Objetivo geral</h3>
+            <p>
+              Avaliar tecnicamente a viabilidade do uso de agregados reciclados de RCC
+              (Resíduos de Construção Civil) na produção de blocos de vedação para
+              habitação de interesse social, comparando desempenho e custo com blocos convencionais.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Objetivos específicos</h3>
+            <ul class="check">
+              <li>Levantar normas aplicáveis (NBR 15.116, NBR 6136, NBR 15.270).</li>
+              <li>Caracterizar amostras de agregado reciclado da região.</li>
+              <li>Produzir corpos de prova em traços com 25%, 50% e 100% de reciclado.</li>
+              <li>Ensaiar resistência à compressão e absorção de água.</li>
+              <li>Estimar redução de custo e de emissão de CO₂ por m² construído.</li>
+              <li>Propor projeto arquitetônico de uma habitação-modelo de 42 m².</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- JUSTIFICATIVA -->
+    <section id="justificativa" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">03 · Justificativa</span>
+          <h2>Por que este TCC importa</h2>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <div class="pillar-icon">♻️</div>
+            <h3>Ambiental</h3>
+            <p>Reduzir o volume de RCC enviado a aterros e reincorporá-lo no ciclo da construção.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">💰</div>
+            <h3>Econômica</h3>
+            <p>Barateamento de insumos permite ampliar o alcance de programas habitacionais.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🏘️</div>
+            <h3>Social</h3>
+            <p>Contribuir para a redução do déficit habitacional em cidades de médio porte.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🎓</div>
+            <h3>Técnica</h3>
+            <p>Aplicar conhecimentos de materiais, projeto e orçamento adquiridos no curso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGIA -->
+    <section id="metodologia" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">04 · Metodologia</span>
+          <h2>Como será executado</h2>
+          <p>Pesquisa aplicada, de caráter experimental e comparativo, dividida em cinco etapas.</p>
+        </div>
+
+        <ol class="timeline">
+          <li>
+            <span class="step">1</span>
+            <div>
+              <h3>Revisão bibliográfica</h3>
+              <p>Levantamento de normas ABNT, artigos científicos e estudos de caso sobre uso de agregado reciclado.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step">2</span>
+            <div>
+              <h3>Coleta e caracterização</h3>
+              <p>Coleta de RCC em obras da região, britagem, peneiramento e análise granulométrica.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step">3</span>
+            <div>
+              <h3>Produção de corpos de prova</h3>
+              <p>Moldagem de blocos com traços variando o percentual de agregado reciclado (0, 25, 50 e 100%).</p>
+            </div>
+          </li>
+          <li>
+            <span class="step">4</span>
+            <div>
+              <h3>Ensaios de laboratório</h3>
+              <p>Ensaios de resistência à compressão aos 7, 14 e 28 dias e ensaios de absorção conforme NBR 6136.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step">5</span>
+            <div>
+              <h3>Projeto e orçamento</h3>
+              <p>Desenvolvimento do projeto arquitetônico da habitação-modelo, memorial de cálculo e orçamento comparativo.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CRONOGRAMA -->
+    <section id="cronograma" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">05 · Cronograma</span>
+          <h2>Plano de execução — 2026</h2>
+        </div>
+        <div class="gantt-wrap">
+          <div class="gantt" role="table" aria-label="Cronograma do TCC">
+            <div class="gantt-head" role="row">
+              <div>Etapa</div>
+              <div>FEV</div><div>MAR</div><div>ABR</div><div>MAI</div>
+              <div>JUN</div><div>JUL</div><div>AGO</div><div>SET</div>
+              <div>OUT</div><div>NOV</div>
+            </div>
+            <div class="gantt-row" role="row">
+              <div>Revisão bibliográfica</div>
+              <div class="cell"><span class="bar" style="--from:1;--to:3"></span></div>
+            </div>
+            <div class="gantt-row">
+              <div>Coleta de RCC</div>
+              <div class="cell"><span class="bar" style="--from:3;--to:5"></span></div>
+            </div>
+            <div class="gantt-row">
+              <div>Produção de corpos de prova</div>
+              <div class="cell"><span class="bar" style="--from:5;--to:7"></span></div>
+            </div>
+            <div class="gantt-row">
+              <div>Ensaios de laboratório</div>
+              <div class="cell"><span class="bar" style="--from:6;--to:8"></span></div>
+            </div>
+            <div class="gantt-row">
+              <div>Projeto arquitetônico</div>
+              <div class="cell"><span class="bar" style="--from:7;--to:9"></span></div>
+            </div>
+            <div class="gantt-row">
+              <div>Orçamento comparativo</div>
+              <div class="cell"><span class="bar" style="--from:8;--to:10"></span></div>
+            </div>
+            <div class="gantt-row">
+              <div>Redação e revisão</div>
+              <div class="cell"><span class="bar" style="--from:9;--to:11"></span></div>
+            </div>
+            <div class="gantt-row">
+              <div>Apresentação final</div>
+              <div class="cell"><span class="bar" style="--from:11;--to:11"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERÊNCIAS -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">06 · Referências</span>
+          <h2>Base normativa e bibliográfica</h2>
+        </div>
+        <div class="refs">
+          <div class="ref">
+            <strong>ABNT NBR 15.116:2021</strong>
+            <span>Agregados reciclados para uso em pavimentação e preparo de concreto sem função estrutural.</span>
+          </div>
+          <div class="ref">
+            <strong>ABNT NBR 6136:2016</strong>
+            <span>Blocos vazados de concreto simples para alvenaria — Requisitos.</span>
+          </div>
+          <div class="ref">
+            <strong>ABNT NBR 15.270:2017</strong>
+            <span>Componentes cerâmicos — Blocos e tijolos para alvenaria.</span>
+          </div>
+          <div class="ref">
+            <strong>CONAMA nº 307/2002</strong>
+            <span>Diretrizes para a gestão de resíduos da construção civil.</span>
+          </div>
+          <div class="ref">
+            <strong>FUNDAÇÃO JOÃO PINHEIRO</strong>
+            <span>Déficit Habitacional no Brasil — relatório mais recente.</span>
+          </div>
+          <div class="ref">
+            <strong>ONU · Agenda 2030</strong>
+            <span>Objetivo de Desenvolvimento Sustentável 11.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPE -->
+    <section id="equipe" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">07 · Equipe</span>
+          <h2>Quem está por trás</h2>
+        </div>
+        <div class="team">
+          <article class="member">
+            <div class="avatar">LH</div>
+            <h3>Luiz Henrique</h3>
+            <span class="role">Autor · Coordenação técnica</span>
+          </article>
+          <article class="member">
+            <div class="avatar">N2</div>
+            <h3>Nome do colega 2</h3>
+            <span class="role">Autor · Levantamento de campo</span>
+          </article>
+          <article class="member">
+            <div class="avatar">N3</div>
+            <h3>Nome do colega 3</h3>
+            <span class="role">Autor · Ensaios de laboratório</span>
+          </article>
+          <article class="member advisor">
+            <div class="avatar">OR</div>
+            <h3>Prof. Orientador(a)</h3>
+            <span class="role">Orientação — Edificações</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section alt">
+      <div class="container contact-grid">
+        <div>
+          <span class="tag">08 · Contato</span>
+          <h2>Fale com a equipe</h2>
+          <p>Dúvidas, sugestões ou parcerias com obras da região para coleta de resíduos? Escreva pra gente.</p>
+          <ul class="contact-list">
+            <li><span>📧</span> hitaloyt914@gmail.com</li>
+            <li><span>🏫</span> ETEC — Curso Técnico em Edificações</li>
+            <li><span>📅</span> Defesa prevista: Novembro de 2026</li>
+          </ul>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.ok').hidden=false; this.reset();">
+          <label>
+            <span>Nome</span>
+            <input type="text" required placeholder="Seu nome completo" />
+          </label>
+          <label>
+            <span>E-mail</span>
+            <input type="email" required placeholder="voce@exemplo.com" />
+          </label>
+          <label>
+            <span>Mensagem</span>
+            <textarea rows="4" required placeholder="Como podemos ajudar?"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+          <p class="ok" hidden>Mensagem enviada! Retornaremos em breve.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="container foot-inner">
+      <span>© <span id="yr"></span> TCC Edificações · ETEC</span>
+      <span class="foot-note">Site desenvolvido para apresentação do projeto de conclusão.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
