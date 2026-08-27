@@ -657,3 +657,17 @@ a:hover { color: var(--accent-dark); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* visualizador CAD */
+.cad-frame {
+  border: 1px solid var(--line-2);
+  background: #fff;
+  padding: 6px;
+}
+.cad-frame iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 420px;
+  border: 0;
+}
