@@ -1,0 +1,378 @@
+[
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.05 (1).jpeg",
+  "dest": "assets/img/renders/render-01.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.05.jpeg",
+  "dest": "assets/img/renders/render-02.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.06 (1).jpeg",
+  "dest": "assets/img/renders/render-03.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.06 (2).jpeg",
+  "dest": "assets/img/renders/render-04.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.06.jpeg",
+  "dest": "assets/img/renders/render-05.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.07 (1).jpeg",
+  "dest": "assets/img/renders/render-06.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.07 (2).jpeg",
+  "dest": "assets/img/renders/render-07.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.07 (3).jpeg",
+  "dest": "assets/img/renders/render-08.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.07.jpeg",
+  "dest": "assets/img/renders/render-09.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.09.jpeg",
+  "dest": "assets/img/renders/render-10.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.10 (1).jpeg",
+  "dest": "assets/img/renders/render-11.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.10 (2).jpeg",
+  "dest": "assets/img/renders/render-12.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.10.jpeg",
+  "dest": "assets/img/renders/render-13.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.11 (1).jpeg",
+  "dest": "assets/img/renders/render-14.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\COMO VAI FICAR O PROJETO\\WhatsApp Image 2026-08-26 at 16.12.11.jpeg",
+  "dest": "assets/img/renders/render-15.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\TERRENO\\WhatsApp Image 2026-08-26 at 16.12.12 (1).jpeg",
+  "dest": "assets/img/terreno/terreno-01.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\TERRENO\\WhatsApp Image 2026-08-26 at 16.12.12.jpeg",
+  "dest": "assets/img/terreno/terreno-02.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\TERRENO\\WhatsApp Image 2026-08-26 at 16.12.13 (1).jpeg",
+  "dest": "assets/img/terreno/terreno-03.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\TERRENO\\WhatsApp Image 2026-08-26 at 16.12.13 (2).jpeg",
+  "dest": "assets/img/terreno/terreno-04.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\TERRENO\\WhatsApp Image 2026-08-26 at 16.12.13 (3).jpeg",
+  "dest": "assets/img/terreno/terreno-05.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\TERRENO\\WhatsApp Image 2026-08-26 at 16.12.13.jpeg",
+  "dest": "assets/img/terreno/terreno-06.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\TERRENO\\WhatsApp Image 2026-08-26 at 16.12.14 (1).jpeg",
+  "dest": "assets/img/terreno/terreno-07.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\TERRENO\\WhatsApp Image 2026-08-26 at 16.12.14.jpeg",
+  "dest": "assets/img/terreno/terreno-08.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\TERRENO\\WhatsApp Image 2026-08-26 at 16.29.06.jpeg",
+  "dest": "assets/img/terreno/terreno-09.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.26.49 (1).jpeg",
+  "dest": "assets/img/projeto/projeto-01.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.26.49 (2).jpeg",
+  "dest": "assets/img/projeto/projeto-02.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.26.49.jpeg",
+  "dest": "assets/img/projeto/projeto-03.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.26.50 (1).jpeg",
+  "dest": "assets/img/projeto/projeto-04.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.26.50 (2).jpeg",
+  "dest": "assets/img/projeto/projeto-05.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.26.50.jpeg",
+  "dest": "assets/img/projeto/projeto-06.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.29.01.jpeg",
+  "dup_of": "assets/img/projeto/projeto-04.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.29.02 (1).jpeg",
+  "dest": "assets/img/projeto/projeto-07.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.29.02.jpeg",
+  "dest": "assets/img/projeto/projeto-08.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.29.03 (1).jpeg",
+  "dup_of": "assets/img/projeto/projeto-02.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.29.03 (2).jpeg",
+  "dup_of": "assets/img/projeto/projeto-05.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.29.03 (3).jpeg",
+  "dest": "assets/img/projeto/projeto-09.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.29.03.jpeg",
+  "dest": "assets/img/projeto/projeto-10.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.29.05.jpeg",
+  "dest": "assets/img/projeto/projeto-11.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Image 2026-08-26 at 16.29.06 (1).jpeg",
+  "dest": "assets/img/projeto/projeto-12.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Unknown 2026-08-27 at 15.42.42\\WhatsApp Image 2026-08-26 at 16.29.06 (1).jpeg",
+  "dest": "assets/img/projeto/projeto-x-01.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Unknown 2026-08-27 at 15.42.42\\WhatsApp Image 2026-08-26 at 16.29.06 (2).jpeg",
+  "dest": "assets/img/projeto/projeto-x-02.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Unknown 2026-08-27 at 15.42.42\\WhatsApp Image 2026-08-26 at 16.29.06.jpeg",
+  "dest": "assets/img/projeto/projeto-x-03.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Unknown 2026-08-27 at 15.42.42\\WhatsApp Image 2026-08-26 at 16.29.07 (1).jpeg",
+  "dest": "assets/img/projeto/projeto-x-04.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Unknown 2026-08-27 at 15.42.42\\WhatsApp Image 2026-08-26 at 16.29.07 (2).jpeg",
+  "dest": "assets/img/projeto/projeto-x-05.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Unknown 2026-08-27 at 15.42.42\\WhatsApp Image 2026-08-26 at 16.29.07.jpeg",
+  "dest": "assets/img/projeto/projeto-x-06.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Unknown 2026-08-27 at 15.42.42\\WhatsApp Image 2026-08-26 at 16.29.08.jpeg",
+  "dest": "assets/img/projeto/projeto-x-07.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.24.jpeg",
+  "dest": "assets/img/obra/obra-01.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.25 (1).jpeg",
+  "dest": "assets/img/obra/obra-02.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.25 (2).jpeg",
+  "dest": "assets/img/obra/obra-03.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.25.jpeg",
+  "dest": "assets/img/obra/obra-04.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.29 (1).jpeg",
+  "dest": "assets/img/obra/obra-05.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.29 (2).jpeg",
+  "dest": "assets/img/obra/obra-06.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.29 (3).jpeg",
+  "dest": "assets/img/obra/obra-07.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.29.jpeg",
+  "dest": "assets/img/obra/obra-08.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.30 (1).jpeg",
+  "dest": "assets/img/obra/obra-09.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.30 (2).jpeg",
+  "dest": "assets/img/obra/obra-10.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.30.jpeg",
+  "dest": "assets/img/obra/obra-11.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.31 (1).jpeg",
+  "dest": "assets/img/obra/obra-12.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.31 (2).jpeg",
+  "dest": "assets/img/obra/obra-13.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.31 (3).jpeg",
+  "dest": "assets/img/obra/obra-14.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.31.jpeg",
+  "dest": "assets/img/obra/obra-15.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.32 (1).jpeg",
+  "dest": "assets/img/obra/obra-16.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.32 (2).jpeg",
+  "dest": "assets/img/obra/obra-17.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.32 (3).jpeg",
+  "dest": "assets/img/obra/obra-18.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.16.32.jpeg",
+  "dest": "assets/img/obra/obra-19.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.26.53 (1).jpeg",
+  "dest": "assets/img/obra/obra-20.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.26.53 (2).jpeg",
+  "dest": "assets/img/obra/obra-21.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.26.53.jpeg",
+  "dest": "assets/img/obra/obra-22.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.26.54.jpeg",
+  "dest": "assets/img/obra/obra-23.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.01 (1).jpeg",
+  "dest": "assets/img/obra/obra-24.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.02.jpeg",
+  "dest": "assets/img/obra/obra-25.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.47 (1).jpeg",
+  "dest": "assets/img/obra/obra-26.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.47 (2).jpeg",
+  "dest": "assets/img/obra/obra-27.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.47.jpeg",
+  "dest": "assets/img/obra/obra-28.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.48 (1).jpeg",
+  "dest": "assets/img/obra/obra-29.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.48.jpeg",
+  "dest": "assets/img/obra/obra-30.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.49 (1).jpeg",
+  "dest": "assets/img/obra/obra-31.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.49 (2).jpeg",
+  "dest": "assets/img/obra/obra-32.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.49 (3).jpeg",
+  "dest": "assets/img/obra/obra-33.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-26 at 16.29.49.jpeg",
+  "dest": "assets/img/obra/obra-34.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-27 at 14.20.57 (1).jpeg",
+  "dup_of": "assets/img/terreno/terreno-02.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-27 at 14.20.57.jpeg",
+  "dup_of": "assets/img/terreno/terreno-03.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-27 at 14.20.58 (1).jpeg",
+  "dest": "assets/img/obra/obra-35.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Image 2026-08-27 at 14.20.58.jpeg",
+  "dup_of": "assets/img/renders/render-02.jpg"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Video 2026-08-26 at 16.16.28 (1).mp4",
+  "dest": "assets/video/obra-video-01.mp4"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Video 2026-08-26 at 16.16.28.mp4",
+  "dest": "assets/video/obra-video-02.mp4"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Video 2026-08-26 at 16.16.29.mp4",
+  "dest": "assets/video/obra-video-03.mp4"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Video 2026-08-26 at 16.26.48.mp4",
+  "dest": "assets/video/obra-video-04.mp4"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Video 2026-08-26 at 16.26.49.mp4",
+  "dest": "assets/video/obra-video-05.mp4"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Video 2026-08-26 at 16.29.05.mp4",
+  "dest": "assets/video/obra-video-06.mp4"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\FOTOS DA CONSTRUÇAO\\WhatsApp Video 2026-08-26 at 16.29.49.mp4",
+  "dest": "assets/video/obra-video-07.mp4"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Video 2026-08-26 at 16.26.51 (1).mp4",
+  "dest": "assets/video/projeto-video-01.mp4"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Video 2026-08-26 at 16.26.51 (2).mp4",
+  "dest": "assets/video/projeto-video-02.mp4"
+ },
+ {
+  "src": "E:\\SITE TCC EDIFICAÇOES\\PROJETO\\WhatsApp Video 2026-08-26 at 16.26.51.mp4",
+  "dest": "assets/video/projeto-video-03.mp4"
+ }
+]

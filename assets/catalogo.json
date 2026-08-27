@@ -1,0 +1,569 @@
+{
+ "renders": {
+  "dir": "renders",
+  "items": [
+   {
+    "file": "render-01.jpg",
+    "caption": "Perspectiva superior: pergolado de eucalipto roliço e cobertura da área de apoio",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Vista 3D em ângulo alto mostrando o pergolado de troncos, telhado cerâmico sobre a cozinha de apoio e piso intertravado escuro."
+   },
+   {
+    "file": "render-02.jpg",
+    "caption": "Referência noturna: churrasqueira de tijolo, bancada em granito e pergolado iluminado",
+    "quality": 5,
+    "orientation": "landscape",
+    "content": "Foto real noturna de um espaço gourmet construído semelhante ao projeto, com pergolado, varal de luzes e churrasqueira de tijolo aparente."
+   },
+   {
+    "file": "render-03.jpg",
+    "caption": "Elevação interna: bancada com cuba, azulejo e churrasqueira em alvenaria",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Vista frontal interna da maquete mostrando bancada de concreto com cuba, painel de azulejo e a torre da churrasqueira."
+   },
+   {
+    "file": "render-04.jpg",
+    "caption": "Vista aérea da maquete: telhado cerâmico e vigamento do pergolado",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Vista aérea do modelo 3D destacando o telhado vermelho da área coberta e o gride de vigas roliças do pergolado."
+   },
+   {
+    "file": "render-05.jpg",
+    "caption": "Perspectiva interna: bancadas de concreto, azulejo até 1,50 m e churrasqueira",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Perspectiva interna com as duas bancadas de concreto, backsplash de azulejo e a churrasqueira central com grelhas."
+   },
+   {
+    "file": "render-06.jpg",
+    "caption": "Maquete eletrônica do espaço de convivência: mesas sob o pergolado e área de apoio",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Vista geral do modelo com figuras humanas em escala, mesas com cadeiras sob o pergolado, geladeira e bancada ao fundo."
+   },
+   {
+    "file": "render-07.jpg",
+    "caption": "Elevação frontal da maquete: layout das mesas e cozinha de apoio ao fundo",
+    "quality": 2,
+    "orientation": "landscape",
+    "content": "Elevação frontal do modelo com mesas, pessoas e cozinha ao fundo; contém rótulo de software visível ('Na face')."
+   },
+   {
+    "file": "render-08.jpg",
+    "caption": "Perspectiva do pergolado com varal de luzes, mesas e cozinha de apoio",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Perspectiva lateral do espaço mostrando o pergolado com varal de lâmpadas, setor de mesas e a área de apoio coberta."
+   },
+   {
+    "file": "render-09.jpg",
+    "caption": "Vista interna: bancada com cuba, revestimento cerâmico e churrasqueira com grelhas",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Vista interna da parede de serviço com bancada, torneira, azulejo claro e a churrasqueira de alvenaria com grelhas."
+   },
+   {
+    "file": "render-10.jpg",
+    "caption": "Área de apoio: geladeira, bancada com cuba e churrasqueira em perspectiva interna",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Perspectiva interna da cozinha de apoio com geladeira, bancada com cuba e churrasqueira, com figura humana em escala."
+   },
+   {
+    "file": "render-11.jpg",
+    "caption": "Detalhe da churrasqueira: grelha e espetos giratórios junto à bancada com cuba",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Close do modelo 3D mostrando a churrasqueira com grelha e espetos e a bancada de concreto com cuba e sifão."
+   },
+   {
+    "file": "render-12.jpg",
+    "caption": "Vista geral externa: volume fechado, janela e pergolado em eucalipto roliço",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Vista externa do conjunto mostrando a parede lateral com janela, cobertura escura e o pergolado sobre as mesas."
+   },
+   {
+    "file": "render-13.jpg",
+    "caption": "Detalhe da bancada: cuba de embutir, sifão aparente e azulejo de fundo",
+    "quality": 2,
+    "orientation": "landscape",
+    "content": "Close da bancada de concreto com cuba, sifão e azulejo, com barra de ferramentas do software visível no topo."
+   },
+   {
+    "file": "render-14.jpg",
+    "caption": "Vista superior: vigamento do pergolado sobre o setor de mesas",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Vista de topo através das vigas roliças do pergolado mostrando a disposição das mesas e o piso intertravado."
+   },
+   {
+    "file": "render-15.jpg",
+    "caption": "Vista geral da maquete: implantação do espaço de convivência com pergolado",
+    "quality": 2,
+    "orientation": "landscape",
+    "content": "Vista geral pequena e de baixa resolução do modelo completo com pessoas, pergolado e volume fechado."
+   },
+   {
+    "file": "obra-35.jpg",
+    "caption": "Projeção noturna do espaço concluído com pergolado e churrasqueira",
+    "quality": 5,
+    "orientation": "landscape",
+    "content": "Vista noturna do espaço finalizado: pergolado, piso intertravado, bancada com cuba e churrasqueira revestida em pedra (imagem com selo de edição por IA, possivelmente perspectiva ilustrativa do resultado).",
+    "_dir": "obra"
+   }
+  ]
+ },
+ "terreno": {
+  "dir": "terreno",
+  "items": [
+   {
+    "file": "terreno-01.jpg",
+    "caption": "Vista geral do terreno sob arborização existente, antes da locação da obra",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Gramado sob árvores de grande porte, palmeiras imperiais ao fundo e resíduos de poda no centro."
+   },
+   {
+    "file": "terreno-02.jpg",
+    "caption": "Limite do piso modular existente e faixa de solo exposto junto à via do pátio",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Borda do deck modular à esquerda, gramado ralo com solo exposto e veículos estacionados na via ao fundo."
+   },
+   {
+    "file": "terreno-03.jpg",
+    "caption": "Pergolado de madeira roliça existente na área de intervenção, ao entardecer",
+    "quality": 2,
+    "orientation": "landscape",
+    "content": "Pergolado rústico com banco de madeira e piso de tijolos, em contraluz, com carros na via ao fundo."
+   },
+   {
+    "file": "terreno-04.jpg",
+    "caption": "Terreno gramado com palmeiras imperiais ao longo da via de acesso ao pátio",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Talude gramado com troncos em primeiro plano, renque de palmeiras, carro estacionado e edificação à direita."
+   },
+   {
+    "file": "terreno-05.jpg",
+    "caption": "Área gramada junto ao bloco escolar, com passeio em placas modulares no primeiro plano",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Gramado com poste/mastro central, fachada do galpão da escola ao fundo e passeio modular na frente."
+   },
+   {
+    "file": "terreno-06.jpg",
+    "caption": "Cobertura vegetal rasteira e resíduos de poda acumulados na área de intervenção",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Tronco de árvore de grande porte, gramado e monte de galhos secos de poda no centro do terreno."
+   },
+   {
+    "file": "terreno-07.jpg",
+    "caption": "Passeio existente em placas modulares tipo deck assentadas sobre o solo",
+    "quality": 4,
+    "orientation": "portrait",
+    "content": "Detalhe do caminho de placas modulares intertravadas, úmido, seguindo em direção ao banco e à via."
+   },
+   {
+    "file": "terreno-08.jpg",
+    "caption": "Piso modular e banco de madeira existentes na área de convivência do pátio",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Terraço de placas modulares com banco de madeira à esquerda, gramado aparado e carros estacionados ao fundo."
+   },
+   {
+    "file": "terreno-09.jpg",
+    "caption": "Isolamento da área e lastro de brita para o radier, com blocos cerâmicos estocados",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Início da obra à noite: blocos empilhados sob o pergolado, brita lançada com guias de madeira e fita zebrada."
+   }
+  ]
+ },
+ "projeto": {
+  "dir": "projeto",
+  "items": [
+   {
+    "file": "projeto-01.jpg",
+    "caption": "Planta de cobertura: vigamento do pergolado e telhado da área da churrasqueira",
+    "quality": 3,
+    "orientation": "square",
+    "content": "Planta de cobertura (Revit) sem cotas mostrando as vigas do pergolado e o pano de telhado, com marcadores de elevação."
+   },
+   {
+    "file": "projeto-02.jpg",
+    "caption": "Perspectiva 3D do conjunto: pergolado de madeira, bancadas e churrasqueira",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Vista 3D em Revit do espaço completo — pergolado com trepadeiras, bancada com banquetas, churrasqueira com coifa e pendente."
+   },
+   {
+    "file": "projeto-03.jpg",
+    "caption": "Planta baixa cotada do espaço de convivência (4,12 x 3,20 m)",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Planta baixa em linha com cotas gerais (4,12 x 3,20 m), bancadas, cubas e marcadores de corte, com o pergolado projetado acima."
+   },
+   {
+    "file": "projeto-04.jpg",
+    "caption": "Perspectiva interna: churrasqueira com coifa, bancada com cuba e pendentes",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Vista 3D interna sob a cobertura mostrando a churrasqueira, a bancada com torneira e as luminárias pendentes."
+   },
+   {
+    "file": "projeto-05.jpg",
+    "caption": "Vista interna sob o pergolado com trepadeiras floridas e bancada da pia",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Perspectiva 3D colorida sob o pergolado, com vegetação florida nos pilares, mureta/bancada e cuba com torneira em primeiro plano."
+   },
+   {
+    "file": "projeto-06.jpg",
+    "caption": "Axonométrica do conjunto: pergolado descoberto e área coberta da churrasqueira",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Vista axonométrica monocromática do modelo completo — radier, pergolado com trepadeiras e volume coberto com churrasqueira e bancadas."
+   },
+   {
+    "file": "projeto-07.jpg",
+    "caption": "Corte cotado: churrasqueira, bancada com banquetas e pé-direito da cobertura",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Corte técnico em linha com cotas verticais (bancadas a 0,90/1,00 m) mostrando churrasqueira, banquetas, cuba e pendentes."
+   },
+   {
+    "file": "projeto-08.jpg",
+    "caption": "Corte cotado do ambiente: alturas de bancadas (0,90 m) e forro (2,82 m)",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Corte técnico semelhante ao anterior, com cotas verticais 1,02/0,80/1,00/0,90 detalhando bancadas, cuba e estrutura da cobertura."
+   },
+   {
+    "file": "projeto-09.jpg",
+    "caption": "Detalhe em planta da bancada com duas cubas e torneiras giratórias",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Ampliação em planta da bancada de concreto com duas cubas, cotas parciais (50/77/50/52) e afastamentos dos pilares do pergolado."
+   },
+   {
+    "file": "projeto-10.jpg",
+    "caption": "Axonométrica do conjunto com indicação da área coberta da churrasqueira",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Mesma vista axonométrica do modelo, com uma seta verde de anotação apontando para a churrasqueira sob a cobertura."
+   },
+   {
+    "file": "projeto-11.jpg",
+    "caption": "Corte cotado da churrasqueira: boca de 0,80 x 0,45 m e bancadas a 0,90 m",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Corte com materiais em cinza detalhando as dimensões da churrasqueira (80/60/45/90) e a bancada com cuba ao lado."
+   },
+   {
+    "file": "projeto-12.jpg",
+    "caption": "Planta baixa cotada com bancadas, cubas e marcações de corte (4,12 x 3,20 m)",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Planta baixa detalhada da área coberta com cotas de bancadas, cubas, churrasqueira e indicações dos cortes 1, 2 e 3."
+   },
+   {
+    "file": "projeto-x-01.jpg",
+    "caption": "Corte longitudinal com níveis: cobertura 2,92 m, pergolado 2,60 m, térreo 0,00",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Corte longitudinal colorido do conjunto mostrando os níveis de projeto, o pergolado com trepadeiras e o volume coberto."
+   },
+   {
+    "file": "projeto-x-02.jpg",
+    "caption": "Planta de cobertura cotada: vigas do pergolado e telhado (4,12 m de largura)",
+    "quality": 4,
+    "orientation": "portrait",
+    "content": "Planta de cobertura em linha com cotas (3,17/4,12 m) e marcadores dos cortes, mostrando vigamento do pergolado e pano de telhado."
+   },
+   {
+    "file": "projeto-x-03.jpg",
+    "caption": "Elevação cotada com pergolado, trepadeiras floridas e bancada com banquetas",
+    "quality": 5,
+    "orientation": "landscape",
+    "content": "Vista/corte colorido com vegetação florida nos pilares, pendentes, bancadas cotadas (0,90/1,00 m) e estrutura do pergolado."
+   },
+   {
+    "file": "projeto-x-04.jpg",
+    "caption": "Perspectiva 3D final: pergolado com trepadeiras, área coberta e churrasqueira",
+    "quality": 5,
+    "orientation": "landscape",
+    "content": "Vista 3D colorida e completa do espaço de convivência — pergolado vermelho florido, cobertura com chaminé e bancada com pia."
+   },
+   {
+    "file": "projeto-x-05.jpg",
+    "caption": "Corte cotado com níveis e detalhamento da churrasqueira (0,80 x 0,45 m)",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Corte colorido com níveis (cobertura 2,92 m, pergolado 2,60 m) e cotas da churrasqueira, bancadas e cuba."
+   },
+   {
+    "file": "projeto-x-06.jpg",
+    "caption": "Perspectiva 3D do conjunto pelo acesso: pergolado, bancada bar e área da pia",
+    "quality": 5,
+    "orientation": "landscape",
+    "content": "Vista 3D colorida em outro ângulo, destacando o pergolado com flores, a bancada com banquetas e a bancada da pia sob a cobertura."
+   },
+   {
+    "file": "projeto-x-07.jpg",
+    "caption": "Planta baixa geral cotada com pergolado e indicação dos cortes 1, 2 e 3",
+    "quality": 4,
+    "orientation": "square",
+    "content": "Planta baixa completa (4,12 x 3,20 m) com cotas de bancadas e cubas, vigamento do pergolado e marcadores de corte."
+   }
+  ]
+ },
+ "obra": {
+  "dir": "obra",
+  "items": [
+   {
+    "file": "obra-01.jpg",
+    "caption": "Recebimento das telhas metálicas destinadas à cobertura do espaço de convivência",
+    "quality": 2,
+    "orientation": "portrait",
+    "content": "Duas pessoas descarregam e transportam telhas metálicas brancas no gramado do pátio ao entardecer."
+   },
+   {
+    "file": "obra-02.jpg",
+    "caption": "Equipe reunida no canteiro para orientação inicial dos serviços preliminares",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Grupo de alunos e professores reunido sob o pergolado à noite, com ferramentas e área isolada por fita zebrada ao fundo."
+   },
+   {
+    "file": "obra-03.jpg",
+    "caption": "Escavação e regularização manual do terreno com enxadas na área isolada",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Alunos escavam e nivelam o solo com enxadas dentro da área delimitada por fita zebrada, sob observação do grupo."
+   },
+   {
+    "file": "obra-04.jpg",
+    "caption": "Luminária do canteiro instalada em poste junto à arborização existente",
+    "quality": 3,
+    "orientation": "portrait",
+    "content": "Vista diurna de poste com luminária LED em meio à copa de árvore do levantamento arbóreo do terreno."
+   },
+   {
+    "file": "obra-05.jpg",
+    "caption": "Vista geral do canteiro isolado com fita zebrada e terreno em preparo",
+    "quality": 3,
+    "orientation": "portrait",
+    "content": "Panorâmica noturna do terreno raspado e delimitado, com equipe reunida sob o pergolado ao fundo."
+   },
+   {
+    "file": "obra-06.jpg",
+    "caption": "Área da obra delimitada após limpeza do terreno, com pergolado ao fundo",
+    "quality": 3,
+    "orientation": "portrait",
+    "content": "Terreno limpo e cercado por fita de isolamento à noite, com grupo de alunos junto ao pergolado de madeira."
+   },
+   {
+    "file": "obra-07.jpg",
+    "caption": "Terreno limpo e nivelado após raspagem, delimitado para locação da obra",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Close bem iluminado da faixa de solo escavada e regularizada, cercada por fita zebrada ao lado do piso do pergolado."
+   },
+   {
+    "file": "obra-08.jpg",
+    "caption": "Canteiro iluminado por torre de luz: área escavada e isolada junto ao pergolado",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Vista geral noturna do canteiro com terreno preparado, isolamento com fita zebrada, pergolado e equipe reunida."
+   },
+   {
+    "file": "obra-09.jpg",
+    "caption": "Faixa de terreno preparada para a fundação ao lado do pergolado existente",
+    "quality": 3,
+    "orientation": "portrait",
+    "content": "Solo escavado e regularizado em primeiro plano, com alunos reunidos sobre o piso intertravado do pergolado."
+   },
+   {
+    "file": "obra-10.jpg",
+    "caption": "Sinalização de segurança: placa de atenção e isolamento do canteiro de obras",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Placa 'Atenção — Respeite o isolamento, não ultrapasse' fixada na fita zebrada, com equipe trabalhando ao fundo."
+   },
+   {
+    "file": "obra-11.jpg",
+    "caption": "Placa 'Área em obras' e fita zebrada demarcando o perímetro do canteiro",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Sinalização de obra e isolamento noturno do terreno escavado, com árvores do levantamento arbóreo ao fundo."
+   },
+   {
+    "file": "obra-12.jpg",
+    "caption": "Alunos executando raspagem e regularização do solo sob supervisão da equipe",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Estudantes trabalham o solo com enxadas junto ao pergolado enquanto o restante do grupo acompanha e registra."
+   },
+   {
+    "file": "obra-13.jpg",
+    "caption": "Escavação manual do terreno com acompanhamento da equipe e do orientador",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Grupo observa sob o pergolado enquanto aluno escava o solo iluminado por torre de luz no pátio da escola."
+   },
+   {
+    "file": "obra-14.jpg",
+    "caption": "Movimentação de terra: abertura de faixa escavada para o preparo da fundação",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Alunos escavam vala rasa no terreno à noite, com professores acompanhando a execução ao lado do pergolado."
+   },
+   {
+    "file": "obra-15.jpg",
+    "caption": "Equipe no canteiro isolado; ao fundo, regularização do terreno com enxadas",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Grupo reunido atrás da fita com placa de isolamento enquanto alunos nivelam o solo à direita."
+   },
+   {
+    "file": "obra-16.jpg",
+    "caption": "Escavação manual da faixa da fundação com enxadão, observada pela equipe",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Aluno escava o solo com enxadão na faixa demarcada, com colegas e professores acompanhando do piso do pergolado."
+   },
+   {
+    "file": "obra-17.jpg",
+    "caption": "Visão geral dos serviços preliminares noturnos: isolamento, equipe e escavação",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Cena ampla do canteiro à noite com placa de atenção, fita zebrada, equipe reunida e alunos trabalhando o solo."
+   },
+   {
+    "file": "obra-18.jpg",
+    "caption": "Placa de isolamento fixada na fita zebrada demarcando o acesso ao canteiro",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Sinalização 'Respeite o isolamento' em primeiro plano, com equipe conferindo prancheta e aluno com enxada ao fundo."
+   },
+   {
+    "file": "obra-19.jpg",
+    "caption": "Isolamento e sinalização da área de intervenção no pátio",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Área da obra isolada à noite com fita zebrada e placa de atenção, equipe reunida sob o pergolado."
+   },
+   {
+    "file": "obra-20.jpg",
+    "caption": "Equipe no canteiro com ferramentas e blocos cerâmicos",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Selfie noturna do grupo segurando marreta e pá, com pilha de blocos cerâmicos ao fundo."
+   },
+   {
+    "file": "obra-21.jpg",
+    "caption": "Conferência de medidas com trena na marcação da obra",
+    "quality": 2,
+    "orientation": "landscape",
+    "content": "Selfie com trena em primeiro plano desfocada e integrantes com ferramentas ao fundo."
+   },
+   {
+    "file": "obra-22.jpg",
+    "caption": "Cronograma físico da obra apresentado no canteiro",
+    "quality": 3,
+    "orientation": "portrait",
+    "content": "Cronograma físico impresso (gráfico de Gantt do TCC) segurado em frente à área de escavação noturna."
+   },
+   {
+    "file": "obra-23.jpg",
+    "caption": "Integrantes do grupo no início dos serviços no canteiro",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Selfie noturna da equipe com pá e martelo, blocos cerâmicos empilhados ao fundo."
+   },
+   {
+    "file": "obra-24.jpg",
+    "caption": "Estocagem de cimento e argamassa sobre lastro de blocos",
+    "quality": 3,
+    "orientation": "portrait",
+    "content": "Sacos de cimento e argamassa empilhados sobre blocos e protegidos com lona plástica junto ao prédio."
+   },
+   {
+    "file": "obra-25.jpg",
+    "caption": "Terreno nivelado e delimitado pelas guias para o radier",
+    "quality": 3,
+    "orientation": "portrait",
+    "content": "Vista noturna do terreno escavado e nivelado, delimitado por guias de concreto antes do radier."
+   },
+   {
+    "file": "obra-26.jpg",
+    "caption": "Equipe reunida ao término da etapa de concretagem",
+    "quality": 3,
+    "orientation": "landscape",
+    "content": "Selfie do grupo no canteiro à noite (19/08/2026), com área concretada e materiais ao fundo."
+   },
+   {
+    "file": "obra-27.jpg",
+    "caption": "Radier concretado com esperas de PVC para instalações",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Placa do radier recém-concretada e desempenada, com tubos de espera embutidos para instalações."
+   },
+   {
+    "file": "obra-28.jpg",
+    "caption": "Concretagem do radier sobre malha de aço em andamento",
+    "quality": 4,
+    "orientation": "landscape",
+    "content": "Lançamento parcial do concreto sobre malha de aço e lastro de brita, com carrinho de mão no canteiro."
+   },
+   {
+    "file": "obra-29.jpg",
+    "caption": "Preparo manual do concreto com enxada junto ao radier",
+    "quality": 4,
+    "orientation": "portrait",
+    "content": "Dois trabalhadores misturando concreto na masseira ao lado da base com malha de aço."
+   },
+   {
+    "file": "obra-30.jpg",
+    "caption": "Aprumo de montante de madeira fixado no concreto",
+    "quality": 4,
+    "orientation": "portrait",
+    "content": "Dupla posiciona e confere o prumo de peça vertical de madeira chumbada em concreto fresco sob o pergolado."
+   },
+   {
+    "file": "obra-31.jpg",
+    "caption": "Lastro de brita e malha de aço posicionados no radier",
+    "quality": 4,
+    "orientation": "portrait",
+    "content": "Vista geral da base do radier com lastro de brita, malha de aço e tubo de espera dentro das formas."
+   },
+   {
+    "file": "obra-32.jpg",
+    "caption": "Ajuste da malha de aço sobre o lastro de brita",
+    "quality": 4,
+    "orientation": "portrait",
+    "content": "Trabalhadores agachados ajustando a armadura em tela sobre a brita antes da concretagem."
+   },
+   {
+    "file": "obra-33.jpg",
+    "caption": "Verificação da base do radier antes da concretagem",
+    "quality": 3,
+    "orientation": "portrait",
+    "content": "Equipe circula pela base preparada do radier (brita e malha) em conferência final noturna."
+   },
+   {
+    "file": "obra-34.jpg",
+    "caption": "Espalhamento de brita para regularização do lastro",
+    "quality": 4,
+    "orientation": "portrait",
+    "content": "Trabalhador nivela a brita com enxada dentro de forma de madeira para o lastro da fundação."
+   }
+  ]
+ }
+}

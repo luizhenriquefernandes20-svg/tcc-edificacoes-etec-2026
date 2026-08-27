@@ -668,3 +668,262 @@ a { color: inherit; text-decoration: none; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* =========================================================
+   Componentes do conteúdo real (galeria, espécies, vídeos)
+   ========================================================= */
+
+/* hero com foto */
+.hero-photo {
+  aspect-ratio: 4/3;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.hero-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.hero-photo::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(15,17,21,.55));
+  pointer-events: none;
+}
+
+/* abas da galeria */
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.tab-btn {
+  font: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all .2s;
+}
+.tab-btn:hover { border-color: var(--brand); color: var(--text); }
+.tab-btn.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #101010;
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+.g-item {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--bg-elev);
+  cursor: zoom-in;
+  aspect-ratio: 4/3;
+}
+.g-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+.g-item:hover img { transform: scale(1.045); }
+.g-item figcaption {
+  position: absolute;
+  inset-inline: 0; bottom: 0;
+  padding: 26px 12px 10px;
+  font-size: 12.5px;
+  color: #fff;
+  background: linear-gradient(180deg, transparent, rgba(10,12,16,.85));
+  opacity: 0;
+  transition: opacity .25s;
+}
+.g-item:hover figcaption { opacity: 1; }
+
+/* lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8,10,14,.94);
+  padding: 24px;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: min(1200px, 92vw);
+  max-height: 82vh;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+}
+.lb-caption {
+  position: absolute;
+  bottom: 26px;
+  inset-inline: 0;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 14px;
+  padding: 0 60px;
+}
+.lb-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  background: var(--bg-elev);
+  color: var(--text);
+  font-size: 20px;
+  cursor: pointer;
+  display: grid; place-items: center;
+  transition: border-color .2s;
+}
+.lb-btn:hover { border-color: var(--brand); color: var(--brand); }
+.lb-prev { left: 18px; }
+.lb-next { right: 18px; }
+.lb-close {
+  position: absolute;
+  top: 18px; right: 18px;
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  background: var(--bg-elev);
+  color: var(--text);
+  font-size: 17px;
+  cursor: pointer;
+}
+.lb-close:hover { border-color: var(--brand); color: var(--brand); }
+
+/* espécies arbóreas */
+.species {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 20px;
+}
+.specie {
+  padding: 26px 22px;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform .2s, border-color .2s;
+}
+.specie:hover { transform: translateY(-4px); border-color: var(--brand); }
+.specie h3 {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  margin: 0 0 2px;
+}
+.specie .sci {
+  display: block;
+  font-style: italic;
+  color: var(--text-mute);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.specie p { color: var(--text-dim); font-size: 13.5px; margin: 0 0 12px; }
+.badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.b {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  color: var(--text-dim);
+}
+.b.warn { border-color: #e05252; color: #ff8484; background: #e0525214; }
+.b.good { border-color: var(--ok); color: var(--ok); background: #3ddc9714; }
+.b.brand { border-color: var(--brand); color: var(--brand); background: var(--brand-soft); }
+
+/* vídeos */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+.video-grid video {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: #000;
+}
+
+/* downloads */
+.downloads {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.dl {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-strong);
+  background: var(--bg-elev);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  transition: border-color .2s, transform .15s;
+}
+.dl:hover { border-color: var(--brand); transform: translateY(-2px); }
+.dl small { color: var(--text-mute); font-weight: 400; }
+
+/* medidas da churrasqueira */
+.specs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 14px;
+}
+.spec {
+  padding: 18px;
+  text-align: center;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+.spec strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--brand);
+}
+.spec span { font-size: 12.5px; color: var(--text-mute); }
+
+/* gantt em 17 semanas */
+.gantt-17 { min-width: 900px; }
+.gantt-17 .gantt-head,
+.gantt-17 .gantt-row { grid-template-columns: 190px repeat(17, 1fr); }
+.gantt-17 .cell { grid-template-columns: repeat(17, 1fr); }
+.gantt-17 .gantt-head div { font-size: 9.5px; }
+.bar.cont { background: linear-gradient(90deg, #d9a400, #a87c00); opacity: .75; }
+
+@media (max-width: 900px) {
+  .species { grid-template-columns: repeat(2, 1fr); }
+  .specs { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .species { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+}
