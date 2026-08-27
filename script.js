@@ -70,20 +70,3 @@ if (lb) {
   });
 }
 
-// Reveal-on-scroll suave
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.opacity = '1';
-      e.target.style.transform = 'translateY(0)';
-      io.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08 });
-
-document.querySelectorAll('.section, .hero-copy, .hero-art').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity .7s ease, transform .7s ease';
-  io.observe(el);
-});
