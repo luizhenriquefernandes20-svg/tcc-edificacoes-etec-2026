@@ -1,4 +1,4 @@
-/* TCC Edificações — ETEC Vasco Antônio Venchiarutti, 2026 */
+/* TCC Edificações, ETEC Vasco Antônio Venchiarutti, 2026 */
 
 /* Paleta: concreto + tijolo (cinza frio, acento ferrugem) */
 :root {
@@ -231,7 +231,7 @@ a:hover { color: var(--accent-dark); }
   margin: 0;
 }
 
-/* stats — ficha técnica */
+/* stats: ficha técnica */
 .stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0,1fr));
