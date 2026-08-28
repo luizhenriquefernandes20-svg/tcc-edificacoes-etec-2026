@@ -1,6 +1,6 @@
 # TCC Edificações — ETEC Vasco Antônio Venchiarutti · 2026
 
-Site do Trabalho de Conclusão de Curso do Técnico em Edificações (noturno, turma B).
+Site do Trabalho de Conclusão de Curso do Técnico em Edificações (noturno, turma 3º L).
 
 **Tema:** Construção de um espaço de convivência com churrasqueira na integração
 escolar e interdisciplinar dos alunos.
@@ -48,7 +48,7 @@ vercel --prod
   (`obra-36.jpg`, `obra-37.jpg`…) e adicione um `<figure class="g-item">` na
   galeria correspondente em `index.html`.
 - **Cronograma:** as barras do Gantt estão em `index.html` (seção Cronograma),
-  cada uma com `--from` e `--to` indicando a semana inicial/final (S1 = 10/08).
+  cada uma com `--from` e `--to` indicando a semana inicial/final (S1 = 04/08).
 - **Equipe / textos:** tudo em `index.html`, seções bem comentadas.
 
 ## 🖥️ Rodar localmente

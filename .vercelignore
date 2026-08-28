@@ -1,0 +1,9 @@
+node_modules/
+tools/
+package-lock.json
+package.json
+PENDING.md
+ErrorReports/
+*.log
+.DS_Store
+Thumbs.db

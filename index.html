@@ -5,76 +5,202 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="TCC do curso Técnico em Edificações da ETEC Vasco Antônio Venchiarutti, 2026. Construção de um espaço de convivência com churrasqueira na integração escolar e interdisciplinar dos alunos." />
   <meta name="theme-color" content="#f4f4f1" />
+  <meta name="color-scheme" content="light" />
   <title>Espaço de Convivência · TCC Edificações ETEC 2026</title>
+
+  <!-- Social / OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TCC Edificações · ETEC Jundiaí 2026" />
+  <meta property="og:title" content="Espaço de convivência com churrasqueira · TCC Edificações 2026" />
+  <meta property="og:description" content="Alunos do técnico em Edificações da ETEC Vasco Antônio Venchiarutti planejam e executam uma área de convivência real dentro da escola." />
+  <meta property="og:image" content="assets/img/projeto/projeto-x-04.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Espaço de convivência com churrasqueira · TCC Edificações 2026" />
+  <meta name="twitter:description" content="Do terreno original ao canteiro em execução — o TCC da turma noturna de Edificações." />
+  <meta name="twitter:image" content="assets/img/projeto/projeto-x-04.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%97%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+  <link rel="canonical" href="/" />
+  <link rel="alternate" type="application/rss+xml" title="TCC Edificações 2026 — Diário de obra" href="/rss.xml" />
+
+  <!-- JSON-LD: obra escolar como CreativeWork -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Espaço de convivência com churrasqueira · TCC Edificações 2026",
+    "inLanguage": "pt-BR",
+    "about": "Construção de área de convivência escolar com churrasqueira, executada pelos alunos do curso Técnico em Edificações.",
+    "dateCreated": "2026-08-10",
+    "dateModified": "2026-12-04",
+    "creator": [
+      { "@type": "Person", "name": "Jacira Szoke" },
+      { "@type": "Person", "name": "Nathan Rodrigues" },
+      { "@type": "Person", "name": "Pedrito J. Santos" },
+      { "@type": "Person", "name": "Thiago M. Silva" },
+      { "@type": "Person", "name": "Thiago N. Szoke" },
+      { "@type": "Person", "name": "Walmir Cruz" }
+    ],
+    "contributor": { "@type": "Person", "name": "Prof. Radian Vega", "roleName": "Orientador" },
+    "sourceOrganization": {
+      "@type": "EducationalOrganization",
+      "name": "ETEC Vasco Antônio Venchiarutti",
+      "address": { "@type": "PostalAddress", "addressLocality": "Jundiaí", "addressRegion": "SP", "addressCountry": "BR" }
+    },
+    "keywords": "TCC, Edificações, Alvenaria, Churrasqueira, NBR 15575, NBR 14518, NR-18, ETEC Jundiaí"
+  }
+  </script>
 </head>
 <body>
 
+  <a href="#top" class="skip">Pular para o conteúdo</a>
+
+  <!-- Ícones técnicos custom (sprite oculto) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-blueprint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"><path d="M3 4h18v16H3z"/><path d="M3 9h18M9 4v16M7 12h4v4H7z"/></symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c8 0 16-6 16-16-6 0-16 4-16 16z"/><path d="M4 20 14 10"/></symbol>
+      <symbol id="i-ruler" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"><path d="M2 8h20v8H2z"/><path d="M6 8v4M10 8v4M14 8v4M18 8v4"/></symbol>
+      <symbol id="i-hardhat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18"/><path d="M4 17c0-5 3-8 8-8s8 3 8 8"/><path d="M10 9V6h4v3"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"><path d="M3 6h18v14H3z"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v11H3z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+      <symbol id="i-team" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5"/><path d="M14 20c0-2 1.5-3.5 3-3.5s3 1.5 3 3.5"/></symbol>
+      <symbol id="i-glyph" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><line x1="4" y1="12" x2="14" y2="12"/><circle cx="20" cy="12" r="2.5"/><line x1="26" y1="12" x2="36" y2="12"/></symbol>
+    </defs>
+  </svg>
+
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="brand">
-        <span class="brand-mark">TCC 2026</span>
-        <span>Edificações · ETEC Jundiaí</span>
+      <a href="#top" class="brand" aria-label="Início — Espaço de convivência, TCC Edificações, ETEC Jundiaí">
+        <span class="brand-title">Espaço de convivência</span>
+        <span class="brand-meta">
+          <span class="brand-num">N.04</span>
+          <span class="brand-sep" aria-hidden="true"></span>
+          <span>TCC · Edificações · 3º L · 26</span>
+        </span>
       </a>
       <nav aria-label="principal">
         <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" id="menuBtn">
           <span></span><span></span><span></span>
         </button>
         <ul class="menu" id="menu">
-          <li><a href="#projeto">O Projeto</a></li>
+          <li><a href="#projeto">Projeto</a></li>
           <li><a href="#arvores">Árvores</a></li>
-          <li><a href="#tecnico">Projeto Técnico</a></li>
+          <li><a href="#tecnico">Técnico</a></li>
           <li><a href="#cronograma">Cronograma</a></li>
           <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#equipe" class="cta">Equipe</a></li>
+          <li><a href="#equipe">Equipe</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- Sub-nav sticky do #tecnico (só visível dentro dessa section) -->
+  <div class="subnav" id="tecnicoSubnav" data-of="tecnico" aria-hidden="true">
+    <div class="container subnav-inner">
+      <span class="subnav-lbl"><svg class="ic" aria-hidden="true"><use href="#i-ruler"/></svg>Projeto técnico</span>
+      <a href="#tec-dim">Dimensões</a>
+      <a href="#tec-fund">Fundação</a>
+      <a href="#tec-roteiro">Roteiro</a>
+      <a href="#tec-planta">Planta</a>
+      <a href="#tec-corte">Corte</a>
+      <a href="#tec-3d">Vista 3D</a>
+      <a href="#tec-instalacoes">Instalações</a>
+      <a href="#tec-docs">Documentos</a>
+    </div>
+  </div>
+
   <main id="top">
 
     <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Trabalho de Conclusão de Curso, 2026</span>
+    <section class="hero hero-editorial">
+      <div class="container">
+        <dl class="hero-rule" aria-label="Ficha do projeto">
+          <div><dt>Curso</dt><dd>Edificações, noturno · 3º L</dd></div>
+          <div><dt>Instituição</dt><dd>ETEC V. A. Venchiarutti · Jundiaí/SP</dd></div>
+          <div><dt>Ciclo</dt><dd>17 semanas · 04/08 → 04/12/2026</dd></div>
+          <div><dt>Entrega</dt><dd><time datetime="2026-12-04">04/12/2026</time> · <span class="countdown" data-countdown="2026-12-04">— dias</span></dd></div>
+        </dl>
+
+        <div class="hero-headline">
+          <span class="eyebrow">Trabalho de Conclusão de Curso · 2026</span>
           <h1>
-            Espaço de convivência com churrasqueira na escola
+            Espaço de convivência <span class="hero-em">com churrasqueira</span> <br class="hero-br" />
+            <span class="hero-loc">na ETEC de Jundiaí.</span>
           </h1>
           <p class="lead">
-            Os alunos de Edificações planejam e executam uma área de convivência
-            real dentro da ETEC Vasco Antônio Venchiarutti, em Jundiaí.
+            Os alunos de Edificações planejam e executam uma área de convivência real dentro
+            da escola — do levantamento arbóreo do terreno à execução da alvenaria refratária.
           </p>
-          <div class="hero-cta">
-            <a href="#projeto" class="btn btn-primary">Conhecer o projeto</a>
-            <a href="#galeria" class="btn btn-ghost">Ver a obra</a>
-          </div>
         </div>
-        <div class="hero-art">
-          <figure class="hero-photo">
-            <img src="assets/img/projeto/projeto-x-04.jpg" alt="Maquete eletrônica do espaço de convivência: pergolado com trepadeiras, área coberta e churrasqueira" />
-            <figcaption>Maquete eletrônica do projeto, perspectiva pelo acesso</figcaption>
-          </figure>
+
+        <figure class="hero-band-photo">
+          <picture><source srcset="assets/img/projeto/projeto-x-04.webp" type="image/webp"/><img src="assets/img/projeto/projeto-x-04.jpg" alt="Maquete eletrônica do espaço de convivência: pergolado com trepadeiras, área coberta e churrasqueira" /></picture>
+          <svg class="stamp" viewBox="0 0 140 140" role="img" aria-label="Selo do projeto: TCC 2026 Edificações Jundiaí">
+            <defs>
+              <path id="stamp-arc-top" d="M 20,70 A 50,50 0 0 1 120,70" fill="none" />
+              <path id="stamp-arc-bot" d="M 20,70 A 50,50 0 0 0 120,70" fill="none" />
+            </defs>
+            <circle cx="70" cy="70" r="62" fill="none" stroke="currentColor" stroke-width="1.5" />
+            <circle cx="70" cy="70" r="55" fill="none" stroke="currentColor" stroke-width="0.6" />
+            <text class="stamp-arc" font-size="9.4" letter-spacing="1.8">
+              <textPath href="#stamp-arc-top" startOffset="50%" text-anchor="middle">TCC · EDIFICAÇÕES · TURMA B</textPath>
+            </text>
+            <text class="stamp-arc" font-size="9.4" letter-spacing="1.8">
+              <textPath href="#stamp-arc-bot" startOffset="50%" text-anchor="middle">ETEC JUNDIAÍ · 2026 ·</textPath>
+            </text>
+            <text x="70" y="66" text-anchor="middle" class="stamp-num">2026</text>
+            <text x="70" y="82" text-anchor="middle" class="stamp-sub">Nº 04</text>
+            <line x1="46" y1="70" x2="58" y2="70" stroke="currentColor" stroke-width="0.6" />
+            <line x1="82" y1="70" x2="94" y2="70" stroke="currentColor" stroke-width="0.6" />
+          </svg>
+          <figcaption>
+            <span class="hbp-label">Maquete eletrônica · perspectiva pelo acesso</span>
+            <span class="hbp-ref">PROJ · 04</span>
+          </figcaption>
+        </figure>
+
+        <div class="hero-cta">
+          <a href="#projeto" class="btn btn-primary">Conhecer o projeto</a>
+          <a href="#galeria" class="btn btn-ghost">Ver a obra</a>
+          <a href="#cronograma" class="hero-cta-link">Cronograma físico</a>
+          <a href="banca.html" class="hero-cta-link">Para a banca ↗</a>
         </div>
-      </div>
-      <div class="container hero-band">
-        <dl class="meta">
-          <div><dt>Curso</dt><dd>Edificações, noturno, turma B</dd></div>
-          <div><dt>Instituição</dt><dd>ETEC Vasco A. Venchiarutti</dd></div>
-          <div><dt>Entrega</dt><dd>04/12/2026</dd></div>
-        </dl>
       </div>
     </section>
 
     <!-- O PROJETO -->
-    <section id="projeto" class="section">
+    <section id="projeto" class="section" data-num="01">
       <div class="container">
+        <!--
+          TODO · MANIFESTO — texto de referência (a reescrever pela turma).
+          Voz atual foi rascunhada pra dar tom editorial ao bloco; substituir por
+          um parágrafo escrito coletivamente pela turma 3º L antes da apresentação.
+          Sugestão: 3-5 frases sobre a motivação real do grupo (por que essa obra,
+          o que aprenderam ao escolher esse tema, o que muda no pátio).
+        -->
+        <figure class="manifesto">
+          <blockquote>
+            <p>
+              A gente <em>não queria só desenhar</em> um TCC. Quisemos construir uma coisa que
+              a escola ia usar. Uma churrasqueira que dá origem a um lugar de convivência —
+              onde antes tinha só terra debaixo das árvores. É o nosso curso inteiro colocado
+              na parede: cotas viram alvenaria, planta vira gente sentada, cronograma vira
+              cheiro de fogo aos sábados de aula.
+            </p>
+          </blockquote>
+          <figcaption>
+            <span class="manifesto-mark">§</span>
+            <span>3º L · Edificações noturno · 2026</span>
+          </figcaption>
+        </figure>
         <div class="section-head">
+          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-blueprint"/></svg>01 · O Projeto</span>
           <h2>Um laboratório vivo dentro da escola</h2>
           <p>
             A churrasqueira deixa de ser apenas um equipamento de lazer e passa a ser objeto
@@ -83,22 +209,92 @@
           </p>
         </div>
         <div class="stats">
-          <div class="stat">
+          <div class="stat" data-idx="01">
             <strong>4,12 × 3,20</strong>
             <span>metros, dimensões do espaço em planta baixa</span>
           </div>
-          <div class="stat">
+          <div class="stat" data-idx="02">
             <strong>17</strong>
-            <span>semanas de obra, de 10/08 a 04/12/2026</span>
+            <span>semanas de obra, de 04/08 a 04/12/2026</span>
           </div>
-          <div class="stat">
-            <strong>6</strong>
+          <div class="stat" data-idx="03">
+            <strong>16</strong>
             <span>alunos executando o projeto no período noturno</span>
           </div>
-          <div class="stat">
+          <div class="stat" data-idx="04">
             <strong>4</strong>
             <span>espécies arbóreas mapeadas e protegidas no terreno</span>
           </div>
+        </div>
+
+        <h3 class="section-h3">Por que aqui, por que assim</h3>
+        <div class="context-grid">
+          <figure class="ctx ctx-map">
+            <svg viewBox="0 0 320 240" role="img" aria-label="Croqui da ETEC com localização do canteiro">
+              <!-- muro / perímetro -->
+              <rect x="10" y="10" width="300" height="220" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+              <!-- blocos da escola -->
+              <rect x="30" y="30" width="120" height="60" fill="var(--paper-2)" stroke="var(--ink-2)" stroke-width="0.8"/>
+              <text x="90" y="64" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Bloco A · Salas</text>
+              <rect x="170" y="30" width="120" height="60" fill="var(--paper-2)" stroke="var(--ink-2)" stroke-width="0.8"/>
+              <text x="230" y="64" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Bloco B · Lab.</text>
+              <rect x="30" y="150" width="200" height="60" fill="var(--paper-2)" stroke="var(--ink-2)" stroke-width="0.8"/>
+              <text x="130" y="184" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Bloco C · Adm + Cantina</text>
+              <!-- pátio central -->
+              <text x="160" y="120" text-anchor="middle" font-family="var(--mono)" font-size="8" fill="var(--ink-3)" letter-spacing="1">PÁTIO</text>
+              <!-- árvores -->
+              <g fill="var(--nature)" opacity="0.85">
+                <circle cx="255" cy="120" r="10"/><circle cx="270" cy="140" r="8"/><circle cx="245" cy="145" r="7"/>
+              </g>
+              <!-- canteiro (destaque) -->
+              <g>
+                <rect x="240" y="105" width="42" height="52" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="3 2"/>
+                <line x1="240" y1="105" x2="220" y2="80" stroke="var(--accent)" stroke-width="0.6"/>
+                <circle cx="220" cy="80" r="2" fill="var(--accent)"/>
+              </g>
+              <text x="132" y="78" text-anchor="end" font-family="var(--mono)" font-size="9" fill="var(--accent)">Canteiro · 4,12 × 3,20 m</text>
+              <!-- rua/acesso -->
+              <text x="10" y="235" font-family="var(--mono)" font-size="7" fill="var(--ink-3)" letter-spacing="1">R. Adhemar Bolina</text>
+              <!-- norte -->
+              <g transform="translate(295,30)">
+                <circle r="10" fill="var(--paper)" stroke="var(--ink)" stroke-width="0.6"/>
+                <path d="M 0 -7 L 3 5 L 0 3 L -3 5 Z" fill="var(--ink)"/>
+                <text y="-14" text-anchor="middle" font-family="var(--mono)" font-size="8" fill="var(--ink)">N</text>
+              </g>
+            </svg>
+            <figcaption><strong>Locação do canteiro</strong> junto ao pátio, entre os blocos de laboratórios e a arborização preservada.</figcaption>
+          </figure>
+
+          <figure class="ctx ctx-solar">
+            <svg viewBox="0 0 320 240" role="img" aria-label="Carta solar simplificada — orientação do projeto">
+              <!-- círculo horizonte -->
+              <circle cx="160" cy="140" r="90" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+              <circle cx="160" cy="140" r="60" fill="none" stroke="var(--line-2)" stroke-width="0.6" stroke-dasharray="2 2"/>
+              <circle cx="160" cy="140" r="30" fill="none" stroke="var(--line-2)" stroke-width="0.6" stroke-dasharray="2 2"/>
+              <!-- eixos N/S/L/O -->
+              <line x1="70" y1="140" x2="250" y2="140" stroke="var(--ink-2)" stroke-width="0.6"/>
+              <line x1="160" y1="50" x2="160" y2="230" stroke="var(--ink-2)" stroke-width="0.6"/>
+              <g font-family="var(--mono)" font-size="10" fill="var(--ink)" text-anchor="middle">
+                <text x="160" y="42">N</text>
+                <text x="160" y="248">S</text>
+                <text x="258" y="144">L</text>
+                <text x="62" y="144">O</text>
+              </g>
+              <!-- trajeto solar (arco vermelho — verão a inverno) -->
+              <path d="M 80 140 A 80 60 0 0 1 240 140" fill="none" stroke="var(--accent)" stroke-width="2"/>
+              <path d="M 90 140 A 70 40 0 0 1 230 140" fill="none" stroke="var(--accent)" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.7"/>
+              <!-- sol -->
+              <circle cx="200" cy="105" r="6" fill="var(--accent)"/>
+              <line x1="200" y1="105" x2="160" y2="140" stroke="var(--accent)" stroke-width="0.6" opacity="0.5"/>
+              <!-- churrasqueira (posição no lote) -->
+              <rect x="150" y="150" width="20" height="14" fill="url(#hatch-alv)" stroke="var(--accent)" stroke-width="1"/>
+              <text x="180" y="164" font-family="var(--mono)" font-size="8" fill="var(--ink)">churrasq.</text>
+              <!-- anotações -->
+              <text x="160" y="20" text-anchor="middle" font-family="var(--sans)" font-weight="700" font-size="11" fill="var(--ink)">Carta solar · Jundiaí, 23°S</text>
+              <text x="200" y="95" font-family="var(--mono)" font-size="8" fill="var(--accent)">14h</text>
+            </svg>
+            <figcaption><strong>Sol da tarde</strong> incide no lado oeste da churrasqueira — a coifa protege quem cozinha e o pergolado sombreia as mesas.</figcaption>
+          </figure>
         </div>
 
         <div class="two-col" style="margin-top: 24px;">
@@ -118,7 +314,8 @@
             <ul class="check">
               <li><strong>Desenho Técnico e Projeto:</strong> plantas, cortes e detalhamento executivo (NBR 15575).</li>
               <li><strong>Tecnologia das Construções:</strong> materiais, alvenaria, fundações e duto de fumaça.</li>
-              <li><strong>Instalações Prediais:</strong> água, esgoto e exaustão (NBR 14518 para chaminés).</li>
+              <li><strong>Instalações Elétricas:</strong> circuitos de iluminação e tomadas do espaço dimensionados conforme a <strong>NBR 5410</strong> (baixa tensão).</li>
+              <li><strong>Instalações Hidrossanitárias:</strong> água fria da bancada (NBR 5626), esgoto e exaustão da chaminé (NBR 14518).</li>
               <li><strong>Segurança do Trabalho:</strong> APR e mapa de risco da obra conforme NR-18.</li>
               <li><strong>Acessibilidade:</strong> NBR 9050 aplicada ao espaço de convivência.</li>
             </ul>
@@ -128,9 +325,10 @@
     </section>
 
     <!-- LEVANTAMENTO ARBÓREO -->
-    <section id="arvores" class="section alt">
+    <section id="arvores" class="section alt" data-num="02">
       <div class="container">
         <div class="section-head">
+          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>02 · Levantamento arbóreo</span>
           <h2>As árvores definiram onde construir</h2>
           <p>
             Inspeção de todos os indivíduos com DAP ≥ 5 cm: identificação botânica, medição
@@ -138,56 +336,103 @@
             diretriz obrigatória de projeto.
           </p>
         </div>
-        <div class="species">
-          <article class="specie">
-            <h3>Pau Brasil</h3>
-            <span class="sci">Paubrasilia echinata</span>
-            <p>Nativa e símbolo nacional. Raízes profundas, baixo risco estrutural. Copa isolada com barreira física durante a obra.</p>
-            <div class="badges"><span class="b warn">Em perigo · IUCN/MMA</span><span class="b good">Nativa</span></div>
-          </article>
-          <article class="specie">
-            <h3>Pau Ferro</h3>
-            <span class="sci">Libidibia ferrea</span>
-            <p>Até 20 m, raiz pivotante profunda e alta resistência a ventos. A copa foi incorporada ao projeto como sombreamento passivo.</p>
-            <div class="badges"><span class="b good">Nativa</span><span class="b brand">Sombreamento</span></div>
-          </article>
-          <article class="specie">
-            <h3>Flamboyant</h3>
-            <span class="sci">Delonix regia</span>
-            <p>Raízes superficiais e agressivas, com risco a pisos e tubulações. A obra foi locada a mais de 6 m de afastamento.</p>
-            <div class="badges"><span class="b">Exótica</span><span class="b brand">Afastamento &gt; 6 m</span></div>
-          </article>
-          <article class="specie">
-            <h3>Espatódea</h3>
-            <span class="sci">Spathodea campanulata</span>
-            <p>Raízes superficiais, espécie invasora em alguns biomas e flores tóxicas para abelhas nativas. Monitoramento semestral.</p>
-            <div class="badges"><span class="b">Exótica</span><span class="b warn">Invasora</span></div>
-          </article>
-        </div>
+        <ol class="species">
+          <li class="specie">
+            <figure class="specie-photo">
+              <picture>
+                <source srcset="assets/img/arvores/pau-brasil.webp" type="image/webp"/>
+                <img src="assets/img/arvores/pau-brasil.jpg" alt="Árvore de Pau Brasil (Paubrasilia echinata) em vegetação nativa" loading="lazy"/>
+              </picture>
+              <figcaption>Foto: <a href="https://commons.wikimedia.org/wiki/User:Jani_Pereira" rel="noopener" target="_blank">Jani Pereira</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="noopener" target="_blank">CC BY-SA 4.0</a></figcaption>
+            </figure>
+            <span class="specie-idx">01</span>
+            <div class="specie-body">
+              <h3>Pau Brasil <span class="sci">Paubrasilia echinata</span></h3>
+              <p>Nativa e símbolo nacional. Raízes profundas, baixo risco estrutural. Copa isolada com barreira física durante a obra.</p>
+              <div class="badges"><span class="b warn">Em perigo · IUCN/MMA</span><span class="b good">Nativa</span></div>
+            </div>
+            <span class="specie-meta"><em>DAP</em> ≥ 5 cm · <em>Diretriz</em> Isolar</span>
+          </li>
+          <li class="specie">
+            <figure class="specie-photo">
+              <picture>
+                <source srcset="assets/img/arvores/pau-ferro.webp" type="image/webp"/>
+                <img src="assets/img/arvores/pau-ferro.jpg" alt="Árvore de Pau Ferro (Libidibia ferrea) com copa aberta e tronco liso" loading="lazy"/>
+              </picture>
+              <figcaption>Foto: <a href="https://commons.wikimedia.org/wiki/User:Mauroguanandi" rel="noopener" target="_blank">Mauroguanandi</a> · Domínio público</figcaption>
+            </figure>
+            <span class="specie-idx">02</span>
+            <div class="specie-body">
+              <h3>Pau Ferro <span class="sci">Libidibia ferrea</span></h3>
+              <p>Até 20 m, raiz pivotante profunda e alta resistência a ventos. A copa foi incorporada ao projeto como sombreamento passivo.</p>
+              <div class="badges"><span class="b good">Nativa</span><span class="b brand">Sombreamento</span></div>
+            </div>
+            <span class="specie-meta"><em>Altura</em> ≤ 20 m · <em>Diretriz</em> Aproveitar copa</span>
+          </li>
+          <li class="specie">
+            <figure class="specie-photo">
+              <picture>
+                <source srcset="assets/img/arvores/flamboyant.webp" type="image/webp"/>
+                <img src="assets/img/arvores/flamboyant.jpg" alt="Flamboyant (Delonix regia) com copa florida em tons vermelho-alaranjados" loading="lazy"/>
+              </picture>
+              <figcaption>Foto: <a href="https://commons.wikimedia.org/wiki/User:Berthold_Werner" rel="noopener" target="_blank">Berthold Werner</a> · Domínio público</figcaption>
+            </figure>
+            <span class="specie-idx">03</span>
+            <div class="specie-body">
+              <h3>Flamboyant <span class="sci">Delonix regia</span></h3>
+              <p>Raízes superficiais e agressivas, com risco a pisos e tubulações. A obra foi locada a mais de 6 m de afastamento.</p>
+              <div class="badges"><span class="b">Exótica</span><span class="b brand">Afastamento &gt; 6 m</span></div>
+            </div>
+            <span class="specie-meta"><em>Risco</em> Alto · <em>Diretriz</em> Afastar &gt; 6 m</span>
+          </li>
+          <li class="specie">
+            <figure class="specie-photo">
+              <picture>
+                <source srcset="assets/img/arvores/espatodea.webp" type="image/webp"/>
+                <img src="assets/img/arvores/espatodea.jpg" alt="Espatódea (Spathodea campanulata) com flores em forma de tulipa alaranjada" loading="lazy"/>
+              </picture>
+              <figcaption>Foto: <a href="https://commons.wikimedia.org/wiki/User:Shyamal" rel="noopener" target="_blank">Shyamal</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener" target="_blank">CC BY-SA 3.0</a></figcaption>
+            </figure>
+            <span class="specie-idx">04</span>
+            <div class="specie-body">
+              <h3>Espatódea <span class="sci">Spathodea campanulata</span></h3>
+              <p>Raízes superficiais, espécie invasora em alguns biomas e flores tóxicas para abelhas nativas. Monitoramento semestral.</p>
+              <div class="badges"><span class="b">Exótica</span><span class="b warn">Invasora</span></div>
+            </div>
+            <span class="specie-meta"><em>Manejo</em> Semestral · <em>Diretriz</em> Monitorar</span>
+          </li>
+        </ol>
       </div>
     </section>
 
     <!-- PROJETO TÉCNICO -->
-    <section id="tecnico" class="section">
+    <section id="tecnico" class="section is-blueprint" data-num="03">
       <div class="container">
+        <div class="plate" aria-label="Cabeçalho de prancha">
+          <div><span>Prancha</span><strong>03/07</strong></div>
+          <div><span>Escala</span><strong>1:50 · esq.</strong></div>
+          <div><span>Data</span><strong>08/2026 · rev. 1</strong></div>
+          <div><span>Autoria</span><strong>3º L · Edif. noturno</strong></div>
+        </div>
         <div class="section-head">
+          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-ruler"/></svg>03 · Projeto técnico</span>
           <h2>Da prancheta ao canteiro</h2>
           <p>
             Projeto desenvolvido em Revit e AutoCAD: plantas cotadas, cortes, vistas 3D e
-            planta de fundação com quantitativos. A churrasqueira é executada em alvenaria
+            planta de fundação com <abbr title="Volume de material calculado a partir do projeto: escavação, forma, concreto, aço.">quantitativos</abbr>. A churrasqueira é executada em alvenaria
             com tijolos e argamassa refratários.
           </p>
         </div>
 
-        <div class="specs">
+        <div class="specs" id="tec-dim">
           <div class="spec"><strong>80-90 cm</strong><span>largura da churrasqueira</span></div>
           <div class="spec"><strong>60 cm</strong><span>profundidade do braseiro</span></div>
           <div class="spec"><strong>90 cm</strong><span>altura da grelha e bancadas</span></div>
           <div class="spec"><strong>2,70 m</strong><span>altura total com chaminé</span></div>
         </div>
 
-        <h3 style="font-family: var(--font-display); margin: 48px 0 20px;">Quantitativos da fundação (radier)</h3>
-        <div class="specs" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));">
+        <h3 class="section-h3" id="tec-fund">Quantitativos da fundação (radier)</h3>
+        <div class="specs specs-auto">
           <div class="spec"><strong>2,00 m³</strong><span>escavação</span></div>
           <div class="spec"><strong>6,23 m²</strong><span>forma</span></div>
           <div class="spec"><strong>3,14 m³</strong><span>concreto</span></div>
@@ -197,60 +442,387 @@
           <div class="spec"><strong>24,84 m²</strong><span>alvenaria</span></div>
         </div>
 
-        <h3 style="font-family: var(--font-display); margin: 48px 0 20px;">Roteiro construtivo da churrasqueira</h3>
+        <h3 class="section-h3" id="tec-roteiro">Roteiro construtivo da churrasqueira</h3>
+        <div class="tl-filter" role="tablist" aria-label="Filtro do roteiro">
+          <button class="tl-filter-btn is-active" data-filter="all">Todas as etapas</button>
+          <button class="tl-filter-btn" data-filter="done">Concluído</button>
+          <button class="tl-filter-btn" data-filter="active">Em execução</button>
+          <button class="tl-filter-btn" data-filter="planned">Planejado</button>
+        </div>
         <ol class="timeline">
-          <li>
+          <li data-from="2" data-to="6">
             <span class="step">1</span>
-            <div>
+            <figure class="step-thumb thumb-obra">
+              <picture><source srcset="assets/img/obra/obra-14.webp" type="image/webp"/><img src="assets/img/obra/obra-14.jpg" loading="lazy" alt="Escavação da faixa de fundação" /></picture>
+              <figcaption>obra</figcaption>
+            </figure>
+            <div class="step-body">
               <h3>Fundação e base</h3>
-              <p>Locação conforme croqui, marcação das linhas de referência e execução da base sobre o radier concluído.</p>
+              <p>Locação conforme croqui, marcação das linhas de referência e execução da base sobre o <abbr title="Fundação única em concreto armado que distribui a carga por toda a área.">radier</abbr> concluído.</p>
             </div>
           </li>
-          <li>
+          <li data-from="6" data-to="8">
             <span class="step">2</span>
-            <div>
+            <figure class="step-thumb thumb-render">
+              <picture><source srcset="assets/img/renders/render-05.webp" type="image/webp"/><img src="assets/img/renders/render-05.jpg" loading="lazy" alt="Perspectiva interna: bancadas e azulejo até 1,50 m" /></picture>
+              <figcaption>projeção</figcaption>
+            </figure>
+            <div class="step-body">
               <h3>Paredes laterais</h3>
               <p>Assentamento da primeira fiada e elevação com blocos amarrados, respeitando as aberturas do projeto.</p>
             </div>
           </li>
-          <li>
+          <li data-from="6" data-to="8">
             <span class="step">3</span>
-            <div>
+            <figure class="step-thumb thumb-render">
+              <picture><source srcset="assets/img/renders/render-03.webp" type="image/webp"/><img src="assets/img/renders/render-03.jpg" loading="lazy" alt="Elevação interna com bancada e cuba" /></picture>
+              <figcaption>projeção</figcaption>
+            </figure>
+            <div class="step-body">
               <h3>Lajes em concreto armado</h3>
               <p>Lajes da base e do meio com barras de ferro; a laje superior exige escoramento e fôrmas de madeira. Instalação da gaveta de aço inox.</p>
             </div>
           </li>
-          <li>
+          <li data-from="8" data-to="10">
             <span class="step">4</span>
-            <div>
+            <figure class="step-thumb thumb-render">
+              <picture><source srcset="assets/img/renders/render-11.webp" type="image/webp"/><img src="assets/img/renders/render-11.jpg" loading="lazy" alt="Detalhe da churrasqueira: grelha e espetos giratórios" /></picture>
+              <figcaption>projeção</figcaption>
+            </figure>
+            <div class="step-body">
               <h3>Área do braseiro e apoio da grelha</h3>
               <p>Blocos perfurados na parede de fundo para suporte dos espetos; grelha dimensionada para a área interna.</p>
             </div>
           </li>
-          <li>
+          <li data-from="8" data-to="10">
             <span class="step">5</span>
-            <div>
+            <figure class="step-thumb thumb-render">
+              <picture><source srcset="assets/img/renders/render-04.webp" type="image/webp"/><img src="assets/img/renders/render-04.jpg" loading="lazy" alt="Vista aérea da maquete com telhado e chaminé" /></picture>
+              <figcaption>projeção</figcaption>
+            </figure>
+            <div class="step-body">
               <h3>Coifa e chaminé</h3>
               <p>Elevação da chaminé em forma de torre, instalação da tampa, soleira e cuba interna com tijolos e argamassa refratária.</p>
             </div>
           </li>
-          <li>
+          <li data-from="8" data-to="10">
             <span class="step">6</span>
-            <div>
+            <figure class="step-thumb thumb-obra">
+              <picture><source srcset="assets/img/obra/obra-01.webp" type="image/webp"/><img src="assets/img/obra/obra-01.jpg" loading="lazy" alt="Telhas metálicas recebidas no canteiro para a cobertura" /></picture>
+              <figcaption>obra</figcaption>
+            </figure>
+            <div class="step-body">
+              <h3>Cobertura em telha metálica</h3>
+              <p>Montagem da estrutura de apoio e fixação das telhas metálicas sobre a área de serviço, com caimento para escoamento e transpasse conforme especificação do fabricante. Vedação no encontro com a chaminé.</p>
+            </div>
+          </li>
+          <li data-from="10" data-to="14">
+            <span class="step">7</span>
+            <figure class="step-thumb thumb-render">
+              <picture><source srcset="assets/img/renders/render-06.webp" type="image/webp"/><img src="assets/img/renders/render-06.jpg" loading="lazy" alt="Maquete eletrônica do espaço concluído" /></picture>
+              <figcaption>projeção</figcaption>
+            </figure>
+            <div class="step-body">
               <h3>Acabamento</h3>
               <p>Limpeza da alvenaria, suporte inox para espetos e liberação de uso após a cura do concreto (3 a 5 dias).</p>
             </div>
           </li>
         </ol>
 
+        <h3 class="section-h3">Isométrica esquemática</h3>
+        <p class="lede-inline">
+          Vista axonométrica <strong>esquemática</strong> mostrando a leitura vertical do conjunto: fundação → alvenaria → cobertura + pergolado.
+          <span class="schema-note"><span class="schema-badge">Esquemático</span> Não substitui a prancha executiva — <a href="#tec-docs">baixe a Vista 3D em DWG</a> para o desenho original em AutoCAD.</span>
+        </p>
+        <div class="iso-wrap">
+          <svg class="iso-svg" viewBox="0 0 700 420" role="img" aria-label="Isométrica esquemática do espaço de convivência">
+            <defs>
+              <pattern id="iso-brick" width="10" height="6" patternUnits="userSpaceOnUse" patternTransform="skewX(-30)">
+                <rect width="10" height="6" fill="none" stroke="var(--accent)" stroke-width="0.4" opacity="0.7"/>
+              </pattern>
+              <pattern id="iso-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="6" stroke="var(--ink-3)" stroke-width="0.5"/>
+              </pattern>
+            </defs>
+            <!-- terreno base isométrico -->
+            <path d="M 100 340 L 400 190 L 700 340 L 400 490 Z" fill="var(--paper-2)" stroke="var(--ink-3)" stroke-width="0.8" opacity="0.6"/>
+            <!-- laje/radier -->
+            <path d="M 220 320 L 400 230 L 580 320 L 400 410 Z" fill="var(--ink-2)" opacity="0.75"/>
+            <path d="M 220 320 L 400 410 L 400 420 L 220 330 Z" fill="var(--ink)" opacity="0.6"/>
+            <path d="M 580 320 L 400 410 L 400 420 L 580 330 Z" fill="var(--ink)" opacity="0.45"/>
+            <!-- churrasqueira (alvenaria) -->
+            <g transform="translate(0,0)">
+              <path d="M 380 280 L 460 240 L 500 260 L 420 300 Z" fill="url(#iso-brick)" stroke="var(--accent)" stroke-width="1.2"/>
+              <path d="M 380 280 L 420 300 L 420 200 L 380 180 Z" fill="var(--accent)" opacity="0.75"/>
+              <path d="M 420 300 L 500 260 L 500 160 L 420 200 Z" fill="var(--accent)" opacity="0.55"/>
+              <!-- chaminé -->
+              <path d="M 430 170 L 470 150 L 480 155 L 440 175 Z" fill="url(#iso-brick)" stroke="var(--accent)" stroke-width="1"/>
+              <path d="M 430 170 L 440 175 L 440 110 L 430 105 Z" fill="var(--accent)" opacity="0.8"/>
+              <path d="M 440 175 L 480 155 L 480 90 L 440 110 Z" fill="var(--accent)" opacity="0.55"/>
+            </g>
+            <!-- pergolado (vigas) -->
+            <g stroke="var(--nature-dark)" stroke-width="1.4" fill="none">
+              <path d="M 250 260 L 340 210"/>
+              <path d="M 290 240 L 380 190"/>
+              <path d="M 330 220 L 420 170"/>
+              <path d="M 370 200 L 460 150"/>
+              <path d="M 410 180 L 500 130"/>
+              <path d="M 450 160 L 540 110"/>
+              <path d="M 240 265 L 460 145"/>
+              <path d="M 260 275 L 480 155"/>
+            </g>
+            <!-- bancada -->
+            <path d="M 240 300 L 340 250 L 380 270 L 280 320 Z" fill="var(--surface)" stroke="var(--ink)" stroke-width="0.8"/>
+            <!-- anotações -->
+            <g font-family="var(--mono)" font-size="10" fill="var(--ink)">
+              <line x1="470" y1="90" x2="580" y2="70" stroke="var(--ink)" stroke-width="0.6"/>
+              <circle cx="580" cy="70" r="2" fill="var(--accent)"/>
+              <text x="586" y="74">Chaminé · 2,70 m</text>
+
+              <line x1="440" y1="250" x2="600" y2="230" stroke="var(--ink)" stroke-width="0.6"/>
+              <circle cx="600" cy="230" r="2" fill="var(--accent)"/>
+              <text x="606" y="234">Alvenaria refratária</text>
+
+              <line x1="300" y1="310" x2="140" y2="310" stroke="var(--ink)" stroke-width="0.6"/>
+              <circle cx="140" cy="310" r="2" fill="var(--accent)"/>
+              <text x="42" y="304" fill="var(--ink)">Bancada · 90 cm</text>
+
+              <line x1="400" y1="410" x2="440" y2="470" stroke="var(--ink)" stroke-width="0.6"/>
+              <circle cx="440" cy="470" r="2" fill="var(--accent)"/>
+              <text x="446" y="474">Radier · 3,14 m³</text>
+
+              <line x1="440" y1="180" x2="230" y2="130" stroke="var(--ink)" stroke-width="0.6"/>
+              <circle cx="230" cy="130" r="2" fill="var(--nature-dark)"/>
+              <text x="60" y="124">Pergolado · eucalipto</text>
+            </g>
+          </svg>
+        </div>
+
+        <h3 class="section-h3" id="tec-planta">Planta baixa interativa</h3>
+        <p class="lede-inline">
+          Passe o mouse (ou toque, em mobile) nos elementos numerados para ver cotas e descrição.
+          Dimensões conforme projeto: 4,12 × 3,20 m em planta.
+          <span class="schema-note"><span class="schema-badge">Esquemático</span> Reconstrução didática — a prancha executiva original está em <a href="assets/img/projeto/projeto-x-07.jpg">galeria › pranchas</a> e em DWG na seção <a href="#tec-docs">Documentos</a>.</span>
+        </p>
+        <div class="plan-wrap">
+          <svg class="plan-svg" viewBox="0 0 620 480" role="img" aria-label="Planta baixa esquemática do espaço de convivência">
+            <defs>
+              <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="6" stroke="var(--line-2)" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <!-- limites do lote (área total) -->
+            <rect x="30" y="30" width="560" height="420" fill="none" stroke="var(--ink-3)" stroke-width="1" stroke-dasharray="4 4" />
+            <text x="40" y="24" class="plan-lbl">LIMITE DA ÁREA · 4,12 × 3,20 m (escala esquemática)</text>
+
+            <!-- pergolado (área principal coberta) -->
+            <g data-hot="pergolado" tabindex="0" role="button" aria-label="Pergolado: eucalipto roliço com trepadeiras, 3,60 x 2,80 m">
+              <rect x="60" y="60" width="500" height="360" fill="var(--nature-soft)" stroke="var(--nature)" stroke-width="1"/>
+              <!-- vigas horizontais -->
+              <g stroke="var(--nature)" stroke-width="0.6" opacity="0.5">
+                <line x1="60" y1="90" x2="560" y2="90"/><line x1="60" y1="130" x2="560" y2="130"/>
+                <line x1="60" y1="170" x2="560" y2="170"/><line x1="60" y1="210" x2="560" y2="210"/>
+                <line x1="60" y1="250" x2="560" y2="250"/><line x1="60" y1="290" x2="560" y2="290"/>
+                <line x1="60" y1="330" x2="560" y2="330"/><line x1="60" y1="370" x2="560" y2="370"/>
+              </g>
+              <text x="75" y="80" class="plan-lbl-el">Pergolado</text>
+            </g>
+
+            <!-- área coberta -->
+            <g data-hot="cobertura" tabindex="0" role="button" aria-label="Área coberta: telhado metálico, 2,80 x 2,00 m">
+              <rect x="90" y="90" width="440" height="220" fill="var(--paper-2)" stroke="var(--ink-2)" stroke-width="1.2"/>
+              <text x="110" y="108" class="plan-lbl-el">Área coberta</text>
+            </g>
+
+            <!-- bancada com cuba -->
+            <g data-hot="bancada" tabindex="0" role="button" aria-label="Bancada com cuba: granito, altura 90 cm, 2,40 x 0,60 m">
+              <rect x="120" y="120" width="260" height="60" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.2"/>
+              <circle cx="330" cy="150" r="12" fill="none" stroke="var(--ink-2)" stroke-width="1"/>
+              <text x="135" y="155" class="plan-lbl-el">Bancada · cuba</text>
+              <text x="382" y="145" class="plan-hot-num">01</text>
+            </g>
+
+            <!-- churrasqueira em alvenaria -->
+            <g data-hot="churrasqueira" tabindex="0" role="button" aria-label="Churrasqueira: alvenaria refratária, 0,80 x 0,60 m em planta, chaminé 2,70 m de altura">
+              <rect x="410" y="120" width="100" height="80" fill="url(#hatch)" stroke="var(--accent)" stroke-width="1.5"/>
+              <rect x="420" y="130" width="80" height="45" fill="var(--paper)" stroke="var(--accent)" stroke-width="0.8"/>
+              <text x="452" y="215" class="plan-lbl-el" fill="var(--accent-dark)">Churrasqueira</text>
+              <text x="515" y="138" class="plan-hot-num">02</text>
+            </g>
+
+            <!-- área de mesas -->
+            <g data-hot="mesas" tabindex="0" role="button" aria-label="Mesas de convivência: até 24 pessoas simultaneamente">
+              <g fill="none" stroke="var(--ink-2)" stroke-width="1">
+                <circle cx="180" cy="240" r="26"/><circle cx="270" cy="240" r="26"/>
+                <circle cx="360" cy="240" r="26"/><circle cx="450" cy="240" r="26"/>
+              </g>
+              <text x="140" y="292" class="plan-lbl-el">Mesas · convivência</text>
+              <text x="480" y="252" class="plan-hot-num">03</text>
+            </g>
+
+            <!-- acesso -->
+            <g data-hot="acesso" tabindex="0" role="button" aria-label="Acesso principal: vão livre de 1,20 m, sem desnível (acessibilidade NBR 9050)">
+              <rect x="270" y="405" width="80" height="10" fill="var(--accent)" opacity="0.15"/>
+              <path d="M 270 415 L 350 415 L 340 425 L 280 425 Z" fill="var(--accent)" opacity="0.3"/>
+              <text x="270" y="440" class="plan-lbl-el" fill="var(--accent-dark)">Acesso · 1,20 m</text>
+              <text x="358" y="413" class="plan-hot-num">04</text>
+            </g>
+
+            <!-- cotas gerais -->
+            <g class="plan-dim">
+              <!-- horizontal top -->
+              <line x1="30" y1="18" x2="590" y2="18" stroke="var(--ink-3)" stroke-width="0.5"/>
+              <line x1="30" y1="14" x2="30" y2="22" stroke="var(--ink-3)" stroke-width="0.6"/>
+              <line x1="590" y1="14" x2="590" y2="22" stroke="var(--ink-3)" stroke-width="0.6"/>
+              <text x="310" y="14" text-anchor="middle" class="plan-dim-lbl">4,12 m</text>
+              <!-- vertical right -->
+              <line x1="605" y1="30" x2="605" y2="450" stroke="var(--ink-3)" stroke-width="0.5"/>
+              <line x1="601" y1="30" x2="609" y2="30" stroke="var(--ink-3)" stroke-width="0.6"/>
+              <line x1="601" y1="450" x2="609" y2="450" stroke="var(--ink-3)" stroke-width="0.6"/>
+              <text x="615" y="245" transform="rotate(90 615 245)" text-anchor="middle" class="plan-dim-lbl">3,20 m</text>
+            </g>
+
+            <!-- norte -->
+            <g transform="translate(560,50)">
+              <circle r="14" fill="var(--paper)" stroke="var(--ink)" stroke-width="0.8"/>
+              <path d="M 0 -10 L 4 6 L 0 3 L -4 6 Z" fill="var(--ink)"/>
+              <text y="-18" text-anchor="middle" class="plan-dim-lbl" fill="var(--ink)">N</text>
+            </g>
+          </svg>
+          <aside class="plan-info" aria-live="polite">
+            <span class="plan-info-idx">—</span>
+            <h4 class="plan-info-title">Passe o mouse na planta</h4>
+            <p class="plan-info-desc">Cada elemento revela cotas e detalhamento executivo. Nas telas de toque, um toque simples ativa; o segundo abre a foto correspondente na galeria.</p>
+          </aside>
+        </div>
+
+        <h3 class="section-h3" id="tec-corte">Corte esquemático · churrasqueira</h3>
+        <p class="lede-inline">
+          Corte AA cotado. Clique nos números para ler o detalhamento de cada elemento construtivo.
+          <span class="schema-note"><span class="schema-badge">Esquemático</span> Reconstrução didática — o corte executivo cotado está em <a href="assets/img/projeto/projeto-x-05.jpg">galeria › pranchas</a>.</span>
+        </p>
+        <div class="section-svg-wrap">
+          <svg class="section-svg" viewBox="0 0 600 360" role="img" aria-label="Corte esquemático da churrasqueira com camadas construtivas anotadas">
+            <defs>
+              <pattern id="hatch-alv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="6" stroke="var(--accent)" stroke-width="0.8" opacity="0.5"/>
+              </pattern>
+              <pattern id="hatch-terreno" width="10" height="10" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="10" x2="10" y2="0" stroke="var(--ink-3)" stroke-width="0.5"/>
+              </pattern>
+            </defs>
+
+            <!-- terreno -->
+            <rect x="20" y="310" width="560" height="30" fill="url(#hatch-terreno)"/>
+            <line x1="20" y1="310" x2="580" y2="310" stroke="var(--ink)" stroke-width="1"/>
+
+            <!-- radier -->
+            <rect x="180" y="298" width="240" height="14" fill="var(--ink-2)" opacity="0.7"/>
+            <line x1="180" y1="312" x2="420" y2="312" stroke="var(--ink)" stroke-width="0.5"/>
+
+            <!-- lastro brita -->
+            <rect x="180" y="308" width="240" height="4" fill="var(--ink-3)" opacity="0.3"/>
+
+            <!-- corpo da churrasqueira: braseiro e bancada -->
+            <rect x="220" y="200" width="160" height="100" fill="url(#hatch-alv)" stroke="var(--accent)" stroke-width="1.2"/>
+            <rect x="235" y="215" width="130" height="55" fill="var(--paper)" stroke="var(--accent)" stroke-width="0.7"/>
+
+            <!-- laje intermediária (grelha) -->
+            <line x1="235" y1="240" x2="365" y2="240" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="3 2"/>
+
+            <!-- coifa -->
+            <path d="M 220 200 L 260 160 L 340 160 L 380 200 Z" fill="url(#hatch-alv)" stroke="var(--accent)" stroke-width="1.2"/>
+
+            <!-- chaminé -->
+            <rect x="270" y="60" width="60" height="100" fill="url(#hatch-alv)" stroke="var(--accent)" stroke-width="1.2"/>
+            <rect x="266" y="55" width="68" height="8" fill="var(--accent)" opacity="0.7"/>
+
+            <!-- fumaça (sugestão) -->
+            <path d="M 300 55 Q 305 40 300 25 Q 295 20 300 10" fill="none" stroke="var(--ink-3)" stroke-width="0.8" opacity="0.5"/>
+
+            <!-- cotas -->
+            <g stroke="var(--ink-3)" stroke-width="0.5">
+              <line x1="600" y1="60" x2="600" y2="310"/>
+              <line x1="596" y1="60" x2="604" y2="60"/>
+              <line x1="596" y1="310" x2="604" y2="310"/>
+              <line x1="600" y1="240" x2="604" y2="240"/>
+              <line x1="595" y1="200" x2="605" y2="200"/>
+              <line x1="597" y1="270" x2="603" y2="270"/>
+            </g>
+            <text x="610" y="185" transform="rotate(90 610 185)" text-anchor="middle" class="plan-dim-lbl">2,70 m · altura total</text>
+
+            <!-- hotspots -->
+            <g class="section-hot-group">
+              <circle cx="130" cy="305" r="14" data-hot="terreno" tabindex="0" role="button" aria-label="Terreno: solo natural regularizado" />
+              <text x="130" y="309" text-anchor="middle" class="section-hot-num">1</text>
+
+              <circle cx="130" cy="270" r="14" data-hot="radier" tabindex="0" role="button" aria-label="Radier: 3,14 m³ de concreto sobre lastro de brita, 219,73 kg de aço" />
+              <text x="130" y="274" text-anchor="middle" class="section-hot-num">2</text>
+
+              <circle cx="130" cy="220" r="14" data-hot="alvenaria" tabindex="0" role="button" aria-label="Alvenaria refratária: tijolos e argamassa refratárias em contato com o braseiro" />
+              <text x="130" y="224" text-anchor="middle" class="section-hot-num">3</text>
+
+              <circle cx="500" cy="240" r="14" data-hot="grelha" tabindex="0" role="button" aria-label="Grelha: 90 cm de altura, área interna dimensionada" />
+              <text x="500" y="244" text-anchor="middle" class="section-hot-num">4</text>
+
+              <circle cx="500" cy="180" r="14" data-hot="coifa" tabindex="0" role="button" aria-label="Coifa: transição da câmara para a chaminé, tijolos refratários" />
+              <text x="500" y="184" text-anchor="middle" class="section-hot-num">5</text>
+
+              <circle cx="500" cy="100" r="14" data-hot="chamine" tabindex="0" role="button" aria-label="Chaminé: NBR 14518, altura mínima acima da cumeeira, tampa em aço inox" />
+              <text x="500" y="104" text-anchor="middle" class="section-hot-num">6</text>
+            </g>
+          </svg>
+          <aside class="plan-info section-info" aria-live="polite">
+            <span class="plan-info-idx">—</span>
+            <h4 class="plan-info-title">Toque em um número</h4>
+            <p class="plan-info-desc">O corte mostra a estratégia construtiva vertical: da fundação em radier ao topo da chaminé, 2,70 m no total.</p>
+          </aside>
+        </div>
+
+        <h3 class="section-h3" id="tec-3d">Vista 3D interativa</h3>
+        <p class="lede-inline">
+          Modelo 3D navegável do projeto executivo. Arraste para orbitar, role para dar zoom.
+          A conversão do arquivo AutoCAD para <code>.glb</code> é feita pela ferramenta descrita em
+          <code>tools/README.md</code>; enquanto o modelo não está publicado, uma perspectiva de
+          referência é exibida.
+        </p>
+        <div class="viewer3d" data-viewer3d data-model="assets/model/vista-3d.glb">
+          <div class="viewer3d-fallback">
+            <picture>
+              <source srcset="assets/img/projeto/projeto-x-04.webp" type="image/webp"/>
+              <img src="assets/img/projeto/projeto-x-04.jpg" alt="Perspectiva 3D da maquete eletrônica" loading="lazy"/>
+            </picture>
+            <span class="viewer3d-tag">Modelo 3D navegável em breve · perspectiva estática</span>
+          </div>
+        </div>
+
+        <h3 class="section-h3" id="tec-instalacoes">Instalações prediais</h3>
+        <p class="lede-inline">
+          Projeto elétrico dimensionado conforme a <strong>NBR 5410</strong> (circuitos de iluminação e
+          tomadas, proteção por disjuntor e DR, aterramento) e projeto hidrossanitário conforme a
+          <strong>NBR 5626</strong> (ramal de água fria e esgoto da bancada com cuba).
+        </p>
+        <!--
+          TODO · INSTALAÇÕES — colocar os arquivos em assets/docs/:
+            planta-eletrica.pdf     (planta de instalações elétricas)
+            planta-hidraulica.pdf   (planta de instalações hidrossanitárias)
+          Os links abaixo se habilitam sozinhos quando os arquivos existirem (script.js).
+          Enquanto não existirem, aparecem como "em breve" e não são clicáveis.
+        -->
+        <div class="downloads">
+          <a class="dl" href="assets/docs/planta-eletrica.pdf" data-optional-file download>Planta elétrica <small>NBR 5410</small></a>
+          <a class="dl" href="assets/docs/planta-hidraulica.pdf" data-optional-file download>Planta hidrossanitária <small>NBR 5626</small></a>
+        </div>
+
+        <h3 class="section-h3" id="tec-docs">Documentos</h3>
         <div class="downloads">
           <a class="dl" href="assets/docs/planta-fundacao.pdf" download>Planta de fundação <small>PDF, 25 KB</small></a>
           <a class="dl" href="assets/docs/cronograma-fisico.pdf" download>Cronograma físico <small>PDF, 11 KB</small></a>
           <a class="dl" href="assets/docs/levantamento-arborico.docx" download>Levantamento arbóreo <small>DOCX, 1 MB</small></a>
         </div>
 
-        <h3 style="font-family: var(--font-display); margin: 56px 0 8px;">Arquivos CAD</h3>
-        <p style="color: var(--ink-2); max-width: 680px; margin: 0 0 20px;">
+        <h3 class="section-h3">Arquivos CAD</h3>
+        <p class="lede-inline">
           Pranchas executivas e vista 3D do projeto em AutoCAD, disponíveis para download.
         </p>
         <div class="downloads">
@@ -264,13 +836,124 @@
       </div>
     </section>
 
-    <!-- CRONOGRAMA -->
-    <section id="cronograma" class="section alt">
+    <!-- SEGURANÇA DO TRABALHO -->
+    <section id="seguranca" class="section alt" data-num="04">
       <div class="container">
         <div class="section-head">
+          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-hardhat"/></svg>04 · Segurança do trabalho</span>
+          <h2>NR-18 aplicada ao canteiro escolar</h2>
+          <p>
+            O canteiro convive com o fluxo normal da escola: 16 alunos executando à noite, sob
+            supervisão docente, dentro do pátio ativo durante o dia. A <abbr title="Análise Preliminar de Risco: identifica riscos antes de cada etapa da obra.">APR</abbr> e o mapa de risco
+            são revisados a cada nova etapa do cronograma.
+          </p>
+        </div>
+
+        <div class="risk-grid">
+          <article class="risk risk-hi">
+            <span class="risk-lvl">Alto</span>
+            <h3>Queda de mesmo nível</h3>
+            <p>Escavação e sobras de material no perímetro. <strong>Mitigação:</strong> fita zebrada dupla, placa de sinalização, iluminação noturna com torre de luz.</p>
+          </article>
+          <article class="risk risk-md">
+            <span class="risk-lvl">Médio</span>
+            <h3>Contato com concreto e argamassa</h3>
+            <p>pH alto, dermatite química. <strong>EPI obrigatório:</strong> luvas nitrílicas, botas impermeáveis, óculos ampla visão.</p>
+          </article>
+          <article class="risk risk-md">
+            <span class="risk-lvl">Médio</span>
+            <h3>Movimentação manual de blocos</h3>
+            <p>Riscos lombares e de esmagamento. <strong>Controle:</strong> paletização, técnica de levantamento em dupla, limite de 20 kg por vez.</p>
+          </article>
+          <article class="risk risk-lo">
+            <span class="risk-lvl">Baixo</span>
+            <h3>Poeira e particulado</h3>
+            <p>Corte e assentamento em ambiente aberto. <strong>EPI:</strong> máscara PFF-1 nas etapas de corte; hidratação frequente no turno.</p>
+          </article>
+        </div>
+
+        <h3 class="section-h3">EPI mínimo por turno</h3>
+        <ul class="epi-list">
+          <li><span class="epi-mark">✓</span> <strong>Capacete</strong> — obrigatório 100% do turno</li>
+          <li><span class="epi-mark">✓</span> <strong>Bota de segurança</strong> com biqueira e palmilha antiperfuração</li>
+          <li><span class="epi-mark">✓</span> <strong>Luva nitrílica</strong> em contato com concreto/argamassa</li>
+          <li><span class="epi-mark">✓</span> <strong>Óculos ampla visão</strong> nas etapas de corte e assentamento</li>
+          <li><span class="epi-mark">✓</span> <strong>Máscara PFF-1</strong> em corte de bloco e limpeza de resíduo</li>
+          <li><span class="epi-mark">✓</span> <strong>Colete refletivo</strong> no acesso ao canteiro após o pôr-do-sol</li>
+        </ul>
+
+        <div class="downloads">
+          <a class="dl" href="assets/docs/levantamento-arborico.docx" download>APR + mapa de risco (referência) <small>DOCX, 1 MB</small></a>
+        </div>
+
+        <h3 class="section-h3">Normas e referências</h3>
+        <ul class="norms">
+          <li>
+            <span class="norm-code">NBR 15575</span>
+            <div>
+              <h4>Desempenho de edificações habitacionais</h4>
+              <p>Base de cálculo para vida útil das camadas construtivas e conforto térmico.</p>
+              <a href="https://www.abntcatalogo.com.br/norma.aspx?ID=299037" rel="noopener" target="_blank">ABNT ↗</a>
+            </div>
+          </li>
+          <li>
+            <span class="norm-code">NBR 14518</span>
+            <div>
+              <h4>Coifas e chaminés — dimensionamento</h4>
+              <p>Referência direta para o dimensionamento da coifa e da chaminé da churrasqueira.</p>
+              <a href="https://www.abntcatalogo.com.br/norma.aspx?ID=1943" rel="noopener" target="_blank">ABNT ↗</a>
+            </div>
+          </li>
+          <li>
+            <span class="norm-code">NR-18</span>
+            <div>
+              <h4>Segurança e saúde no trabalho na indústria da construção</h4>
+              <p>Aplicada ao canteiro escolar: isolamento, sinalização, EPI e treinamento.</p>
+              <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/normas-regulamentadoras/nr-18-atualizada-2022.pdf" rel="noopener" target="_blank">MTE (PDF) ↗</a>
+            </div>
+          </li>
+          <li>
+            <span class="norm-code">NBR 9050</span>
+            <div>
+              <h4>Acessibilidade a edificações, mobiliário e espaços urbanos</h4>
+              <p>Vão livre de 1,20 m no acesso, piso antiderrapante, contraste cromático.</p>
+              <a href="https://www.abntcatalogo.com.br/norma.aspx?ID=346304" rel="noopener" target="_blank">ABNT ↗</a>
+            </div>
+          </li>
+          <li>
+            <span class="norm-code">NBR 5626</span>
+            <div>
+              <h4>Instalações prediais de água fria</h4>
+              <p>Consulta para o ramal da cuba na bancada.</p>
+              <a href="https://www.abntcatalogo.com.br/norma.aspx?ID=458924" rel="noopener" target="_blank">ABNT ↗</a>
+            </div>
+          </li>
+          <li>
+            <span class="norm-code">NBR 5410</span>
+            <div>
+              <h4>Instalações elétricas de baixa tensão</h4>
+              <p>Dimensionamento dos circuitos de iluminação e tomadas do espaço: seção dos condutores, proteção por disjuntor e DR, aterramento e quadro de distribuição. Aplicada também ao ponto de força da área de apoio.</p>
+              <a href="https://www.abntcatalogo.com.br/norma.aspx?ID=307015" rel="noopener" target="_blank">ABNT ↗</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CRONOGRAMA -->
+    <section id="cronograma" class="section" data-num="05">
+      <div class="container">
+        <div class="plate" aria-label="Cabeçalho de prancha">
+          <div><span>Prancha</span><strong>05/07</strong></div>
+          <div><span>Escala</span><strong>semanas · 1 col = 1 sem</strong></div>
+          <div><span>Data</span><strong>rev. contínua</strong></div>
+          <div><span>Autoria</span><strong>Orient. Prof. Radian Vega</strong></div>
+        </div>
+        <div class="section-head">
+          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>05 · Cronograma físico</span>
           <h2>17 semanas de obra</h2>
           <p>
-            Início em 10/08, produção concluída em 20/11 e contingência isolada de 10%
+            Início em 04/08, produção concluída em 20/11 e contingência isolada de 10%
             entre 24/11 e 04/12, sem sobreposição com as tarefas. Entrega final: 04/12/2026.
           </p>
         </div>
@@ -278,10 +961,10 @@
           <div class="gantt gantt-17" role="table" aria-label="Cronograma físico da obra">
             <div class="gantt-head" role="row">
               <div>Etapa</div>
-              <div>10/8</div><div>17/8</div><div>24/8</div><div>31/8</div>
-              <div>7/9</div><div>14/9</div><div>21/9</div><div>28/9</div>
-              <div>5/10</div><div>12/10</div><div>19/10</div><div>26/10</div>
-              <div>2/11</div><div>9/11</div><div>16/11</div><div>23/11</div><div>30/11</div>
+              <div>4/8</div><div>11/8</div><div>18/8</div><div>25/8</div>
+              <div>1/9</div><div>8/9</div><div>15/9</div><div>22/9</div>
+              <div>29/9</div><div>6/10</div><div>13/10</div><div>20/10</div>
+              <div>27/10</div><div>3/11</div><div>10/11</div><div>17/11</div><div>24/11</div>
             </div>
             <div class="gantt-row" role="row">
               <div>Preparação e locação</div>
@@ -304,7 +987,7 @@
               <div class="cell"><span class="bar" style="--from:6;--to:8"></span></div>
             </div>
             <div class="gantt-row">
-              <div>Cobertura</div>
+              <div>Cobertura (telha metálica)</div>
               <div class="cell"><span class="bar" style="--from:8;--to:10"></span></div>
             </div>
             <div class="gantt-row">
@@ -337,23 +1020,95 @@
             </div>
           </div>
         </div>
-        <p style="color: var(--text-mute); font-size: 13px; margin-top: 14px;">
-          Cada coluna é uma semana (data de segunda-feira). Barra hachurada = contingência isolada.
-          O cronograma completo com as 33 atividades está disponível para <a href="assets/docs/cronograma-fisico.pdf" style="color: var(--brand);" download>download em PDF</a>.
+        <!--
+          TODO · CURVA S — todos os valores nesta seção são ESTIMATIVAS derivadas dos
+          quantitativos executivos. Substituir por valores reais do orçamento fechado
+          da turma (total e executado atual). Os pontos do <path> do SVG também devem
+          ser recalculados a partir dos números finais.
+        -->
+        <h3 class="section-h3">Curva S · físico-financeiro</h3>
+        <p class="lede-inline">
+          Custo acumulado planejado (cinza) vs. executado (ferrugem) semana a semana.
+          <span class="schema-note"><span class="schema-badge">Estimativa</span> Valores derivados dos quantitativos executivos — <strong>R$ 12.480,00</strong> previstos, <strong>R$ 2.180,00</strong> executados (17,5%). Substituir pelos números reais quando o orçamento fechar.</span>
+        </p>
+        <div class="curveS-wrap">
+          <svg class="curveS" viewBox="0 0 800 320" role="img" aria-label="Curva S do físico-financeiro do TCC">
+            <defs>
+              <linearGradient id="curveFill" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="var(--accent)" stop-opacity="0.22"/>
+                <stop offset="1" stop-color="var(--accent)" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <!-- grid horizontal -->
+            <g stroke="var(--line)" stroke-width="0.6">
+              <line x1="60" y1="40"  x2="780" y2="40"/>
+              <line x1="60" y1="100" x2="780" y2="100"/>
+              <line x1="60" y1="160" x2="780" y2="160"/>
+              <line x1="60" y1="220" x2="780" y2="220"/>
+              <line x1="60" y1="280" x2="780" y2="280"/>
+            </g>
+            <!-- eixo Y (valor) -->
+            <g font-family="var(--mono)" font-size="9" fill="var(--ink-3)" text-anchor="end">
+              <text x="54" y="44">R$ 12,5k</text>
+              <text x="54" y="104">R$ 9,4k</text>
+              <text x="54" y="164">R$ 6,2k</text>
+              <text x="54" y="224">R$ 3,1k</text>
+              <text x="54" y="284">R$ 0</text>
+            </g>
+            <!-- eixo X (semanas) -->
+            <g font-family="var(--mono)" font-size="9" fill="var(--ink-3)" text-anchor="middle">
+              <text x="60"  y="302">S1</text>
+              <text x="153" y="302">S3</text>
+              <text x="288" y="302">S6</text>
+              <text x="423" y="302">S9</text>
+              <text x="558" y="302">S12</text>
+              <text x="693" y="302">S15</text>
+              <text x="780" y="302">S17</text>
+            </g>
+            <!-- área planejada (curva S teórica) -->
+            <path d="M 60 280 L 105 275 L 150 262 L 195 240 L 240 205 L 285 165 L 330 130 L 375 100 L 420 78 L 465 62 L 510 52 L 555 48 L 600 46 L 645 44 L 690 42 L 735 41 L 780 40"
+                  fill="none" stroke="var(--line-2)" stroke-width="2" stroke-dasharray="4 3"/>
+            <!-- área real (executada até hoje ~ S3) -->
+            <path d="M 60 280 L 105 275 L 150 262 L 195 250"
+                  fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+            <path d="M 60 280 L 105 275 L 150 262 L 195 250 L 195 280 Z" fill="url(#curveFill)"/>
+            <!-- ponto atual -->
+            <circle cx="195" cy="250" r="4.5" fill="var(--paper)" stroke="var(--accent)" stroke-width="2"/>
+            <text x="205" y="245" font-family="var(--mono)" font-size="9" fill="var(--accent)">S3 · R$ 2.180</text>
+            <!-- linha "hoje" -->
+            <line x1="195" y1="40" x2="195" y2="280" stroke="var(--accent)" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+          </svg>
+          <div class="curveS-legend">
+            <span class="cS-item"><span class="cS-sw plan"></span>Planejado (R$ 12.480)</span>
+            <span class="cS-item"><span class="cS-sw real"></span>Executado (R$ 2.180 · 17,5%)</span>
+          </div>
+        </div>
+
+        <div class="gantt-legend" aria-label="Legenda do cronograma">
+          <span class="gantt-legend-item"><span class="gantt-legend-swatch plan"></span> Planejado</span>
+          <span class="gantt-legend-item"><span class="gantt-legend-swatch real"></span> Executado</span>
+          <span class="gantt-legend-item"><span class="gantt-legend-swatch cont"></span> Contingência</span>
+        </div>
+        <p class="gantt-note">
+          Cada coluna é uma semana (data de segunda-feira). O preenchimento sólido acompanha o executado
+          em relação ao planejado. Cronograma completo com as 33 atividades disponível para
+          <a href="assets/docs/cronograma-fisico.pdf" download>download em PDF</a>.
         </p>
       </div>
     </section>
 
     <!-- GALERIA -->
-    <section id="galeria" class="section">
+    <section id="galeria" class="section alt" data-num="06">
       <div class="container">
         <div class="section-head">
-          <h2>Registro fotográfico</h2>
+          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-camera"/></svg>06 · Registro fotográfico</span>
+          <h2>Do terreno ao canteiro</h2>
           <p>Do terreno original às pranchas técnicas, da maquete eletrônica ao canteiro em execução. Clique em uma foto para ampliar.</p>
         </div>
 
         <div class="tabs" role="tablist">
           <button class="tab-btn active" data-panel="p-obra">Obra</button>
+          <button class="tab-btn" data-panel="p-diff">Antes / depois</button>
           <button class="tab-btn" data-panel="p-terreno">Terreno</button>
           <button class="tab-btn" data-panel="p-projeto">Pranchas</button>
           <button class="tab-btn" data-panel="p-renders">Como vai ficar</button>
@@ -362,141 +1117,207 @@
 
         <div class="tab-panel active" id="p-obra">
           <div class="gallery">
+            <header class="week-head">
+              <span class="week-tag">Semana 1</span>
+              <span class="week-name">Serviços preliminares · 04 → 10/08</span>
+              <span class="week-count">11 registros</span>
+<!-- TODO · DIÁRIO — texto rascunhado; validar/reescrever com a turma antes de publicar. --><aside class="week-note">
+                <span class="week-note-lbl">Diário de campo</span>
+                <p>Organização do canteiro no turno da noite, sem interferir na aula do dia. O grupo executou o primeiro exercício real de NR-18: isolamento, sinalização e mapeamento do fluxo de circulação.</p>
+              </aside>
+            </header>
                         <figure class="g-item">
-              <img src="assets/img/obra/obra-01.jpg" loading="lazy" alt="Recebimento das telhas metálicas destinadas à cobertura do espaço de convivência" />
+              <picture><source srcset="assets/img/obra/obra-01.webp" type="image/webp"/><img src="assets/img/obra/obra-01.jpg" loading="lazy" alt="Recebimento das telhas metálicas destinadas à cobertura do espaço de convivência" /></picture>
               <figcaption>Recebimento das telhas metálicas destinadas à cobertura do espaço de convivência</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-02.jpg" loading="lazy" alt="Equipe reunida no canteiro para orientação inicial dos serviços preliminares" />
+              <picture><source srcset="assets/img/obra/obra-02.webp" type="image/webp"/><img src="assets/img/obra/obra-02.jpg" loading="lazy" alt="Equipe reunida no canteiro para orientação inicial dos serviços preliminares" /></picture>
               <figcaption>Equipe reunida no canteiro para orientação inicial dos serviços preliminares</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-03.jpg" loading="lazy" alt="Escavação e regularização manual do terreno com enxadas na área isolada" />
+              <picture><source srcset="assets/img/obra/obra-03.webp" type="image/webp"/><img src="assets/img/obra/obra-03.jpg" loading="lazy" alt="Escavação e regularização manual do terreno com enxadas na área isolada" /></picture>
               <figcaption>Escavação e regularização manual do terreno com enxadas na área isolada</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-04.jpg" loading="lazy" alt="Luminária do canteiro instalada em poste junto à arborização existente" />
+              <picture><source srcset="assets/img/obra/obra-04.webp" type="image/webp"/><img src="assets/img/obra/obra-04.jpg" loading="lazy" alt="Luminária do canteiro instalada em poste junto à arborização existente" /></picture>
               <figcaption>Luminária do canteiro instalada em poste junto à arborização existente</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-05.jpg" loading="lazy" alt="Vista geral do canteiro isolado com fita zebrada e terreno em preparo" />
+              <picture><source srcset="assets/img/obra/obra-05.webp" type="image/webp"/><img src="assets/img/obra/obra-05.jpg" loading="lazy" alt="Vista geral do canteiro isolado com fita zebrada e terreno em preparo" /></picture>
               <figcaption>Vista geral do canteiro isolado com fita zebrada e terreno em preparo</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-06.jpg" loading="lazy" alt="Área da obra delimitada após limpeza do terreno, com pergolado ao fundo" />
+              <picture><source srcset="assets/img/obra/obra-06.webp" type="image/webp"/><img src="assets/img/obra/obra-06.jpg" loading="lazy" alt="Área da obra delimitada após limpeza do terreno, com pergolado ao fundo" /></picture>
               <figcaption>Área da obra delimitada após limpeza do terreno, com pergolado ao fundo</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-07.jpg" loading="lazy" alt="Terreno limpo e nivelado após raspagem, delimitado para locação da obra" />
+              <picture><source srcset="assets/img/obra/obra-07.webp" type="image/webp"/><img src="assets/img/obra/obra-07.jpg" loading="lazy" alt="Terreno limpo e nivelado após raspagem, delimitado para locação da obra" /></picture>
               <figcaption>Terreno limpo e nivelado após raspagem, delimitado para locação da obra</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-08.jpg" loading="lazy" alt="Canteiro iluminado por torre de luz: área escavada e isolada junto ao pergolado" />
+              <picture><source srcset="assets/img/obra/obra-08.webp" type="image/webp"/><img src="assets/img/obra/obra-08.jpg" loading="lazy" alt="Canteiro iluminado por torre de luz: área escavada e isolada junto ao pergolado" /></picture>
               <figcaption>Canteiro iluminado por torre de luz: área escavada e isolada junto ao pergolado</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-09.jpg" loading="lazy" alt="Faixa de terreno preparada para a fundação ao lado do pergolado existente" />
+              <picture><source srcset="assets/img/obra/obra-09.webp" type="image/webp"/><img src="assets/img/obra/obra-09.jpg" loading="lazy" alt="Faixa de terreno preparada para a fundação ao lado do pergolado existente" /></picture>
               <figcaption>Faixa de terreno preparada para a fundação ao lado do pergolado existente</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-10.jpg" loading="lazy" alt="Sinalização de segurança: placa de atenção e isolamento do canteiro de obras" />
+              <picture><source srcset="assets/img/obra/obra-10.webp" type="image/webp"/><img src="assets/img/obra/obra-10.jpg" loading="lazy" alt="Sinalização de segurança: placa de atenção e isolamento do canteiro de obras" /></picture>
               <figcaption>Sinalização de segurança: placa de atenção e isolamento do canteiro de obras</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-11.jpg" loading="lazy" alt="Placa 'Área em obras' e fita zebrada demarcando o perímetro do canteiro" />
+              <picture><source srcset="assets/img/obra/obra-11.webp" type="image/webp"/><img src="assets/img/obra/obra-11.jpg" loading="lazy" alt="Placa 'Área em obras' e fita zebrada demarcando o perímetro do canteiro" /></picture>
               <figcaption>Placa 'Área em obras' e fita zebrada demarcando o perímetro do canteiro</figcaption>
             </figure>
+            <header class="week-head">
+              <span class="week-tag">Semana 2</span>
+              <span class="week-name">Terraplenagem e isolamento · 11 → 17/08</span>
+              <span class="week-count">11 registros</span>
+<!-- TODO · DIÁRIO — texto rascunhado; validar/reescrever com a turma antes de publicar. --><aside class="week-note">
+                <span class="week-note-lbl">Diário de campo</span>
+                <p>Terraplenagem manual pra preservar o solo ao redor das raízes do Flamboyant. Processo mais demorado que mecânico, mas alinhado à diretriz do levantamento arbóreo.</p>
+              </aside>
+            </header>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-12.jpg" loading="lazy" alt="Alunos executando raspagem e regularização do solo sob supervisão da equipe" />
+              <picture><source srcset="assets/img/obra/obra-12.webp" type="image/webp"/><img src="assets/img/obra/obra-12.jpg" loading="lazy" alt="Alunos executando raspagem e regularização do solo sob supervisão da equipe" /></picture>
               <figcaption>Alunos executando raspagem e regularização do solo sob supervisão da equipe</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-13.jpg" loading="lazy" alt="Escavação manual do terreno com acompanhamento da equipe e do orientador" />
+              <picture><source srcset="assets/img/obra/obra-13.webp" type="image/webp"/><img src="assets/img/obra/obra-13.jpg" loading="lazy" alt="Escavação manual do terreno com acompanhamento da equipe e do orientador" /></picture>
               <figcaption>Escavação manual do terreno com acompanhamento da equipe e do orientador</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-14.jpg" loading="lazy" alt="Movimentação de terra: abertura de faixa escavada para o preparo da fundação" />
+              <picture><source srcset="assets/img/obra/obra-14.webp" type="image/webp"/><img src="assets/img/obra/obra-14.jpg" loading="lazy" alt="Movimentação de terra: abertura de faixa escavada para o preparo da fundação" /></picture>
               <figcaption>Movimentação de terra: abertura de faixa escavada para o preparo da fundação</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-15.jpg" loading="lazy" alt="Equipe no canteiro isolado; ao fundo, regularização do terreno com enxadas" />
+              <picture><source srcset="assets/img/obra/obra-15.webp" type="image/webp"/><img src="assets/img/obra/obra-15.jpg" loading="lazy" alt="Equipe no canteiro isolado; ao fundo, regularização do terreno com enxadas" /></picture>
               <figcaption>Equipe no canteiro isolado; ao fundo, regularização do terreno com enxadas</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-16.jpg" loading="lazy" alt="Escavação manual da faixa da fundação com enxadão, observada pela equipe" />
+              <picture><source srcset="assets/img/obra/obra-16.webp" type="image/webp"/><img src="assets/img/obra/obra-16.jpg" loading="lazy" alt="Escavação manual da faixa da fundação com enxadão, observada pela equipe" /></picture>
               <figcaption>Escavação manual da faixa da fundação com enxadão, observada pela equipe</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-17.jpg" loading="lazy" alt="Visão geral dos serviços preliminares noturnos: isolamento, equipe e escavação" />
+              <picture><source srcset="assets/img/obra/obra-17.webp" type="image/webp"/><img src="assets/img/obra/obra-17.jpg" loading="lazy" alt="Visão geral dos serviços preliminares noturnos: isolamento, equipe e escavação" /></picture>
               <figcaption>Visão geral dos serviços preliminares noturnos: isolamento, equipe e escavação</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-18.jpg" loading="lazy" alt="Placa de isolamento fixada na fita zebrada demarcando o acesso ao canteiro" />
+              <picture><source srcset="assets/img/obra/obra-18.webp" type="image/webp"/><img src="assets/img/obra/obra-18.jpg" loading="lazy" alt="Placa de isolamento fixada na fita zebrada demarcando o acesso ao canteiro" /></picture>
               <figcaption>Placa de isolamento fixada na fita zebrada demarcando o acesso ao canteiro</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-19.jpg" loading="lazy" alt="Isolamento e sinalização da área de intervenção no pátio" />
+              <picture><source srcset="assets/img/obra/obra-19.webp" type="image/webp"/><img src="assets/img/obra/obra-19.jpg" loading="lazy" alt="Isolamento e sinalização da área de intervenção no pátio" /></picture>
               <figcaption>Isolamento e sinalização da área de intervenção no pátio</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-20.jpg" loading="lazy" alt="Equipe no canteiro com ferramentas e blocos cerâmicos" />
+              <picture><source srcset="assets/img/obra/obra-20.webp" type="image/webp"/><img src="assets/img/obra/obra-20.jpg" loading="lazy" alt="Equipe no canteiro com ferramentas e blocos cerâmicos" /></picture>
               <figcaption>Equipe no canteiro com ferramentas e blocos cerâmicos</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-21.jpg" loading="lazy" alt="Conferência de medidas com trena na marcação da obra" />
+              <picture><source srcset="assets/img/obra/obra-21.webp" type="image/webp"/><img src="assets/img/obra/obra-21.jpg" loading="lazy" alt="Conferência de medidas com trena na marcação da obra" /></picture>
               <figcaption>Conferência de medidas com trena na marcação da obra</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-22.jpg" loading="lazy" alt="Cronograma físico da obra apresentado no canteiro" />
+              <picture><source srcset="assets/img/obra/obra-22.webp" type="image/webp"/><img src="assets/img/obra/obra-22.jpg" loading="lazy" alt="Cronograma físico da obra apresentado no canteiro" /></picture>
               <figcaption>Cronograma físico da obra apresentado no canteiro</figcaption>
             </figure>
+            <header class="week-head">
+              <span class="week-tag">Semana 3</span>
+              <span class="week-name">Escavação e lastro · 18 → 24/08</span>
+              <span class="week-count">13 registros</span>
+<!-- TODO · DIÁRIO — texto rascunhado; validar/reescrever com a turma antes de publicar. --><aside class="week-note">
+                <span class="week-note-lbl">Diário de campo</span>
+                <p>Chegada da brita marca o início do radier. Primeira experiência da maioria da turma com armação e concretagem em obra real, com supervisão docente próxima.</p>
+              </aside>
+            </header>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-23.jpg" loading="lazy" alt="Integrantes do grupo no início dos serviços no canteiro" />
+              <picture><source srcset="assets/img/obra/obra-23.webp" type="image/webp"/><img src="assets/img/obra/obra-23.jpg" loading="lazy" alt="Integrantes do grupo no início dos serviços no canteiro" /></picture>
               <figcaption>Integrantes do grupo no início dos serviços no canteiro</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-24.jpg" loading="lazy" alt="Estocagem de cimento e argamassa sobre lastro de blocos" />
+              <picture><source srcset="assets/img/obra/obra-24.webp" type="image/webp"/><img src="assets/img/obra/obra-24.jpg" loading="lazy" alt="Estocagem de cimento e argamassa sobre lastro de blocos" /></picture>
               <figcaption>Estocagem de cimento e argamassa sobre lastro de blocos</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-25.jpg" loading="lazy" alt="Terreno nivelado e delimitado pelas guias para o radier" />
+              <picture><source srcset="assets/img/obra/obra-25.webp" type="image/webp"/><img src="assets/img/obra/obra-25.jpg" loading="lazy" alt="Terreno nivelado e delimitado pelas guias para o radier" /></picture>
               <figcaption>Terreno nivelado e delimitado pelas guias para o radier</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-26.jpg" loading="lazy" alt="Equipe reunida ao término da etapa de concretagem" />
+              <picture><source srcset="assets/img/obra/obra-26.webp" type="image/webp"/><img src="assets/img/obra/obra-26.jpg" loading="lazy" alt="Equipe reunida ao término da etapa de concretagem" /></picture>
               <figcaption>Equipe reunida ao término da etapa de concretagem</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-27.jpg" loading="lazy" alt="Radier concretado com esperas de PVC para instalações" />
+              <picture><source srcset="assets/img/obra/obra-27.webp" type="image/webp"/><img src="assets/img/obra/obra-27.jpg" loading="lazy" alt="Radier concretado com esperas de PVC para instalações" /></picture>
               <figcaption>Radier concretado com esperas de PVC para instalações</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-28.jpg" loading="lazy" alt="Concretagem do radier sobre malha de aço em andamento" />
+              <picture><source srcset="assets/img/obra/obra-28.webp" type="image/webp"/><img src="assets/img/obra/obra-28.jpg" loading="lazy" alt="Concretagem do radier sobre malha de aço em andamento" /></picture>
               <figcaption>Concretagem do radier sobre malha de aço em andamento</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-29.jpg" loading="lazy" alt="Preparo manual do concreto com enxada junto ao radier" />
+              <picture><source srcset="assets/img/obra/obra-29.webp" type="image/webp"/><img src="assets/img/obra/obra-29.jpg" loading="lazy" alt="Preparo manual do concreto com enxada junto ao radier" /></picture>
               <figcaption>Preparo manual do concreto com enxada junto ao radier</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-30.jpg" loading="lazy" alt="Aprumo de montante de madeira fixado no concreto" />
+              <picture><source srcset="assets/img/obra/obra-30.webp" type="image/webp"/><img src="assets/img/obra/obra-30.jpg" loading="lazy" alt="Aprumo de montante de madeira fixado no concreto" /></picture>
               <figcaption>Aprumo de montante de madeira fixado no concreto</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-31.jpg" loading="lazy" alt="Lastro de brita e malha de aço posicionados no radier" />
+              <picture><source srcset="assets/img/obra/obra-31.webp" type="image/webp"/><img src="assets/img/obra/obra-31.jpg" loading="lazy" alt="Lastro de brita e malha de aço posicionados no radier" /></picture>
               <figcaption>Lastro de brita e malha de aço posicionados no radier</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-32.jpg" loading="lazy" alt="Ajuste da malha de aço sobre o lastro de brita" />
+              <picture><source srcset="assets/img/obra/obra-32.webp" type="image/webp"/><img src="assets/img/obra/obra-32.jpg" loading="lazy" alt="Ajuste da malha de aço sobre o lastro de brita" /></picture>
               <figcaption>Ajuste da malha de aço sobre o lastro de brita</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-33.jpg" loading="lazy" alt="Verificação da base do radier antes da concretagem" />
+              <picture><source srcset="assets/img/obra/obra-33.webp" type="image/webp"/><img src="assets/img/obra/obra-33.jpg" loading="lazy" alt="Verificação da base do radier antes da concretagem" /></picture>
               <figcaption>Verificação da base do radier antes da concretagem</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-34.jpg" loading="lazy" alt="Espalhamento de brita para regularização do lastro" />
+              <picture><source srcset="assets/img/obra/obra-34.webp" type="image/webp"/><img src="assets/img/obra/obra-34.jpg" loading="lazy" alt="Espalhamento de brita para regularização do lastro" /></picture>
               <figcaption>Espalhamento de brita para regularização do lastro</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="p-diff">
+          <p class="lede-inline">Arraste o divisor horizontal para comparar o terreno original com o projeto executado. Três perspectivas equivalentes.</p>
+          <div class="diff-list">
+            <figure class="diff" data-diff>
+              <div class="diff-frame">
+                <picture><source srcset="assets/img/terreno/terreno-01.webp" type="image/webp"/><img class="diff-before" src="assets/img/terreno/terreno-01.jpg" alt="Terreno antes da obra: área sob arborização existente" /></picture>
+                <picture><source srcset="assets/img/renders/render-06.webp" type="image/webp"/><img class="diff-after"  src="assets/img/renders/render-06.jpg" alt="Depois: maquete eletrônica com pergolado e mesas" /></picture>
+                <div class="diff-handle" aria-hidden="true"><span></span></div>
+                <span class="diff-tag diff-tag-before">Antes · 08/2026</span>
+                <span class="diff-tag diff-tag-after">Depois · projeção</span>
+                <input type="range" min="0" max="100" value="50" class="diff-slider" aria-label="Posição do comparador" />
+              </div>
+              <figcaption>Vista geral · área sob arborização preservada</figcaption>
+            </figure>
+            <figure class="diff" data-diff>
+              <div class="diff-frame">
+                <picture><source srcset="assets/img/terreno/terreno-04.webp" type="image/webp"/><img class="diff-before" src="assets/img/terreno/terreno-04.jpg" alt="Terreno antes: perspectiva pelo acesso" /></picture>
+                <picture><source srcset="assets/img/renders/render-08.webp" type="image/webp"/><img class="diff-after"  src="assets/img/renders/render-08.jpg" alt="Depois: pergolado com varal de luzes, mesas e cozinha de apoio" /></picture>
+                <div class="diff-handle" aria-hidden="true"><span></span></div>
+                <span class="diff-tag diff-tag-before">Antes · 08/2026</span>
+                <span class="diff-tag diff-tag-after">Depois · projeção</span>
+                <input type="range" min="0" max="100" value="50" class="diff-slider" aria-label="Posição do comparador" />
+              </div>
+              <figcaption>Perspectiva pelo acesso · pergolado e mesas</figcaption>
+            </figure>
+            <figure class="diff" data-diff>
+              <div class="diff-frame">
+                <picture><source srcset="assets/img/terreno/terreno-07.webp" type="image/webp"/><img class="diff-before" src="assets/img/terreno/terreno-07.jpg" alt="Terreno antes: canteiro delimitado" /></picture>
+                <picture><source srcset="assets/img/renders/render-12.webp" type="image/webp"/><img class="diff-after"  src="assets/img/renders/render-12.jpg" alt="Depois: volume fechado com janela e pergolado externo" /></picture>
+                <div class="diff-handle" aria-hidden="true"><span></span></div>
+                <span class="diff-tag diff-tag-before">Antes · 08/2026</span>
+                <span class="diff-tag diff-tag-after">Depois · projeção</span>
+                <input type="range" min="0" max="100" value="50" class="diff-slider" aria-label="Posição do comparador" />
+              </div>
+              <figcaption>Volume fechado · janela e pergolado externo</figcaption>
             </figure>
           </div>
         </div>
@@ -504,39 +1325,39 @@
         <div class="tab-panel" id="p-terreno">
           <div class="gallery">
                         <figure class="g-item">
-              <img src="assets/img/terreno/terreno-01.jpg" loading="lazy" alt="Vista geral do terreno sob arborização existente, antes da locação da obra" />
+              <picture><source srcset="assets/img/terreno/terreno-01.webp" type="image/webp"/><img src="assets/img/terreno/terreno-01.jpg" loading="lazy" alt="Vista geral do terreno sob arborização existente, antes da locação da obra" /></picture>
               <figcaption>Vista geral do terreno sob arborização existente, antes da locação da obra</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/terreno/terreno-02.jpg" loading="lazy" alt="Limite do piso modular existente e faixa de solo exposto junto à via do pátio" />
+              <picture><source srcset="assets/img/terreno/terreno-02.webp" type="image/webp"/><img src="assets/img/terreno/terreno-02.jpg" loading="lazy" alt="Limite do piso modular existente e faixa de solo exposto junto à via do pátio" /></picture>
               <figcaption>Limite do piso modular existente e faixa de solo exposto junto à via do pátio</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/terreno/terreno-03.jpg" loading="lazy" alt="Pergolado de madeira roliça existente na área de intervenção, ao entardecer" />
+              <picture><source srcset="assets/img/terreno/terreno-03.webp" type="image/webp"/><img src="assets/img/terreno/terreno-03.jpg" loading="lazy" alt="Pergolado de madeira roliça existente na área de intervenção, ao entardecer" /></picture>
               <figcaption>Pergolado de madeira roliça existente na área de intervenção, ao entardecer</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/terreno/terreno-04.jpg" loading="lazy" alt="Terreno gramado com palmeiras imperiais ao longo da via de acesso ao pátio" />
+              <picture><source srcset="assets/img/terreno/terreno-04.webp" type="image/webp"/><img src="assets/img/terreno/terreno-04.jpg" loading="lazy" alt="Terreno gramado com palmeiras imperiais ao longo da via de acesso ao pátio" /></picture>
               <figcaption>Terreno gramado com palmeiras imperiais ao longo da via de acesso ao pátio</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/terreno/terreno-05.jpg" loading="lazy" alt="Área gramada junto ao bloco escolar, com passeio em placas modulares no primeiro plano" />
+              <picture><source srcset="assets/img/terreno/terreno-05.webp" type="image/webp"/><img src="assets/img/terreno/terreno-05.jpg" loading="lazy" alt="Área gramada junto ao bloco escolar, com passeio em placas modulares no primeiro plano" /></picture>
               <figcaption>Área gramada junto ao bloco escolar, com passeio em placas modulares no primeiro plano</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/terreno/terreno-06.jpg" loading="lazy" alt="Cobertura vegetal rasteira e resíduos de poda acumulados na área de intervenção" />
+              <picture><source srcset="assets/img/terreno/terreno-06.webp" type="image/webp"/><img src="assets/img/terreno/terreno-06.jpg" loading="lazy" alt="Cobertura vegetal rasteira e resíduos de poda acumulados na área de intervenção" /></picture>
               <figcaption>Cobertura vegetal rasteira e resíduos de poda acumulados na área de intervenção</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/terreno/terreno-07.jpg" loading="lazy" alt="Passeio existente em placas modulares tipo deck assentadas sobre o solo" />
+              <picture><source srcset="assets/img/terreno/terreno-07.webp" type="image/webp"/><img src="assets/img/terreno/terreno-07.jpg" loading="lazy" alt="Passeio existente em placas modulares tipo deck assentadas sobre o solo" /></picture>
               <figcaption>Passeio existente em placas modulares tipo deck assentadas sobre o solo</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/terreno/terreno-08.jpg" loading="lazy" alt="Piso modular e banco de madeira existentes na área de convivência do pátio" />
+              <picture><source srcset="assets/img/terreno/terreno-08.webp" type="image/webp"/><img src="assets/img/terreno/terreno-08.jpg" loading="lazy" alt="Piso modular e banco de madeira existentes na área de convivência do pátio" /></picture>
               <figcaption>Piso modular e banco de madeira existentes na área de convivência do pátio</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/terreno/terreno-09.jpg" loading="lazy" alt="Isolamento da área e lastro de brita para o radier, com blocos cerâmicos estocados" />
+              <picture><source srcset="assets/img/terreno/terreno-09.webp" type="image/webp"/><img src="assets/img/terreno/terreno-09.jpg" loading="lazy" alt="Isolamento da área e lastro de brita para o radier, com blocos cerâmicos estocados" /></picture>
               <figcaption>Isolamento da área e lastro de brita para o radier, com blocos cerâmicos estocados</figcaption>
             </figure>
           </div>
@@ -545,79 +1366,79 @@
         <div class="tab-panel" id="p-projeto">
           <div class="gallery">
                         <figure class="g-item">
-              <img src="assets/img/projeto/projeto-01.jpg" loading="lazy" alt="Planta de cobertura: vigamento do pergolado e telhado da área da churrasqueira" />
+              <picture><source srcset="assets/img/projeto/projeto-01.webp" type="image/webp"/><img src="assets/img/projeto/projeto-01.jpg" loading="lazy" alt="Planta de cobertura: vigamento do pergolado e telhado da área da churrasqueira" /></picture>
               <figcaption>Planta de cobertura: vigamento do pergolado e telhado da área da churrasqueira</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-02.jpg" loading="lazy" alt="Perspectiva 3D do conjunto: pergolado de madeira, bancadas e churrasqueira" />
+              <picture><source srcset="assets/img/projeto/projeto-02.webp" type="image/webp"/><img src="assets/img/projeto/projeto-02.jpg" loading="lazy" alt="Perspectiva 3D do conjunto: pergolado de madeira, bancadas e churrasqueira" /></picture>
               <figcaption>Perspectiva 3D do conjunto: pergolado de madeira, bancadas e churrasqueira</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-03.jpg" loading="lazy" alt="Planta baixa cotada do espaço de convivência (4,12 x 3,20 m)" />
+              <picture><source srcset="assets/img/projeto/projeto-03.webp" type="image/webp"/><img src="assets/img/projeto/projeto-03.jpg" loading="lazy" alt="Planta baixa cotada do espaço de convivência (4,12 x 3,20 m)" /></picture>
               <figcaption>Planta baixa cotada do espaço de convivência (4,12 x 3,20 m)</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-04.jpg" loading="lazy" alt="Perspectiva interna: churrasqueira com coifa, bancada com cuba e pendentes" />
+              <picture><source srcset="assets/img/projeto/projeto-04.webp" type="image/webp"/><img src="assets/img/projeto/projeto-04.jpg" loading="lazy" alt="Perspectiva interna: churrasqueira com coifa, bancada com cuba e pendentes" /></picture>
               <figcaption>Perspectiva interna: churrasqueira com coifa, bancada com cuba e pendentes</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-05.jpg" loading="lazy" alt="Vista interna sob o pergolado com trepadeiras floridas e bancada da pia" />
+              <picture><source srcset="assets/img/projeto/projeto-05.webp" type="image/webp"/><img src="assets/img/projeto/projeto-05.jpg" loading="lazy" alt="Vista interna sob o pergolado com trepadeiras floridas e bancada da pia" /></picture>
               <figcaption>Vista interna sob o pergolado com trepadeiras floridas e bancada da pia</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-06.jpg" loading="lazy" alt="Axonométrica do conjunto: pergolado descoberto e área coberta da churrasqueira" />
+              <picture><source srcset="assets/img/projeto/projeto-06.webp" type="image/webp"/><img src="assets/img/projeto/projeto-06.jpg" loading="lazy" alt="Axonométrica do conjunto: pergolado descoberto e área coberta da churrasqueira" /></picture>
               <figcaption>Axonométrica do conjunto: pergolado descoberto e área coberta da churrasqueira</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-07.jpg" loading="lazy" alt="Corte cotado: churrasqueira, bancada com banquetas e pé-direito da cobertura" />
+              <picture><source srcset="assets/img/projeto/projeto-07.webp" type="image/webp"/><img src="assets/img/projeto/projeto-07.jpg" loading="lazy" alt="Corte cotado: churrasqueira, bancada com banquetas e pé-direito da cobertura" /></picture>
               <figcaption>Corte cotado: churrasqueira, bancada com banquetas e pé-direito da cobertura</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-08.jpg" loading="lazy" alt="Corte cotado do ambiente: alturas de bancadas (0,90 m) e forro (2,82 m)" />
+              <picture><source srcset="assets/img/projeto/projeto-08.webp" type="image/webp"/><img src="assets/img/projeto/projeto-08.jpg" loading="lazy" alt="Corte cotado do ambiente: alturas de bancadas (0,90 m) e forro (2,82 m)" /></picture>
               <figcaption>Corte cotado do ambiente: alturas de bancadas (0,90 m) e forro (2,82 m)</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-09.jpg" loading="lazy" alt="Detalhe em planta da bancada com duas cubas e torneiras giratórias" />
+              <picture><source srcset="assets/img/projeto/projeto-09.webp" type="image/webp"/><img src="assets/img/projeto/projeto-09.jpg" loading="lazy" alt="Detalhe em planta da bancada com duas cubas e torneiras giratórias" /></picture>
               <figcaption>Detalhe em planta da bancada com duas cubas e torneiras giratórias</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-10.jpg" loading="lazy" alt="Axonométrica do conjunto com indicação da área coberta da churrasqueira" />
+              <picture><source srcset="assets/img/projeto/projeto-10.webp" type="image/webp"/><img src="assets/img/projeto/projeto-10.jpg" loading="lazy" alt="Axonométrica do conjunto com indicação da área coberta da churrasqueira" /></picture>
               <figcaption>Axonométrica do conjunto com indicação da área coberta da churrasqueira</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-11.jpg" loading="lazy" alt="Corte cotado da churrasqueira: boca de 0,80 x 0,45 m e bancadas a 0,90 m" />
+              <picture><source srcset="assets/img/projeto/projeto-11.webp" type="image/webp"/><img src="assets/img/projeto/projeto-11.jpg" loading="lazy" alt="Corte cotado da churrasqueira: boca de 0,80 x 0,45 m e bancadas a 0,90 m" /></picture>
               <figcaption>Corte cotado da churrasqueira: boca de 0,80 x 0,45 m e bancadas a 0,90 m</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-12.jpg" loading="lazy" alt="Planta baixa cotada com bancadas, cubas e marcações de corte (4,12 x 3,20 m)" />
+              <picture><source srcset="assets/img/projeto/projeto-12.webp" type="image/webp"/><img src="assets/img/projeto/projeto-12.jpg" loading="lazy" alt="Planta baixa cotada com bancadas, cubas e marcações de corte (4,12 x 3,20 m)" /></picture>
               <figcaption>Planta baixa cotada com bancadas, cubas e marcações de corte (4,12 x 3,20 m)</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-x-01.jpg" loading="lazy" alt="Corte longitudinal com níveis: cobertura 2,92 m, pergolado 2,60 m, térreo 0,00" />
+              <picture><source srcset="assets/img/projeto/projeto-x-01.webp" type="image/webp"/><img src="assets/img/projeto/projeto-x-01.jpg" loading="lazy" alt="Corte longitudinal com níveis: cobertura 2,92 m, pergolado 2,60 m, térreo 0,00" /></picture>
               <figcaption>Corte longitudinal com níveis: cobertura 2,92 m, pergolado 2,60 m, térreo 0,00</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-x-02.jpg" loading="lazy" alt="Planta de cobertura cotada: vigas do pergolado e telhado (4,12 m de largura)" />
+              <picture><source srcset="assets/img/projeto/projeto-x-02.webp" type="image/webp"/><img src="assets/img/projeto/projeto-x-02.jpg" loading="lazy" alt="Planta de cobertura cotada: vigas do pergolado e telhado (4,12 m de largura)" /></picture>
               <figcaption>Planta de cobertura cotada: vigas do pergolado e telhado (4,12 m de largura)</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-x-03.jpg" loading="lazy" alt="Elevação cotada com pergolado, trepadeiras floridas e bancada com banquetas" />
+              <picture><source srcset="assets/img/projeto/projeto-x-03.webp" type="image/webp"/><img src="assets/img/projeto/projeto-x-03.jpg" loading="lazy" alt="Elevação cotada com pergolado, trepadeiras floridas e bancada com banquetas" /></picture>
               <figcaption>Elevação cotada com pergolado, trepadeiras floridas e bancada com banquetas</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-x-04.jpg" loading="lazy" alt="Perspectiva 3D final: pergolado com trepadeiras, área coberta e churrasqueira" />
+              <picture><source srcset="assets/img/projeto/projeto-x-04.webp" type="image/webp"/><img src="assets/img/projeto/projeto-x-04.jpg" loading="lazy" alt="Perspectiva 3D final: pergolado com trepadeiras, área coberta e churrasqueira" /></picture>
               <figcaption>Perspectiva 3D final: pergolado com trepadeiras, área coberta e churrasqueira</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-x-05.jpg" loading="lazy" alt="Corte cotado com níveis e detalhamento da churrasqueira (0,80 x 0,45 m)" />
+              <picture><source srcset="assets/img/projeto/projeto-x-05.webp" type="image/webp"/><img src="assets/img/projeto/projeto-x-05.jpg" loading="lazy" alt="Corte cotado com níveis e detalhamento da churrasqueira (0,80 x 0,45 m)" /></picture>
               <figcaption>Corte cotado com níveis e detalhamento da churrasqueira (0,80 x 0,45 m)</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-x-06.jpg" loading="lazy" alt="Perspectiva 3D do conjunto pelo acesso: pergolado, bancada bar e área da pia" />
+              <picture><source srcset="assets/img/projeto/projeto-x-06.webp" type="image/webp"/><img src="assets/img/projeto/projeto-x-06.jpg" loading="lazy" alt="Perspectiva 3D do conjunto pelo acesso: pergolado, bancada bar e área da pia" /></picture>
               <figcaption>Perspectiva 3D do conjunto pelo acesso: pergolado, bancada bar e área da pia</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/projeto/projeto-x-07.jpg" loading="lazy" alt="Planta baixa geral cotada com pergolado e indicação dos cortes 1, 2 e 3" />
+              <picture><source srcset="assets/img/projeto/projeto-x-07.webp" type="image/webp"/><img src="assets/img/projeto/projeto-x-07.jpg" loading="lazy" alt="Planta baixa geral cotada com pergolado e indicação dos cortes 1, 2 e 3" /></picture>
               <figcaption>Planta baixa geral cotada com pergolado e indicação dos cortes 1, 2 e 3</figcaption>
             </figure>
           </div>
@@ -626,67 +1447,67 @@
         <div class="tab-panel" id="p-renders">
           <div class="gallery">
                         <figure class="g-item">
-              <img src="assets/img/renders/render-01.jpg" loading="lazy" alt="Perspectiva superior: pergolado de eucalipto roliço e cobertura da área de apoio" />
+              <picture><source srcset="assets/img/renders/render-01.webp" type="image/webp"/><img src="assets/img/renders/render-01.jpg" loading="lazy" alt="Perspectiva superior: pergolado de eucalipto roliço e cobertura da área de apoio" /></picture>
               <figcaption>Perspectiva superior: pergolado de eucalipto roliço e cobertura da área de apoio</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-02.jpg" loading="lazy" alt="Referência noturna: churrasqueira de tijolo, bancada em granito e pergolado iluminado" />
+              <picture><source srcset="assets/img/renders/render-02.webp" type="image/webp"/><img src="assets/img/renders/render-02.jpg" loading="lazy" alt="Referência noturna: churrasqueira de tijolo, bancada em granito e pergolado iluminado" /></picture>
               <figcaption>Referência noturna: churrasqueira de tijolo, bancada em granito e pergolado iluminado</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-03.jpg" loading="lazy" alt="Elevação interna: bancada com cuba, azulejo e churrasqueira em alvenaria" />
+              <picture><source srcset="assets/img/renders/render-03.webp" type="image/webp"/><img src="assets/img/renders/render-03.jpg" loading="lazy" alt="Elevação interna: bancada com cuba, azulejo e churrasqueira em alvenaria" /></picture>
               <figcaption>Elevação interna: bancada com cuba, azulejo e churrasqueira em alvenaria</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-04.jpg" loading="lazy" alt="Vista aérea da maquete: telhado cerâmico e vigamento do pergolado" />
-              <figcaption>Vista aérea da maquete: telhado cerâmico e vigamento do pergolado</figcaption>
+              <picture><source srcset="assets/img/renders/render-04.webp" type="image/webp"/><img src="assets/img/renders/render-04.jpg" loading="lazy" alt="Vista aérea da maquete: cobertura em telha metálica e vigamento do pergolado" /></picture>
+              <figcaption>Vista aérea da maquete: cobertura em telha metálica e vigamento do pergolado</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-05.jpg" loading="lazy" alt="Perspectiva interna: bancadas de concreto, azulejo até 1,50 m e churrasqueira" />
+              <picture><source srcset="assets/img/renders/render-05.webp" type="image/webp"/><img src="assets/img/renders/render-05.jpg" loading="lazy" alt="Perspectiva interna: bancadas de concreto, azulejo até 1,50 m e churrasqueira" /></picture>
               <figcaption>Perspectiva interna: bancadas de concreto, azulejo até 1,50 m e churrasqueira</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-06.jpg" loading="lazy" alt="Maquete eletrônica do espaço de convivência: mesas sob o pergolado e área de apoio" />
+              <picture><source srcset="assets/img/renders/render-06.webp" type="image/webp"/><img src="assets/img/renders/render-06.jpg" loading="lazy" alt="Maquete eletrônica do espaço de convivência: mesas sob o pergolado e área de apoio" /></picture>
               <figcaption>Maquete eletrônica do espaço de convivência: mesas sob o pergolado e área de apoio</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-07.jpg" loading="lazy" alt="Elevação frontal da maquete: layout das mesas e cozinha de apoio ao fundo" />
+              <picture><source srcset="assets/img/renders/render-07.webp" type="image/webp"/><img src="assets/img/renders/render-07.jpg" loading="lazy" alt="Elevação frontal da maquete: layout das mesas e cozinha de apoio ao fundo" /></picture>
               <figcaption>Elevação frontal da maquete: layout das mesas e cozinha de apoio ao fundo</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-08.jpg" loading="lazy" alt="Perspectiva do pergolado com varal de luzes, mesas e cozinha de apoio" />
+              <picture><source srcset="assets/img/renders/render-08.webp" type="image/webp"/><img src="assets/img/renders/render-08.jpg" loading="lazy" alt="Perspectiva do pergolado com varal de luzes, mesas e cozinha de apoio" /></picture>
               <figcaption>Perspectiva do pergolado com varal de luzes, mesas e cozinha de apoio</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-09.jpg" loading="lazy" alt="Vista interna: bancada com cuba, revestimento cerâmico e churrasqueira com grelhas" />
+              <picture><source srcset="assets/img/renders/render-09.webp" type="image/webp"/><img src="assets/img/renders/render-09.jpg" loading="lazy" alt="Vista interna: bancada com cuba, revestimento cerâmico e churrasqueira com grelhas" /></picture>
               <figcaption>Vista interna: bancada com cuba, revestimento cerâmico e churrasqueira com grelhas</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-10.jpg" loading="lazy" alt="Área de apoio: geladeira, bancada com cuba e churrasqueira em perspectiva interna" />
+              <picture><source srcset="assets/img/renders/render-10.webp" type="image/webp"/><img src="assets/img/renders/render-10.jpg" loading="lazy" alt="Área de apoio: geladeira, bancada com cuba e churrasqueira em perspectiva interna" /></picture>
               <figcaption>Área de apoio: geladeira, bancada com cuba e churrasqueira em perspectiva interna</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-11.jpg" loading="lazy" alt="Detalhe da churrasqueira: grelha e espetos giratórios junto à bancada com cuba" />
+              <picture><source srcset="assets/img/renders/render-11.webp" type="image/webp"/><img src="assets/img/renders/render-11.jpg" loading="lazy" alt="Detalhe da churrasqueira: grelha e espetos giratórios junto à bancada com cuba" /></picture>
               <figcaption>Detalhe da churrasqueira: grelha e espetos giratórios junto à bancada com cuba</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-12.jpg" loading="lazy" alt="Vista geral externa: volume fechado, janela e pergolado em eucalipto roliço" />
+              <picture><source srcset="assets/img/renders/render-12.webp" type="image/webp"/><img src="assets/img/renders/render-12.jpg" loading="lazy" alt="Vista geral externa: volume fechado, janela e pergolado em eucalipto roliço" /></picture>
               <figcaption>Vista geral externa: volume fechado, janela e pergolado em eucalipto roliço</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-13.jpg" loading="lazy" alt="Detalhe da bancada: cuba de embutir, sifão aparente e azulejo de fundo" />
+              <picture><source srcset="assets/img/renders/render-13.webp" type="image/webp"/><img src="assets/img/renders/render-13.jpg" loading="lazy" alt="Detalhe da bancada: cuba de embutir, sifão aparente e azulejo de fundo" /></picture>
               <figcaption>Detalhe da bancada: cuba de embutir, sifão aparente e azulejo de fundo</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-14.jpg" loading="lazy" alt="Vista superior: vigamento do pergolado sobre o setor de mesas" />
+              <picture><source srcset="assets/img/renders/render-14.webp" type="image/webp"/><img src="assets/img/renders/render-14.jpg" loading="lazy" alt="Vista superior: vigamento do pergolado sobre o setor de mesas" /></picture>
               <figcaption>Vista superior: vigamento do pergolado sobre o setor de mesas</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/renders/render-15.jpg" loading="lazy" alt="Vista geral da maquete: implantação do espaço de convivência com pergolado" />
+              <picture><source srcset="assets/img/renders/render-15.webp" type="image/webp"/><img src="assets/img/renders/render-15.jpg" loading="lazy" alt="Vista geral da maquete: implantação do espaço de convivência com pergolado" /></picture>
               <figcaption>Vista geral da maquete: implantação do espaço de convivência com pergolado</figcaption>
             </figure>
             <figure class="g-item">
-              <img src="assets/img/obra/obra-35.jpg" loading="lazy" alt="Projeção noturna do espaço concluído com pergolado e churrasqueira" />
+              <picture><source srcset="assets/img/obra/obra-35.webp" type="image/webp"/><img src="assets/img/obra/obra-35.jpg" loading="lazy" alt="Projeção noturna do espaço concluído com pergolado e churrasqueira" /></picture>
               <figcaption>Projeção noturna do espaço concluído com pergolado e churrasqueira</figcaption>
             </figure>
           </div>
@@ -694,58 +1515,65 @@
 
         <div class="tab-panel" id="p-videos">
           <div class="video-grid">
-                        <video src="assets/video/obra-video-01.mp4" controls preload="metadata" title="Registro da obra 1"></video>
-            <video src="assets/video/obra-video-02.mp4" controls preload="metadata" title="Registro da obra 2"></video>
-            <video src="assets/video/obra-video-03.mp4" controls preload="metadata" title="Registro da obra 3"></video>
-            <video src="assets/video/obra-video-04.mp4" controls preload="metadata" title="Registro da obra 4"></video>
-            <video src="assets/video/obra-video-05.mp4" controls preload="metadata" title="Registro da obra 5"></video>
-            <video src="assets/video/obra-video-06.mp4" controls preload="metadata" title="Registro da obra 6"></video>
-            <video src="assets/video/obra-video-07.mp4" controls preload="metadata" title="Registro da obra 7"></video>
-            <video src="assets/video/projeto-video-01.mp4" controls preload="metadata" title="Passeio virtual pelo projeto 1"></video>
-            <video src="assets/video/projeto-video-02.mp4" controls preload="metadata" title="Passeio virtual pelo projeto 2"></video>
-            <video src="assets/video/projeto-video-03.mp4" controls preload="metadata" title="Passeio virtual pelo projeto 3"></video>
+                        <video src="assets/video/obra-video-01.mp4" controls preload="none" title="Registro da obra 1"></video>
+            <video src="assets/video/obra-video-02.mp4" controls preload="none" title="Registro da obra 2"></video>
+            <video src="assets/video/obra-video-03.mp4" controls preload="none" title="Registro da obra 3"></video>
+            <video src="assets/video/obra-video-04.mp4" controls preload="none" title="Registro da obra 4"></video>
+            <video src="assets/video/obra-video-05.mp4" controls preload="none" title="Registro da obra 5"></video>
+            <video src="assets/video/obra-video-06.mp4" controls preload="none" title="Registro da obra 6"></video>
+            <video src="assets/video/obra-video-07.mp4" controls preload="none" title="Registro da obra 7"></video>
+            <video src="assets/video/projeto-video-01.mp4" controls preload="none" title="Passeio virtual pelo projeto 1"></video>
+            <video src="assets/video/projeto-video-02.mp4" controls preload="none" title="Passeio virtual pelo projeto 2"></video>
+            <video src="assets/video/projeto-video-03.mp4" controls preload="none" title="Passeio virtual pelo projeto 3"></video>
           </div>
         </div>
       </div>
     </section>
 
     <!-- EQUIPE -->
-    <section id="equipe" class="section alt">
+    <section id="equipe" class="section" data-num="07">
       <div class="container">
         <div class="section-head">
-          <h2>Ficha técnica</h2>
-          <p>Turma B, Edificações noturno. ETEC Vasco Antônio Venchiarutti, Jundiaí/SP.</p>
+          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-team"/></svg>07 · Ficha técnica</span>
+          <h2>Quem executou</h2>
+          <p>Turma 3º L, Edificações noturno. ETEC Vasco Antônio Venchiarutti, Jundiaí/SP.</p>
         </div>
         <div class="team">
           <article class="member">
             <div class="avatar">JS</div>
             <h3>Jacira Szoke</h3>
             <span class="role">Autora</span>
+            <span class="member-links" data-links><a href="#" data-net="linkedin" aria-label="LinkedIn (link a preencher)" title="Preencher com URL do LinkedIn">in</a><a href="#" data-net="instagram" aria-label="Instagram (link a preencher)" title="Preencher com URL do Instagram">ig</a></span>
           </article>
           <article class="member">
             <div class="avatar">NR</div>
             <h3>Nathan Rodrigues</h3>
             <span class="role">Autor</span>
+            <span class="member-links" data-links><a href="#" data-net="linkedin" aria-label="LinkedIn (link a preencher)" title="Preencher com URL do LinkedIn">in</a><a href="#" data-net="instagram" aria-label="Instagram (link a preencher)" title="Preencher com URL do Instagram">ig</a></span>
           </article>
           <article class="member">
             <div class="avatar">PS</div>
             <h3>Pedrito J. Santos</h3>
             <span class="role">Autor</span>
+            <span class="member-links" data-links><a href="#" data-net="linkedin" aria-label="LinkedIn (link a preencher)" title="Preencher com URL do LinkedIn">in</a><a href="#" data-net="instagram" aria-label="Instagram (link a preencher)" title="Preencher com URL do Instagram">ig</a></span>
           </article>
           <article class="member">
             <div class="avatar">TS</div>
             <h3>Thiago M. Silva</h3>
             <span class="role">Autor</span>
+            <span class="member-links" data-links><a href="#" data-net="linkedin" aria-label="LinkedIn (link a preencher)" title="Preencher com URL do LinkedIn">in</a><a href="#" data-net="instagram" aria-label="Instagram (link a preencher)" title="Preencher com URL do Instagram">ig</a></span>
           </article>
           <article class="member">
             <div class="avatar">TZ</div>
             <h3>Thiago N. Szoke</h3>
             <span class="role">Autor</span>
+            <span class="member-links" data-links><a href="#" data-net="linkedin" aria-label="LinkedIn (link a preencher)" title="Preencher com URL do LinkedIn">in</a><a href="#" data-net="instagram" aria-label="Instagram (link a preencher)" title="Preencher com URL do Instagram">ig</a></span>
           </article>
           <article class="member">
             <div class="avatar">WC</div>
             <h3>Walmir Cruz</h3>
             <span class="role">Autor</span>
+            <span class="member-links" data-links><a href="#" data-net="linkedin" aria-label="LinkedIn (link a preencher)" title="Preencher com URL do LinkedIn">in</a><a href="#" data-net="instagram" aria-label="Instagram (link a preencher)" title="Preencher com URL do Instagram">ig</a></span>
           </article>
           <article class="member advisor">
             <div class="avatar">RV</div>
@@ -758,18 +1586,113 @@
 
   </main>
 
+  <!-- QUIZ_REMOVED --><!--
+  <section id="quiz" class="section" data-num="08">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-blueprint"/></svg>08 · Quiz</span>
+        <h2>Cinco perguntas rápidas</h2>
+        <p>Você leu com atenção? Responda pra ver — não vale voltar rolando pra procurar.</p>
+      </div>
+      <ol class="quiz" data-quiz>
+        <li data-answer="6">
+          <p><strong>01.</strong> Qual o afastamento mínimo aplicado à obra em relação ao Flamboyant?</p>
+          <div class="quiz-opts">
+            <button data-v="3">3 m</button>
+            <button data-v="6">6 m</button>
+            <button data-v="10">10 m</button>
+          </div>
+        </li>
+        <li data-answer="17">
+          <p><strong>02.</strong> Em quantas semanas o cronograma inteiro se desenrola?</p>
+          <div class="quiz-opts">
+            <button data-v="12">12</button>
+            <button data-v="17">17</button>
+            <button data-v="22">22</button>
+          </div>
+        </li>
+        <li data-answer="14518">
+          <p><strong>03.</strong> Qual norma foi seguida especificamente pro dimensionamento da chaminé?</p>
+          <div class="quiz-opts">
+            <button data-v="15575">NBR 15575</button>
+            <button data-v="14518">NBR 14518</button>
+            <button data-v="9050">NBR 9050</button>
+          </div>
+        </li>
+        <li data-answer="4">
+          <p><strong>04.</strong> Quantas espécies arbóreas foram mapeadas e protegidas no terreno?</p>
+          <div class="quiz-opts">
+            <button data-v="2">2</button>
+            <button data-v="4">4</button>
+            <button data-v="6">6</button>
+          </div>
+        </li>
+        <li data-answer="270">
+          <p><strong>05.</strong> Qual a altura total da churrasqueira (com chaminé), em cm?</p>
+          <div class="quiz-opts">
+            <button data-v="180">180</button>
+            <button data-v="270">270</button>
+            <button data-v="320">320</button>
+          </div>
+        </li>
+      </ol>
+      <div class="quiz-result" hidden>
+        <span class="quiz-score">—</span>
+        <p class="quiz-msg">Responda todas para ver o resultado.</p>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <details class="credits">
+    <summary>Créditos de imagem</summary>
+    <div class="container">
+      <ul>
+        <li>Pau Brasil (Paubrasilia echinata): <a href="https://commons.wikimedia.org/wiki/File:%C3%81rvore_pau-brasil_(Paubrasilia_echinata)_por_Jani_Pereira.jpg" rel="noopener" target="_blank">foto por Jani Pereira</a>, licença <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="noopener" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons.</li>
+        <li>Pau Ferro (Libidibia ferrea): <a href="https://commons.wikimedia.org/wiki/File:Pauferroceret.jpg" rel="noopener" target="_blank">foto por Mauroguanandi</a>, <strong>domínio público</strong>, via Wikimedia Commons.</li>
+        <li>Flamboyant (Delonix regia): <a href="https://commons.wikimedia.org/wiki/File:Flamboyant_BW_2.jpg" rel="noopener" target="_blank">foto por Berthold Werner</a>, <strong>domínio público</strong>, via Wikimedia Commons.</li>
+        <li>Espatódea (Spathodea campanulata): <a href="https://commons.wikimedia.org/wiki/File:Spathodea_campanulata.jpg" rel="noopener" target="_blank">foto por Shyamal</a>, licença <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener" target="_blank">CC BY-SA 3.0</a>, via Wikimedia Commons.</li>
+        <li>Demais fotos, renders e vídeos: acervo próprio dos alunos autores do TCC (3º L · Edificações · ETEC Vasco A. Venchiarutti · 2026), uso restrito ao projeto acadêmico.</li>
+      </ul>
+    </div>
+  </details>
+
   <footer class="foot">
     <div class="container foot-inner">
-      <span>© <span id="yr"></span> TCC Edificações · ETEC Vasco Antônio Venchiarutti</span>
-      <span class="foot-note">Espaço de convivência com churrasqueira. Integração escolar e interdisciplinar.</span>
+      <div class="foot-text">
+        <span>© <span id="yr"></span> TCC Edificações · ETEC Vasco Antônio Venchiarutti</span>
+        <span class="foot-note">Espaço de convivência com churrasqueira. Integração escolar e interdisciplinar.</span>
+        <div class="foot-share" role="group" aria-label="Compartilhar">
+          <a class="share" href="https://api.whatsapp.com/send?text=Espa%C3%A7o%20de%20conviv%C3%AAncia%20%C2%B7%20TCC%20Edifica%C3%A7%C3%B5es%20ETEC%20Jundia%C3%AD%202026" target="_blank" rel="noopener" data-share="wa">WhatsApp ↗</a>
+          <a class="share" href="mailto:?subject=Espa%C3%A7o%20de%20conviv%C3%AAncia%20%E2%80%94%20TCC%20Edifica%C3%A7%C3%B5es%202026&body=Confira%20o%20projeto%3A%20" data-share="mail">Email ↗</a>
+          <button class="share" type="button" data-share="copy" aria-label="Copiar link">Copiar link</button>
+        </div>
+      </div>
+      <figure class="foot-qr" aria-label="QR code apontando para este site">
+        <object data="assets/qr.svg" type="image/svg+xml" aria-hidden="true"></object>
+        <figcaption>escanear para acessar<br />este site em outro aparelho</figcaption>
+      </figure>
     </div>
   </footer>
+
+  <!-- HUD DO MODO APRESENTAÇÃO -->
+  <div class="present-hud" id="presentHud" role="toolbar" aria-label="Modo apresentação">
+    <button data-present-nav="prev" aria-label="Anterior">←</button>
+    <span><span class="present-idx" id="presentIdx">1</span> / <span id="presentTotal">7</span></span>
+    <button data-present-nav="next" aria-label="Próxima">→</button>
+    <button data-present-exit>ESC · sair</button>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <a href="#top" class="to-top" id="toTop" aria-label="Voltar ao topo" hidden>
+    <span aria-hidden="true">↑</span>
+  </a>
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" role="dialog" aria-label="Visualização ampliada">
     <button class="lb-close" aria-label="Fechar">✕</button>
     <button class="lb-btn lb-prev" aria-label="Anterior">‹</button>
-    <img src="" alt="" />
+    <img src="" alt="Imagem ampliada" />
     <button class="lb-btn lb-next" aria-label="Próxima">›</button>
     <p class="lb-caption"></p>
   </div>

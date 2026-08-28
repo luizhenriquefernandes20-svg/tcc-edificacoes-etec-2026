@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TCC Edificações 2026 — Diário de obra</title>
+    <link>/</link>
+    <description>Atualizações semanais da execução do espaço de convivência com churrasqueira, TCC do técnico em Edificações da ETEC Vasco Antônio Venchiarutti.</description>
+    <language>pt-BR</language>
+    <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Semana 3 · escavação e lastro</title>
+      <link>/#galeria</link>
+      <guid isPermaLink="false">tcc-2026-s3</guid>
+      <pubDate>Tue, 18 Aug 2026 12:00:00 -0300</pubDate>
+      <description>Chegada da brita, marcações executadas e início da armação do radier. Primeira concretagem prevista pra semana que vem.</description>
+    </item>
+    <item>
+      <title>Semana 2 · terraplenagem manual</title>
+      <link>/#galeria</link>
+      <guid isPermaLink="false">tcc-2026-s2</guid>
+      <pubDate>Tue, 11 Aug 2026 12:00:00 -0300</pubDate>
+      <description>Regularização do terreno com enxadas, preservando as raízes da arborização existente. 11 registros no diário.</description>
+    </item>
+    <item>
+      <title>Semana 1 · serviços preliminares</title>
+      <link>/#galeria</link>
+      <guid isPermaLink="false">tcc-2026-s1</guid>
+      <pubDate>Tue, 04 Aug 2026 12:00:00 -0300</pubDate>
+      <description>Instalação do canteiro, isolamento com fita zebrada e placas, recebimento do primeiro lote de materiais.</description>
+    </item>
+  </channel>
+</rss>
