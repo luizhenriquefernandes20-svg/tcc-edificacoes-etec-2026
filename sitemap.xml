@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/</loc>
+    <loc>https://tcc-edificacoes-etec-2026.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url><loc>/#projeto</loc><priority>0.9</priority></url>
-  <url><loc>/#arvores</loc><priority>0.8</priority></url>
-  <url><loc>/#tecnico</loc><priority>0.9</priority></url>
-  <url><loc>/#seguranca</loc><priority>0.8</priority></url>
-  <url><loc>/#cronograma</loc><priority>0.8</priority></url>
-  <url><loc>/#galeria</loc><priority>0.7</priority></url>
-  <url><loc>/#equipe</loc><priority>0.6</priority></url>
+  <url>
+    <loc>https://tcc-edificacoes-etec-2026.vercel.app/banca</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
