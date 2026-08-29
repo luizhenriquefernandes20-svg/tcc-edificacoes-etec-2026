@@ -63,29 +63,11 @@
 
   <a href="#top" class="skip">Pular para o conteúdo</a>
 
-  <!-- Ícones técnicos custom (sprite oculto) -->
-  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
-    <defs>
-      <symbol id="i-blueprint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"><path d="M3 4h18v16H3z"/><path d="M3 9h18M9 4v16M7 12h4v4H7z"/></symbol>
-      <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c8 0 16-6 16-16-6 0-16 4-16 16z"/><path d="M4 20 14 10"/></symbol>
-      <symbol id="i-ruler" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"><path d="M2 8h20v8H2z"/><path d="M6 8v4M10 8v4M14 8v4M18 8v4"/></symbol>
-      <symbol id="i-hardhat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18"/><path d="M4 17c0-5 3-8 8-8s8 3 8 8"/><path d="M10 9V6h4v3"/></symbol>
-      <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"><path d="M3 6h18v14H3z"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
-      <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v11H3z"/><circle cx="12" cy="13" r="3.5"/></symbol>
-      <symbol id="i-team" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5"/><path d="M14 20c0-2 1.5-3.5 3-3.5s3 1.5 3 3.5"/></symbol>
-      <symbol id="i-glyph" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><line x1="4" y1="12" x2="14" y2="12"/><circle cx="20" cy="12" r="2.5"/><line x1="26" y1="12" x2="36" y2="12"/></symbol>
-    </defs>
-  </svg>
-
   <header class="nav">
     <div class="container nav-inner">
       <a href="#top" class="brand" aria-label="Início — Espaço de convivência, TCC Edificações, ETEC Jundiaí">
         <span class="brand-title">Espaço de convivência</span>
-        <span class="brand-meta">
-          <span class="brand-num">N.04</span>
-          <span class="brand-sep" aria-hidden="true"></span>
-          <span>TCC · Edificações · 3º L · 26</span>
-        </span>
+        <span class="brand-meta">TCC Edificações · 3º L · ETEC Jundiaí</span>
       </a>
       <nav aria-label="principal">
         <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" id="menuBtn">
@@ -106,7 +88,7 @@
   <!-- Sub-nav sticky do #tecnico (só visível dentro dessa section) -->
   <div class="subnav" id="tecnicoSubnav" data-of="tecnico" aria-hidden="true">
     <div class="container subnav-inner">
-      <span class="subnav-lbl"><svg class="ic" aria-hidden="true"><use href="#i-ruler"/></svg>Projeto técnico</span>
+      <span class="subnav-lbl">Projeto técnico</span>
       <a href="#tec-dim">Dimensões</a>
       <a href="#tec-fund">Fundação</a>
       <a href="#tec-roteiro">Roteiro</a>
@@ -124,10 +106,9 @@
     <section class="hero hero-editorial">
       <div class="container">
         <dl class="hero-rule" aria-label="Ficha do projeto">
-          <div><dt>Curso</dt><dd>Edificações, noturno · 3º L</dd></div>
-          <div><dt>Instituição</dt><dd>ETEC V. A. Venchiarutti · Jundiaí/SP</dd></div>
-          <div><dt>Ciclo</dt><dd>17 semanas · 04/08 → 04/12/2026</dd></div>
-          <div><dt>Entrega</dt><dd><time datetime="2026-12-04">04/12/2026</time> · <span class="countdown" data-countdown="2026-12-04">— dias</span></dd></div>
+          <div><dt>Curso</dt><dd>Edificações · noturno · 3º L</dd></div>
+          <div><dt>Instituição</dt><dd>ETEC Vasco A. Venchiarutti</dd></div>
+          <div><dt>Execução</dt><dd>04/08 a <time datetime="2026-12-04">04/12/2026</time></dd></div>
         </dl>
 
         <div class="hero-headline">
@@ -144,24 +125,6 @@
 
         <figure class="hero-band-photo">
           <picture><source srcset="assets/img/projeto/projeto-x-04.webp" type="image/webp"/><img src="assets/img/projeto/projeto-x-04.jpg" alt="Maquete eletrônica do espaço de convivência: pergolado com trepadeiras, área coberta e churrasqueira" /></picture>
-          <svg class="stamp" viewBox="0 0 140 140" role="img" aria-label="Selo do projeto: TCC 2026 Edificações Jundiaí">
-            <defs>
-              <path id="stamp-arc-top" d="M 20,70 A 50,50 0 0 1 120,70" fill="none" />
-              <path id="stamp-arc-bot" d="M 20,70 A 50,50 0 0 0 120,70" fill="none" />
-            </defs>
-            <circle cx="70" cy="70" r="62" fill="none" stroke="currentColor" stroke-width="1.5" />
-            <circle cx="70" cy="70" r="55" fill="none" stroke="currentColor" stroke-width="0.6" />
-            <text class="stamp-arc" font-size="9.4" letter-spacing="1.8">
-              <textPath href="#stamp-arc-top" startOffset="50%" text-anchor="middle">TCC · EDIFICAÇÕES · TURMA B</textPath>
-            </text>
-            <text class="stamp-arc" font-size="9.4" letter-spacing="1.8">
-              <textPath href="#stamp-arc-bot" startOffset="50%" text-anchor="middle">ETEC JUNDIAÍ · 2026 ·</textPath>
-            </text>
-            <text x="70" y="66" text-anchor="middle" class="stamp-num">2026</text>
-            <text x="70" y="82" text-anchor="middle" class="stamp-sub">Nº 04</text>
-            <line x1="46" y1="70" x2="58" y2="70" stroke="currentColor" stroke-width="0.6" />
-            <line x1="82" y1="70" x2="94" y2="70" stroke="currentColor" stroke-width="0.6" />
-          </svg>
           <figcaption>
             <span class="hbp-label">Maquete eletrônica · perspectiva pelo acesso</span>
             <span class="hbp-ref">PROJ · 04</span>
@@ -178,7 +141,7 @@
     </section>
 
     <!-- O PROJETO -->
-    <section id="projeto" class="section" data-num="01">
+    <section id="projeto" class="section">
       <div class="container">
         <!--
           TODO · MANIFESTO — texto de referência (a reescrever pela turma).
@@ -190,11 +153,11 @@
         <figure class="manifesto">
           <blockquote>
             <p>
-              A gente <em>não queria só desenhar</em> um TCC. Quisemos construir uma coisa que
-              a escola ia usar. Uma churrasqueira que dá origem a um lugar de convivência —
-              onde antes tinha só terra debaixo das árvores. É o nosso curso inteiro colocado
-              na parede: cotas viram alvenaria, planta vira gente sentada, cronograma vira
-              cheiro de fogo aos sábados de aula.
+              A turma escolheu um tema que <em>não terminasse na prancheta</em>. Em vez de
+              projetar algo hipotético, projetamos e construímos uma área de convivência que
+              a escola vai continuar usando depois que a gente sair. O terreno debaixo das
+              árvores estava ocioso — e executar ali, de verdade, obriga a aplicar o que
+              se aprende em sala.
             </p>
           </blockquote>
           <figcaption>
@@ -203,7 +166,7 @@
           </figcaption>
         </figure>
         <div class="section-head">
-          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-blueprint"/></svg>01 · O Projeto</span>
+          <span class="eyebrow">O Projeto</span>
           <h2>Um laboratório vivo dentro da escola</h2>
           <p>
             A churrasqueira deixa de ser apenas um equipamento de lazer e passa a ser objeto
@@ -212,19 +175,19 @@
           </p>
         </div>
         <div class="stats">
-          <div class="stat" data-idx="01">
+          <div class="stat">
             <strong>4,12 × 3,20</strong>
             <span>metros, dimensões do espaço em planta baixa</span>
           </div>
-          <div class="stat" data-idx="02">
+          <div class="stat">
             <strong>17</strong>
             <span>semanas de obra, de 04/08 a 04/12/2026</span>
           </div>
-          <div class="stat" data-idx="03">
+          <div class="stat">
             <strong>16</strong>
             <span>alunos executando o projeto no período noturno</span>
           </div>
-          <div class="stat" data-idx="04">
+          <div class="stat">
             <strong>4</strong>
             <span>espécies arbóreas mapeadas e protegidas no terreno</span>
           </div>
@@ -328,10 +291,10 @@
     </section>
 
     <!-- LEVANTAMENTO ARBÓREO -->
-    <section id="arvores" class="section alt" data-num="02">
+    <section id="arvores" class="section alt">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>02 · Levantamento arbóreo</span>
+          <span class="eyebrow">Levantamento arbóreo</span>
           <h2>As árvores definiram onde construir</h2>
           <p>
             Inspeção de todos os indivíduos com DAP ≥ 5 cm: identificação botânica, medição
@@ -409,7 +372,7 @@
     </section>
 
     <!-- PROJETO TÉCNICO -->
-    <section id="tecnico" class="section is-blueprint" data-num="03">
+    <section id="tecnico" class="section">
       <div class="container">
         <div class="plate" aria-label="Cabeçalho de prancha">
           <div><span>Prancha</span><strong>03/07</strong></div>
@@ -418,7 +381,7 @@
           <div><span>Autoria</span><strong>3º L · Edif. noturno</strong></div>
         </div>
         <div class="section-head">
-          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-ruler"/></svg>03 · Projeto técnico</span>
+          <span class="eyebrow">Projeto técnico</span>
           <h2>Da prancheta ao canteiro</h2>
           <p>
             Projeto desenvolvido em Revit e AutoCAD: plantas cotadas, cortes, vistas 3D e
@@ -840,10 +803,10 @@
     </section>
 
     <!-- SEGURANÇA DO TRABALHO -->
-    <section id="seguranca" class="section alt" data-num="04">
+    <section id="seguranca" class="section alt">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-hardhat"/></svg>04 · Segurança do trabalho</span>
+          <span class="eyebrow">Segurança do trabalho</span>
           <h2>NR-18 aplicada ao canteiro escolar</h2>
           <p>
             O canteiro convive com o fluxo normal da escola: 16 alunos executando à noite, sob
@@ -944,7 +907,7 @@
     </section>
 
     <!-- CRONOGRAMA -->
-    <section id="cronograma" class="section" data-num="05">
+    <section id="cronograma" class="section">
       <div class="container">
         <div class="plate" aria-label="Cabeçalho de prancha">
           <div><span>Prancha</span><strong>05/07</strong></div>
@@ -953,7 +916,7 @@
           <div><span>Autoria</span><strong>Orient. Prof. Radian Vega</strong></div>
         </div>
         <div class="section-head">
-          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>05 · Cronograma físico</span>
+          <span class="eyebrow">Cronograma físico</span>
           <h2>17 semanas de obra</h2>
           <p>
             Início em 04/08, produção concluída em 20/11 e contingência isolada de 10%
@@ -1101,10 +1064,10 @@
     </section>
 
     <!-- GALERIA -->
-    <section id="galeria" class="section alt" data-num="06">
+    <section id="galeria" class="section alt">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-camera"/></svg>06 · Registro fotográfico</span>
+          <span class="eyebrow">Registro fotográfico</span>
           <h2>Do terreno ao canteiro</h2>
           <p>Do terreno original às pranchas técnicas, da maquete eletrônica ao canteiro em execução. Clique em uma foto para ampliar.</p>
         </div>
@@ -1534,10 +1497,10 @@
     </section>
 
     <!-- EQUIPE -->
-    <section id="equipe" class="section" data-num="07">
+    <section id="equipe" class="section">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-team"/></svg>07 · Ficha técnica</span>
+          <span class="eyebrow">Ficha técnica</span>
           <h2>Quem executou</h2>
           <p>Turma 3º L, Edificações noturno. ETEC Vasco Antônio Venchiarutti, Jundiaí/SP.</p>
         </div>
@@ -1590,10 +1553,10 @@
   </main>
 
   <!-- QUIZ_REMOVED --><!--
-  <section id="quiz" class="section" data-num="08">
+  <section id="quiz" class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-blueprint"/></svg>08 · Quiz</span>
+        <span class="eyebrow">Quiz</span>
         <h2>Cinco perguntas rápidas</h2>
         <p>Você leu com atenção? Responda pra ver — não vale voltar rolando pra procurar.</p>
       </div>
