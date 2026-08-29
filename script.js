@@ -543,7 +543,107 @@ document.querySelectorAll('[data-diff]').forEach(diff => {
   }
 })();
 
-// Viewer 3D: só ativa se o arquivo .glb existir. Carrega model-viewer sob demanda.
+// Carrega a lib model-viewer uma única vez, sob demanda
+let modelViewerPromise = null;
+function loadModelViewer() {
+  if (customElements.get('model-viewer')) return Promise.resolve(true);
+  if (modelViewerPromise) return modelViewerPromise;
+  modelViewerPromise = new Promise(resolve => {
+    const s = document.createElement('script');
+    s.type = 'module';
+    s.src = 'assets/js/model-viewer.min.js';
+    s.onload = () => resolve(true);
+    s.onerror = () => resolve(false);
+    document.head.appendChild(s);
+  });
+  return modelViewerPromise;
+}
+
+// Maquete 3D no hero: a foto aparece primeiro, o modelo assume quando carregar
+(() => {
+  const fig = document.querySelector('[data-hero3d]');
+  if (!fig) return;
+  const model = fig.dataset.model;
+  const poster = fig.dataset.poster || '';
+
+  const start = async () => {
+    try {
+      const head = await fetch(model, { method: 'HEAD' });
+      if (!head.ok) return;
+    } catch { return; }
+
+    if (!(await loadModelViewer())) return;
+
+    const mv = document.createElement('model-viewer');
+    mv.setAttribute('src', model);
+    if (poster) mv.setAttribute('poster', poster);
+    mv.setAttribute('alt', 'Maquete 3D navegável do espaço de convivência: pergolado, área coberta e churrasqueira');
+    mv.setAttribute('camera-controls', '');
+    mv.setAttribute('touch-action', 'pan-y');
+    mv.setAttribute('auto-rotate', '');
+    mv.setAttribute('auto-rotate-delay', '2500');
+    mv.setAttribute('rotation-per-second', '12deg');
+    mv.setAttribute('interaction-prompt', 'none');
+    mv.setAttribute('shadow-intensity', '0.9');
+    mv.setAttribute('shadow-softness', '0.8');
+    mv.setAttribute('exposure', '1.05');
+    mv.setAttribute('environment-image', 'neutral');
+    // modelo tem ~9,4 m de frente: 15 m dá um enquadramento cheio sem cortar
+    mv.setAttribute('camera-orbit', '35deg 70deg 15m');
+    mv.setAttribute('min-camera-orbit', 'auto 20deg 7m');
+    mv.setAttribute('max-camera-orbit', 'auto 88deg 28m');
+    mv.setAttribute('field-of-view', '32deg');
+    mv.setAttribute('loading', 'eager');
+
+    // controles e dica
+    const ctrl = document.createElement('div');
+    ctrl.className = 'hero3d-ctrl';
+    ctrl.innerHTML =
+      '<button type="button" data-3d="reset" aria-label="Recentralizar a maquete" title="Recentralizar">⟲</button>' +
+      '<button type="button" data-3d="full" aria-label="Ver em tela cheia" title="Tela cheia">⤢</button>';
+
+    const hint = document.createElement('span');
+    hint.className = 'hero3d-hint';
+    hint.textContent = 'arraste para girar · role para aproximar';
+
+    fig.insertBefore(mv, fig.firstElementChild);
+    fig.appendChild(ctrl);
+    fig.appendChild(hint);
+    fig.classList.add('is-3d');
+
+    const label = fig.querySelector('[data-hero3d-label]');
+    if (label) label.textContent = 'Maquete 3D · arraste para girar';
+
+    // a dica some no primeiro contato
+    const dismiss = () => {
+      hint.classList.add('is-gone');
+      mv.removeEventListener('pointerdown', dismiss);
+      mv.removeEventListener('wheel', dismiss);
+    };
+    mv.addEventListener('pointerdown', dismiss, { once: true });
+    mv.addEventListener('wheel', dismiss, { once: true, passive: true });
+
+    ctrl.addEventListener('click', e => {
+      const b = e.target.closest('[data-3d]');
+      if (!b) return;
+      if (b.dataset['3d'] === 'reset') {
+        mv.cameraOrbit = '35deg 70deg 15m';
+        mv.cameraTarget = 'auto auto auto';
+        mv.fieldOfView = '32deg';
+      } else if (document.fullscreenElement) {
+        document.exitFullscreen().catch(() => {});
+      } else {
+        fig.requestFullscreen?.().catch(() => {});
+      }
+    });
+  };
+
+  // só busca o modelo depois que a página estiver pronta, pra não competir com o LCP
+  if (document.readyState === 'complete') start();
+  else window.addEventListener('load', start, { once: true });
+})();
+
+// Viewer 3D da seção técnica: só ativa se o arquivo .glb existir.
 (async () => {
   const el = document.querySelector('[data-viewer3d]');
   if (!el) return;
@@ -553,18 +653,7 @@ document.querySelectorAll('[data-diff]').forEach(diff => {
     if (!resp.ok) return;
   } catch { return; }
 
-  // Carrega model-viewer se ainda não carregou
-  if (!customElements.get('model-viewer')) {
-    await new Promise((resolve, reject) => {
-      const s = document.createElement('script');
-      s.type = 'module';
-      s.src = 'assets/js/model-viewer.min.js';
-      s.onload = resolve;
-      s.onerror = () => reject(new Error('model-viewer script indisponível'));
-      document.head.appendChild(s);
-    }).catch(err => { console.warn('viewer3d:', err.message); });
-    if (!customElements.get('model-viewer')) return;
-  }
+  if (!(await loadModelViewer())) return;
 
   el.innerHTML = '';
   const mv = document.createElement('model-viewer');

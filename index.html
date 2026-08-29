@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%97%EF%B8%8F%3C/text%3E%3C/svg%3E" />
   <link rel="canonical" href="https://tcc-edificacoes-etec-2026.vercel.app/" />
   <link rel="alternate" type="application/rss+xml" title="Diário de obra · TCC Edificações 2026" href="/rss.xml" />
@@ -123,10 +123,12 @@
           </p>
         </div>
 
-        <figure class="hero-band-photo">
+        <figure class="hero-band-photo" data-hero3d
+                data-model="assets/model/espaco-gourmet-pergolado.glb"
+                data-poster="assets/img/projeto/projeto-x-04.jpg">
           <picture><source srcset="assets/img/projeto/projeto-x-04.webp" type="image/webp"/><img src="assets/img/projeto/projeto-x-04.jpg" alt="Maquete eletrônica do espaço de convivência: pergolado com trepadeiras, área coberta e churrasqueira" /></picture>
           <figcaption>
-            <span class="hbp-label">Maquete eletrônica · perspectiva pelo acesso</span>
+            <span class="hbp-label" data-hero3d-label>Maquete eletrônica · perspectiva pelo acesso</span>
             <span class="hbp-ref">PROJ · 04</span>
           </figcaption>
         </figure>
@@ -747,12 +749,10 @@
 
         <h3 class="section-h3" id="tec-3d">Vista 3D interativa</h3>
         <p class="lede-inline">
-          Modelo 3D navegável do projeto executivo. Arraste para orbitar, role para dar zoom.
-          A conversão do arquivo AutoCAD para <code>.glb</code> é feita pela ferramenta descrita em
-          <code>tools/README.md</code>; enquanto o modelo não está publicado, uma perspectiva de
-          referência é exibida.
+          Modelo 3D navegável do projeto executivo, exportado do Revit. Arraste para orbitar,
+          role para aproximar. O mesmo modelo abre no topo da página.
         </p>
-        <div class="viewer3d" data-viewer3d data-model="assets/model/vista-3d.glb">
+        <div class="viewer3d" data-viewer3d data-model="assets/model/espaco-gourmet-pergolado.glb">
           <div class="viewer3d-fallback">
             <picture>
               <source srcset="assets/img/projeto/projeto-x-04.webp" type="image/webp"/>
@@ -1663,6 +1663,6 @@
     <p class="lb-caption"></p>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

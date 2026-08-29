@@ -404,6 +404,72 @@ a:hover { color: var(--accent-dark); }
 }
 .hbp-ref { color: var(--accent); letter-spacing: .12em; text-transform: uppercase; }
 
+/* ---------- MAQUETE 3D NO HERO ---------- */
+.hero-band-photo model-viewer {
+  display: block;
+  width: 100%;
+  height: clamp(320px, 46vw, 520px);
+  background: var(--paper-2);
+  --poster-color: transparent;
+  --progress-bar-color: var(--accent);
+  --progress-mask: transparent;
+  cursor: grab;
+}
+.hero-band-photo model-viewer:active { cursor: grabbing; }
+.hero-band-photo.is-3d picture { display: none; }
+.hero-band-photo.is-3d:hover img { transform: none; }
+
+/* dica de interação, some no primeiro arrasto */
+.hero3d-hint {
+  position: absolute;
+  left: 18px;
+  bottom: 64px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  background: rgba(30, 31, 33, .82);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  pointer-events: none;
+  transition: opacity var(--dur-slow) var(--ease);
+}
+.hero3d-hint.is-gone { opacity: 0; }
+
+/* controles sobrepostos */
+.hero3d-ctrl {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 3;
+  display: flex;
+  gap: 6px;
+}
+.hero3d-ctrl button {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: rgba(30, 31, 33, .82);
+  color: var(--paper);
+  border: 0;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1;
+  transition: background var(--dur) var(--ease);
+}
+.hero3d-ctrl button:hover { background: var(--accent-dark); }
+
+@media (max-width: 640px) {
+  .hero-band-photo model-viewer { height: 300px; }
+  .hero3d-hint { left: 12px; bottom: 58px; font-size: 10px; padding: 6px 10px; }
+  .hero3d-ctrl { top: 12px; right: 12px; }
+}
+
 
 .hero-cta {
   display: flex;
