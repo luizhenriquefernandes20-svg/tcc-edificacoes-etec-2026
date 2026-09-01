@@ -77,6 +77,7 @@
           <li><a href="#projeto">Projeto</a></li>
           <li><a href="#arvores">Árvores</a></li>
           <li><a href="#tecnico">Técnico</a></li>
+          <li><a href="#maquete">Maquete</a></li>
           <li><a href="#cronograma">Cronograma</a></li>
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#equipe">Equipe</a></li>
@@ -802,8 +803,112 @@
       </div>
     </section>
 
+    <!--
+      MAQUETE FÍSICA
+      Fotos e vídeos aparecem sozinhos: basta colocar os arquivos nas pastas
+      seguindo a numeração. Não precisa editar este HTML.
+
+        assets/img/maquete/maquete-01.jpg, -02.jpg, -03.jpg ...
+        assets/video/maquete/maquete-video-01.mp4, -02.mp4 ...
+
+      Para dar legenda a uma foto, acrescente a linha correspondente em
+      LEGENDAS_MAQUETE no script.js. Sem legenda, ela entra só com o número.
+
+      TODO: conferir escala, materiais e datas das etapas abaixo com a turma.
+    -->
+    <section id="maquete" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Maquete física</span>
+          <h2>Da tela para as mãos</h2>
+          <p>
+            Antes de assentar o primeiro bloco, o projeto foi construído em escala
+            reduzida. A maquete obriga a resolver no papel o que o desenho às vezes
+            esconde: encontro de planos, altura da coifa, folga entre o pergolado e a
+            copa das árvores.
+          </p>
+        </div>
+
+        <dl class="mk-ficha">
+          <div><dt>Escala</dt><dd>1:25</dd></div>
+          <div><dt>Base</dt><dd>50 × 40 cm</dd></div>
+          <div><dt>Materiais</dt><dd>Papel paraná, MDF 3 mm, palito roliço</dd></div>
+        </dl>
+
+        <ol class="mk-steps">
+          <li>
+            <span class="mk-num">01</span>
+            <div>
+              <h3>Base e implantação</h3>
+              <p>Corte da base em MDF, marcação dos eixos e transferência da planta baixa em escala, incluindo a posição das árvores preservadas.</p>
+            </div>
+          </li>
+          <li>
+            <span class="mk-num">02</span>
+            <div>
+              <h3>Alvenaria e churrasqueira</h3>
+              <p>Montagem das paredes em papel paraná, com o volume da churrasqueira e da chaminé recortados separadamente para conferir a altura de 2,70 m em escala.</p>
+            </div>
+          </li>
+          <li>
+            <span class="mk-num">03</span>
+            <div>
+              <h3>Pergolado e cobertura</h3>
+              <p>Vigas em palito roliço replicando o vão de 40 cm entre peças; cobertura metálica representada em chapa fina, com o caimento do projeto.</p>
+            </div>
+          </li>
+          <li>
+            <span class="mk-num">04</span>
+            <div>
+              <h3>Paisagismo e acabamento</h3>
+              <p>Trepadeiras, arborização existente, mobiliário e texturas de piso. É a etapa que aproxima a maquete da perspectiva eletrônica.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="section-h3">Registro do processo</h3>
+        <div class="mk-media"
+             data-media-gallery
+             data-dir="assets/img/maquete"
+             data-prefix="maquete-"
+             data-max="24">
+          <p class="mk-empty">
+            As fotos da montagem entram aqui assim que forem adicionadas à pasta
+            <code>assets/img/maquete/</code>.
+          </p>
+        </div>
+
+        <h3 class="section-h3">Vídeos da montagem</h3>
+        <div class="mk-media mk-media-video"
+             data-media-video
+             data-dir="assets/video/maquete"
+             data-prefix="maquete-video-"
+             data-max="8">
+          <p class="mk-empty">
+            Os vídeos entram aqui assim que forem adicionados à pasta
+            <code>assets/video/maquete/</code>.
+          </p>
+        </div>
+
+        <h3 class="section-h3">Maquete eletrônica</h3>
+        <p class="lede-inline">
+          O mesmo conjunto no modelo tridimensional, para comparar com a peça física.
+          Arraste para orbitar.
+        </p>
+        <div class="viewer3d" data-viewer3d data-model="assets/model/espaco-gourmet-pergolado.glb">
+          <div class="viewer3d-fallback">
+            <picture>
+              <source srcset="assets/img/projeto/projeto-x-04.webp" type="image/webp"/>
+              <img src="assets/img/projeto/projeto-x-04.jpg" alt="Perspectiva da maquete eletrônica" loading="lazy"/>
+            </picture>
+            <span class="viewer3d-tag">carregando modelo…</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SEGURANÇA DO TRABALHO -->
-    <section id="seguranca" class="section alt">
+    <section id="seguranca" class="section">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Segurança do trabalho</span>

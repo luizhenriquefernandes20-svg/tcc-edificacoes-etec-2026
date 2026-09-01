@@ -145,7 +145,7 @@ if (nav || toTop) {
 })();
 
 // Scroll spy: marca link ativo do menu conforme a seção em vista
-const spySections = ['projeto', 'arvores', 'tecnico', 'seguranca', 'cronograma', 'galeria', 'equipe']
+const spySections = ['projeto', 'arvores', 'tecnico', 'maquete', 'seguranca', 'cronograma', 'galeria', 'equipe']
   .map(id => document.getElementById(id))
   .filter(Boolean);
 const spyLinks = new Map();
@@ -643,10 +643,86 @@ function loadModelViewer() {
   else window.addEventListener('load', start, { once: true });
 })();
 
-// Viewer 3D da seção técnica: só ativa se o arquivo .glb existir.
+// Legendas das fotos da maquete. A chave é o número do arquivo
+// (maquete-03.jpg → '03'). Sem entrada aqui, a foto entra só com o número.
+const LEGENDAS_MAQUETE = {
+  // '01': 'Corte da base em MDF e marcação dos eixos',
+  // '02': 'Transferência da planta baixa em escala',
+};
+
+// Descobre quantos arquivos numerados existem numa pasta, testando em paralelo
+async function descobrirMidia(dir, prefixo, max, extensoes) {
+  const testar = async n => {
+    const num = String(n).padStart(2, '0');
+    for (const ext of extensoes) {
+      const url = `${dir}/${prefixo}${num}.${ext}`;
+      try {
+        const r = await fetch(url, { method: 'HEAD' });
+        if (r.ok) return { num, url, ext };
+      } catch { /* segue */ }
+    }
+    return null;
+  };
+  const encontrados = await Promise.all(
+    Array.from({ length: max }, (_, i) => testar(i + 1))
+  );
+  return encontrados.filter(Boolean);
+}
+
+// Galeria da maquete: monta a partir dos arquivos que existirem na pasta
 (async () => {
-  const el = document.querySelector('[data-viewer3d]');
-  if (!el) return;
+  const box = document.querySelector('[data-media-gallery]');
+  if (!box) return;
+  const { dir, prefix, max } = box.dataset;
+  const fotos = await descobrirMidia(dir, prefix, Number(max) || 24, ['jpg', 'jpeg', 'png', 'webp']);
+  if (!fotos.length) return; // mantém o aviso de pasta vazia
+
+  const galeria = document.createElement('div');
+  galeria.className = 'gallery';
+  fotos.forEach(({ num, url, ext }) => {
+    const legenda = LEGENDAS_MAQUETE[num] || `Montagem da maquete · registro ${num}`;
+    const fig = document.createElement('figure');
+    fig.className = 'g-item';
+    const webp = url.replace(new RegExp(`\\.${ext}$`), '.webp');
+    fig.innerHTML =
+      `<picture><source srcset="${webp}" type="image/webp"/>` +
+      `<img src="${url}" loading="lazy" alt="${legenda}"></picture>` +
+      `<figcaption>${legenda}</figcaption>`;
+    galeria.appendChild(fig);
+  });
+
+  box.innerHTML = '';
+  box.appendChild(galeria);
+  box.classList.add('is-filled');
+  ligarLightbox(galeria);
+})();
+
+// Vídeos da maquete: mesma lógica
+(async () => {
+  const box = document.querySelector('[data-media-video]');
+  if (!box) return;
+  const { dir, prefix, max } = box.dataset;
+  const videos = await descobrirMidia(dir, prefix, Number(max) || 8, ['mp4', 'webm', 'mov']);
+  if (!videos.length) return;
+
+  const grid = document.createElement('div');
+  grid.className = 'video-grid';
+  videos.forEach(({ num, url }) => {
+    const v = document.createElement('video');
+    v.src = url;
+    v.controls = true;
+    v.preload = 'none';
+    v.title = `Montagem da maquete · vídeo ${num}`;
+    grid.appendChild(v);
+  });
+
+  box.innerHTML = '';
+  box.appendChild(grid);
+  box.classList.add('is-filled');
+})();
+
+// Viewers 3D (seção técnica e maquete): só ativam se o .glb existir.
+document.querySelectorAll('[data-viewer3d]').forEach(async el => {
   const model = el.dataset.model;
   try {
     const resp = await fetch(model, { method: 'HEAD' });
@@ -666,7 +742,7 @@ function loadModelViewer() {
   mv.setAttribute('interaction-prompt', 'none');
   mv.setAttribute('alt', 'Modelo 3D do espaço de convivência');
   el.appendChild(mv);
-})();
+});
 
 // Downloads opcionais: só ficam clicáveis se o arquivo realmente existir no servidor
 document.querySelectorAll('.dl[data-optional-file]').forEach(async link => {
@@ -701,6 +777,9 @@ document.querySelectorAll('.dl[data-optional-file]').forEach(async link => {
 })();
 
 // Lightbox
+// Declarada aqui para que galerias montadas depois (maquete) também possam usar.
+let ligarLightbox = () => {};
+
 const lb = document.getElementById('lightbox');
 if (lb) {
   const lbImg = lb.querySelector('img');
@@ -727,10 +806,11 @@ if (lb) {
     document.body.style.overflow = '';
   }
 
-  document.querySelectorAll('.gallery').forEach(gal => {
+  ligarLightbox = (gal) => {
     const list = Array.from(gal.querySelectorAll('.g-item'));
     list.forEach((el, i) => el.addEventListener('click', () => openLb(list, i)));
-  });
+  };
+  document.querySelectorAll('.gallery').forEach(ligarLightbox);
 
   lb.querySelector('.lb-close').addEventListener('click', closeLb);
   lb.querySelector('.lb-prev').addEventListener('click', e => { e.stopPropagation(); show(idx - 1); });

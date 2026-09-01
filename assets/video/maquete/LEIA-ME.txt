@@ -1,0 +1,10 @@
+# Videos da maquete
+
+Coloque aqui os videos da montagem, numerados em sequencia:
+
+    maquete-video-01.mp4
+    maquete-video-02.mp4
+    ...
+
+Formatos aceitos: mp4, webm, mov. Ate 8 arquivos.
+Os videos aparecem sozinhos no site — nao precisa editar o HTML.

@@ -1,0 +1,15 @@
+# Fotos da maquete
+
+Coloque aqui os registros da montagem, numerados em sequência:
+
+    maquete-01.jpg
+    maquete-02.jpg
+    maquete-03.jpg
+    ...
+
+Formatos aceitos: jpg, jpeg, png, webp. Ate 24 arquivos.
+As fotos aparecem sozinhas no site, na ordem da numeracao — nao precisa
+editar o HTML. Se pular um numero, o restante continua aparecendo.
+
+Para dar legenda a uma foto, adicione a linha correspondente em
+LEGENDAS_MAQUETE no script.js (o numero do arquivo e a chave).
