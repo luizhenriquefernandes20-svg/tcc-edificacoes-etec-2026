@@ -1,0 +1,48 @@
+{
+  "_leia_me": [
+    "Diário de obra. Para registrar uma semana nova, copie um bloco de 'entradas'",
+    "e ajuste os campos. A ordem no arquivo não importa: o site ordena por semana.",
+    "",
+    "semana  número da semana no cronograma (S1 começa em 04/08/2026)",
+    "inicio  primeiro dia da semana, no formato AAAA-MM-DD",
+    "fim     último dia da semana",
+    "etapa   nome da etapa correspondente no cronograma físico",
+    "titulo  resumo curto do que aconteceu",
+    "texto   o registro em si, dois ou três períodos",
+    "fotos   caminhos a partir de assets/img/ (sem extensão). Opcional.",
+    "        exemplo: \"obra/obra-14\" aponta para assets/img/obra/obra-14.jpg",
+    "",
+    "O status (concluída / em andamento / prevista) é calculado pela data,",
+    "não precisa preencher."
+  ],
+
+  "entradas": [
+    {
+      "semana": 1,
+      "inicio": "2026-08-04",
+      "fim": "2026-08-10",
+      "etapa": "Preparação e locação",
+      "titulo": "Instalação do canteiro",
+      "texto": "Isolamento da área com fita zebrada e placas de sinalização, definindo o perímetro de trabalho sem cortar a circulação do pátio durante o dia. Recebimento do primeiro lote de material, incluindo as telhas metálicas da cobertura. Primeira aplicação prática da NR-18 pela turma.",
+      "fotos": ["obra/obra-01", "obra/obra-10", "obra/obra-05"]
+    },
+    {
+      "semana": 2,
+      "inicio": "2026-08-11",
+      "fim": "2026-08-17",
+      "etapa": "Terraplenagem",
+      "titulo": "Regularização manual do terreno",
+      "texto": "Raspagem e nivelamento executados com enxada, e não com equipamento mecânico, para preservar o solo em volta das raízes do Flamboyant. A escolha atrasou a etapa, mas respeita a diretriz do levantamento arbóreo, que exigia afastamento superior a 6 m.",
+      "fotos": ["obra/obra-12", "obra/obra-14", "obra/obra-16"]
+    },
+    {
+      "semana": 3,
+      "inicio": "2026-08-18",
+      "fim": "2026-08-24",
+      "etapa": "Radier (fundação)",
+      "titulo": "Escavação e lastro de brita",
+      "texto": "Abertura da faixa de fundação e espalhamento da brita para o lastro do radier. Conferência das medidas com trena antes da concretagem. Primeira experiência da maior parte da turma com armação e concreto em obra real.",
+      "fotos": ["obra/obra-25", "obra/obra-34", "obra/obra-24"]
+    }
+  ]
+}

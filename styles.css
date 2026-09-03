@@ -1257,6 +1257,158 @@ a:hover { color: var(--accent-dark); }
   .plan-info.is-active { border-top-color: var(--accent); border-left: 0; }
 }
 
+/* ---------- DIÁRIO DE OBRA ---------- */
+.diario-resumo {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  margin: 0 0 40px;
+  padding: 14px 0 12px;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+.diario-resumo > div { padding: 0 30px; border-left: 1px solid var(--line); }
+.diario-resumo > div:first-child { padding-left: 0; border-left: 0; }
+.diario-resumo strong {
+  display: block;
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 5px;
+  font-variant-numeric: tabular-nums;
+}
+.diario-resumo span {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.diario {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--ink);
+}
+.diario-carregando,
+.diario-vazio {
+  padding: 26px 0;
+  color: var(--ink-3);
+  font-size: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.diario-vazio code {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink-2);
+  background: var(--surface);
+  padding: 1px 5px;
+}
+
+.diario-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 30px;
+  padding: 30px 4px 34px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+/* filete de status na lateral esquerda */
+.diario-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 30px;
+  bottom: 34px;
+  width: 2px;
+  background: var(--line-2);
+}
+.diario-item.is-fechada::before { background: var(--nature); }
+.diario-item.is-atual::before { background: var(--accent); }
+
+.diario-marco { padding-left: 16px; }
+.diario-semana {
+  display: block;
+  font-family: var(--mono);
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1;
+  letter-spacing: -.02em;
+  margin-bottom: 6px;
+  font-variant-numeric: tabular-nums;
+}
+.diario-item.is-atual .diario-semana { color: var(--accent); }
+.diario-item.is-futura .diario-semana { color: var(--ink-3); }
+.diario-data {
+  display: block;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-3);
+  margin-bottom: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.diario-status {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid var(--line-2);
+  color: var(--ink-3);
+}
+.diario-item.is-fechada .diario-status { border-color: var(--nature); color: var(--nature-dark); background: var(--nature-soft); }
+.diario-item.is-atual .diario-status { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+
+.diario-etapa {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.diario-corpo h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  letter-spacing: -.015em;
+}
+.diario-corpo p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 14.5px;
+  line-height: 1.6;
+  max-width: 66ch;
+}
+.diario-fotos {
+  margin-top: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.diario-fotos .g-item img { aspect-ratio: 3/2; }
+.diario-fotos .g-item figcaption { display: none; }
+
+@media (max-width: 760px) {
+  .diario-resumo { grid-template-columns: 1fr; }
+  .diario-resumo > div { padding: 8px 0; border-left: 0; border-top: 1px solid var(--line); }
+  .diario-resumo > div:first-child { border-top: 0; padding-top: 0; }
+  .diario-item { grid-template-columns: 1fr; gap: 14px; padding: 24px 4px 28px; }
+  .diario-marco {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .diario-semana { font-size: 1.3rem; margin-bottom: 0; }
+  .diario-data { margin-bottom: 0; }
+  .diario-fotos { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* ---------- MAQUETE FÍSICA ---------- */
 .mk-ficha {
   display: grid;

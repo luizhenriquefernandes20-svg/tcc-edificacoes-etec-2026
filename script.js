@@ -145,7 +145,7 @@ if (nav || toTop) {
 })();
 
 // Scroll spy: marca link ativo do menu conforme a seção em vista
-const spySections = ['projeto', 'arvores', 'tecnico', 'maquete', 'seguranca', 'cronograma', 'galeria', 'equipe']
+const spySections = ['projeto', 'arvores', 'tecnico', 'maquete', 'seguranca', 'cronograma', 'diario', 'galeria', 'equipe']
   .map(id => document.getElementById(id))
   .filter(Boolean);
 const spyLinks = new Map();
@@ -641,6 +641,88 @@ function loadModelViewer() {
   // só busca o modelo depois que a página estiver pronta, pra não competir com o LCP
   if (document.readyState === 'complete') start();
   else window.addEventListener('load', start, { once: true });
+})();
+
+// Diário de obra: monta as entradas a partir de assets/diario.json
+(async () => {
+  const lista = document.querySelector('[data-diario]');
+  if (!lista) return;
+
+  const TOTAL_SEMANAS = 17;
+  const semanaAtual = Math.floor((new Date() - new Date(2026, 7, 4)) / 86_400_000 / 7) + 1;
+
+  let dados;
+  try {
+    const r = await fetch('assets/diario.json', { cache: 'no-cache' });
+    if (!r.ok) throw new Error('sem arquivo');
+    dados = await r.json();
+  } catch {
+    lista.innerHTML =
+      '<li class="diario-vazio">Os registros semanais entram aqui assim que ' +
+      '<code>assets/diario.json</code> for publicado.</li>';
+    return;
+  }
+
+  const entradas = (dados.entradas || []).slice().sort((a, b) => a.semana - b.semana);
+  if (!entradas.length) {
+    lista.innerHTML = '<li class="diario-vazio">Nenhuma semana registrada ainda.</li>';
+    return;
+  }
+
+  const dia = iso => {
+    const [a, m, d] = iso.split('-');
+    return `${d}/${m}`;
+  };
+  const statusDe = e => {
+    if (semanaAtual > e.semana) return { cls: 'fechada', txt: 'concluída' };
+    if (semanaAtual === e.semana) return { cls: 'atual', txt: 'em andamento' };
+    return { cls: 'futura', txt: 'prevista' };
+  };
+
+  lista.innerHTML = '';
+  entradas.forEach(e => {
+    const st = statusDe(e);
+    const li = document.createElement('li');
+    li.className = `diario-item is-${st.cls}`;
+
+    const fotos = (e.fotos || []).map(caminho => {
+      const base = `assets/img/${caminho}`;
+      return `<figure class="g-item">
+          <picture>
+            <source srcset="${base}.webp" type="image/webp"/>
+            <img src="${base}.jpg" loading="lazy" alt="${e.titulo} — registro da semana ${e.semana}">
+          </picture>
+          <figcaption>${e.titulo}</figcaption>
+        </figure>`;
+    }).join('');
+
+    li.innerHTML = `
+      <div class="diario-marco">
+        <span class="diario-semana">S${String(e.semana).padStart(2, '0')}</span>
+        <span class="diario-data">${dia(e.inicio)} → ${dia(e.fim)}</span>
+        <span class="diario-status">${st.txt}</span>
+      </div>
+      <div class="diario-corpo">
+        <span class="diario-etapa">${e.etapa}</span>
+        <h3>${e.titulo}</h3>
+        <p>${e.texto}</p>
+        ${fotos ? `<div class="gallery diario-fotos">${fotos}</div>` : ''}
+      </div>`;
+    lista.appendChild(li);
+  });
+
+  // liga o lightbox nas fotos recém-criadas
+  lista.querySelectorAll('.gallery').forEach(g => ligarLightbox(g));
+
+  // resumo do topo
+  const resumo = document.querySelector('[data-diario-resumo]');
+  if (resumo) {
+    const set = (sel, v) => { const el = resumo.querySelector(sel); if (el) el.textContent = v; };
+    set('[data-diario-registradas]', entradas.length);
+    set('[data-diario-atual]', semanaAtual >= 1 && semanaAtual <= TOTAL_SEMANAS ? `S${semanaAtual}` : '—');
+    set('[data-diario-restantes]', Math.max(0, TOTAL_SEMANAS - semanaAtual));
+    resumo.hidden = false;
+  }
 })();
 
 // Legendas das fotos da maquete. A chave é o número do arquivo

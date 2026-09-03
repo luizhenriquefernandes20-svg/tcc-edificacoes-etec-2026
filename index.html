@@ -79,6 +79,7 @@
           <li><a href="#tecnico">Técnico</a></li>
           <li><a href="#maquete">Maquete</a></li>
           <li><a href="#cronograma">Cronograma</a></li>
+          <li><a href="#diario">Diário</a></li>
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#equipe">Equipe</a></li>
         </ul>
@@ -1168,8 +1169,39 @@
       </div>
     </section>
 
+    <!--
+      DIÁRIO DE OBRA
+      As entradas vêm de assets/diario.json — para registrar uma semana nova,
+      edite só aquele arquivo. Não precisa mexer neste HTML.
+      O status de cada semana (concluída / em andamento / prevista) é calculado
+      pela data, comparando com o início do cronograma em 04/08/2026.
+    -->
+    <section id="diario" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Diário de obra</span>
+          <h2>Semana a semana no canteiro</h2>
+          <p>
+            Registro do que foi executado a cada semana, com as decisões tomadas em campo
+            e o que elas custaram em prazo. É onde o cronograma planejado encontra o que
+            realmente aconteceu.
+          </p>
+        </div>
+
+        <div class="diario-resumo" data-diario-resumo hidden>
+          <div><strong data-diario-registradas>—</strong><span>semanas registradas</span></div>
+          <div><strong data-diario-atual>—</strong><span>semana em curso</span></div>
+          <div><strong data-diario-restantes>—</strong><span>semanas até a entrega</span></div>
+        </div>
+
+        <ol class="diario" data-diario>
+          <li class="diario-carregando">Carregando registros…</li>
+        </ol>
+      </div>
+    </section>
+
     <!-- GALERIA -->
-    <section id="galeria" class="section alt">
+    <section id="galeria" class="section">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Registro fotográfico</span>
@@ -1192,10 +1224,6 @@
               <span class="week-tag">Semana 1</span>
               <span class="week-name">Serviços preliminares · 04 → 10/08</span>
               <span class="week-count">11 registros</span>
-<!-- TODO · DIÁRIO — texto rascunhado; validar/reescrever com a turma antes de publicar. --><aside class="week-note">
-                <span class="week-note-lbl">Diário de campo</span>
-                <p>Organização do canteiro no turno da noite, sem interferir na aula do dia. O grupo executou o primeiro exercício real de NR-18: isolamento, sinalização e mapeamento do fluxo de circulação.</p>
-              </aside>
             </header>
                         <figure class="g-item">
               <picture><source srcset="assets/img/obra/obra-01.webp" type="image/webp"/><img src="assets/img/obra/obra-01.jpg" loading="lazy" alt="Recebimento das telhas metálicas destinadas à cobertura do espaço de convivência" /></picture>
@@ -1245,10 +1273,6 @@
               <span class="week-tag">Semana 2</span>
               <span class="week-name">Terraplenagem e isolamento · 11 → 17/08</span>
               <span class="week-count">11 registros</span>
-<!-- TODO · DIÁRIO — texto rascunhado; validar/reescrever com a turma antes de publicar. --><aside class="week-note">
-                <span class="week-note-lbl">Diário de campo</span>
-                <p>Terraplenagem manual pra preservar o solo ao redor das raízes do Flamboyant. Processo mais demorado que mecânico, mas alinhado à diretriz do levantamento arbóreo.</p>
-              </aside>
             </header>
             <figure class="g-item">
               <picture><source srcset="assets/img/obra/obra-12.webp" type="image/webp"/><img src="assets/img/obra/obra-12.jpg" loading="lazy" alt="Alunos executando raspagem e regularização do solo sob supervisão da equipe" /></picture>
@@ -1298,10 +1322,6 @@
               <span class="week-tag">Semana 3</span>
               <span class="week-name">Escavação e lastro · 18 → 24/08</span>
               <span class="week-count">13 registros</span>
-<!-- TODO · DIÁRIO — texto rascunhado; validar/reescrever com a turma antes de publicar. --><aside class="week-note">
-                <span class="week-note-lbl">Diário de campo</span>
-                <p>Chegada da brita marca o início do radier. Primeira experiência da maioria da turma com armação e concretagem em obra real, com supervisão docente próxima.</p>
-              </aside>
             </header>
             <figure class="g-item">
               <picture><source srcset="assets/img/obra/obra-23.webp" type="image/webp"/><img src="assets/img/obra/obra-23.jpg" loading="lazy" alt="Integrantes do grupo no início dos serviços no canteiro" /></picture>
