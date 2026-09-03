@@ -7,7 +7,12 @@
   --surface: #fbfbf9;
   --ink: #1e1f21;
   --ink-2: #54565c;
-  --ink-3: #82848b;
+  /* cinza de apoio: legendas, datas, rótulos. Escolhido para ficar acima do
+     mínimo de 4,5:1 nos três fundos do site — papel, papel alternado e
+     superfície (4,98 / 4,59 / 5,30). */
+  --ink-3: #67696f;
+  /* mesmo cinza um tom mais claro, só para texto grande (h1), onde o mínimo é 3:1 */
+  --ink-3-display: #82848b;
   --line: #d8d8d3;
   --line-2: #c2c3bd;
   --accent: #a8431f;
@@ -363,7 +368,8 @@ a:hover { color: var(--accent-dark); }
   max-width: 18ch;
 }
 .hero-em { color: var(--accent); }
-.hero-loc { color: var(--ink-3); font-weight: 500; }
+/* faz parte do h1: texto grande, o tom claro preserva a hierarquia de três níveis */
+.hero-loc { color: var(--ink-3-display); font-weight: 500; }
 .hero-br { display: inline; }
 
 .lead {
@@ -826,7 +832,7 @@ a:hover { color: var(--accent-dark); }
 .b.brand { border-color: var(--accent); color: var(--accent); }
 
 /* aplicação da paleta natureza nos meta das espécies nativas */
-.specie:has(.b.good) .specie-idx { color: var(--nature); }
+.specie:has(.b.good) .specie-idx { color: var(--nature-dark); }
 
 /* roteiro / timeline */
 .timeline {
