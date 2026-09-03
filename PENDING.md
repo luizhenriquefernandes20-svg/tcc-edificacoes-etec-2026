@@ -20,6 +20,12 @@ monta a galeria. Detalhes em `LEIA-ME.txt` dentro da pasta.
 ### Vídeos da maquete → `assets/video/maquete/`
 Mesma lógica: `maquete-video-01.mp4`, `-02.mp4`…
 
+### Caderno do diário → `assets/docs/diario-de-obra.pdf`
+Colocar o PDF do diário de obra com esse nome exato. O visualizador aparece
+sozinho no fim da seção Diário, já com o tamanho do arquivo, botão de abrir em
+nova aba e de baixar. Enquanto o arquivo não existir, fica um aviso no lugar.
+Se o caderno for atualizado, é só substituir o arquivo.
+
 ### Fotos novas da obra → `assets/img/obra/`
 Essas ainda entram manualmente no `index.html`, na aba "Obra" da galeria, seguindo
 a numeração existente (`obra-36.jpg` em diante). Depois é só referenciar o caminho

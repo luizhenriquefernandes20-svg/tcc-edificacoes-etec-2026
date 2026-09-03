@@ -1409,6 +1409,90 @@ a:hover { color: var(--accent-dark); }
   .diario-fotos { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ---------- VISUALIZADOR DE PDF ---------- */
+.pdf-box {
+  margin: 0 0 12px;
+  border: 1px solid var(--line-2);
+  background: var(--surface);
+  box-shadow: var(--shadow-1);
+}
+.section.alt .pdf-box { background: var(--paper); }
+
+.pdf-vazio {
+  margin: 0;
+  padding: 26px 22px;
+  color: var(--ink-3);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.pdf-vazio code {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink-2);
+  background: var(--paper-2);
+  padding: 1px 5px;
+}
+.section.alt .pdf-vazio code { background: var(--surface); }
+
+.pdf-barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line-2);
+  background: var(--paper-2);
+}
+.section.alt .pdf-barra { background: var(--surface); }
+.pdf-nome {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: .04em;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.pdf-acoes { display: inline-flex; gap: 8px; flex-wrap: wrap; }
+.pdf-acoes a {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .04em;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid var(--line-2);
+  background: var(--paper);
+  transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.section.alt .pdf-acoes a { background: var(--paper-2); }
+.pdf-acoes a:hover { border-color: var(--accent); color: var(--accent); }
+
+.pdf-frame {
+  display: block;
+  width: 100%;
+  height: clamp(460px, 78vh, 900px);
+  border: 0;
+  background: var(--paper-2);
+}
+.pdf-sem-suporte {
+  margin: 0;
+  padding: 24px 20px;
+  color: var(--ink-2);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.pdf-sem-suporte a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .pdf-frame { height: 62vh; }
+  .pdf-barra { padding: 10px 12px; }
+  .pdf-nome { font-size: 10.5px; }
+}
+
 /* ---------- MAQUETE FÍSICA ---------- */
 .mk-ficha {
   display: grid;
@@ -2718,6 +2802,11 @@ abbr[title] {
   .today-line::before { background: #000; color: #fff; }
   .reveal { opacity: 1 !important; transform: none !important; }
   .diff, .risk-grid > *:nth-child(3n+1) { page-break-inside: avoid; }
+
+  /* o PDF embutido não se imprime: vira uma linha com o endereço */
+  .pdf-frame { display: none; }
+  .pdf-box { break-inside: avoid; box-shadow: none; }
+  .pdf-barra { border-bottom: 0; }
 
   /* equipe, diário e maquete: nada é partido no meio entre páginas */
   .pessoa, .frente, .coletivo, .orientacao, .diario-item, .mk-steps li {

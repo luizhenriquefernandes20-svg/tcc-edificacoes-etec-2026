@@ -725,6 +725,58 @@ function loadModelViewer() {
   }
 })();
 
+// Visualizador de PDF embutido: monta só se o arquivo existir de fato
+document.querySelectorAll('.pdf-box[data-pdf]').forEach(async box => {
+  const url = box.dataset.pdf;
+  const titulo = box.dataset.titulo || 'Documento';
+
+  let tamanho = '';
+  try {
+    const r = await fetch(url, { method: 'HEAD' });
+    if (!r.ok) return; // mantém o aviso de "ainda não publicado"
+    const bytes = Number(r.headers.get('content-length'));
+    if (bytes > 0) {
+      tamanho = bytes > 1024 * 1024
+        ? (bytes / 1048576).toFixed(1).replace('.', ',') + ' MB'
+        : Math.round(bytes / 1024) + ' KB';
+    }
+  } catch { return; }
+
+  // navigator.pdfViewerEnabled === false diz que o navegador não abre PDF embutido
+  // (iOS Safari, alguns Android). Nesse caso vale mais oferecer o link direto.
+  const embute = navigator.pdfViewerEnabled !== false;
+
+  const barra = document.createElement('div');
+  barra.className = 'pdf-barra';
+  barra.innerHTML =
+    `<span class="pdf-nome">${titulo}${tamanho ? ' · PDF, ' + tamanho : ' · PDF'}</span>` +
+    `<span class="pdf-acoes">` +
+      `<a href="${url}" target="_blank" rel="noopener">Abrir em nova aba ↗</a>` +
+      `<a href="${url}" download>Baixar ↓</a>` +
+    `</span>`;
+
+  box.innerHTML = '';
+  box.appendChild(barra);
+
+  if (embute) {
+    const frame = document.createElement('iframe');
+    frame.className = 'pdf-frame';
+    frame.src = url + '#view=FitH';
+    frame.title = titulo;
+    frame.loading = 'lazy';
+    box.appendChild(frame);
+  } else {
+    const aviso = document.createElement('p');
+    aviso.className = 'pdf-sem-suporte';
+    aviso.innerHTML =
+      'Este navegador não abre PDF dentro da página. ' +
+      `<a href="${url}" target="_blank" rel="noopener">Abrir o documento ↗</a>`;
+    box.appendChild(aviso);
+  }
+
+  box.classList.add('is-pronto');
+});
+
 // Legendas das fotos da maquete. A chave é o número do arquivo
 // (maquete-03.jpg → '03'). Sem entrada aqui, a foto entra só com o número.
 const LEGENDAS_MAQUETE = {
