@@ -2,6 +2,31 @@
 
 Checklist do que ainda depende de dado real ou decisão humana. Nada aqui **quebra** o site — são substituições de placeholder.
 
+---
+
+## Rotina semanal (enquanto a obra corre)
+
+Três coisas se atualizam sozinhas conforme os arquivos aparecem. Nenhuma exige editar HTML.
+
+### Diário de obra → `assets/diario.json`
+Registrar a semana nova copiando um bloco de `entradas` e ajustando os campos.
+O próprio arquivo traz as instruções no topo. O status (concluída / em andamento /
+prevista) sai da data, não precisa preencher.
+
+### Fotos da maquete → `assets/img/maquete/`
+Numerar em sequência: `maquete-01.jpg`, `maquete-02.jpg`… O site varre a pasta e
+monta a galeria. Detalhes em `LEIA-ME.txt` dentro da pasta.
+
+### Vídeos da maquete → `assets/video/maquete/`
+Mesma lógica: `maquete-video-01.mp4`, `-02.mp4`…
+
+### Fotos novas da obra → `assets/img/obra/`
+Essas ainda entram manualmente no `index.html`, na aba "Obra" da galeria, seguindo
+a numeração existente (`obra-36.jpg` em diante). Depois é só referenciar o caminho
+no `diario.json` da semana correspondente.
+
+---
+
 ## Precisam ser preenchidos antes do deploy final
 
 ### 1. Contatos dos autores (crítico)
