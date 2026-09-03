@@ -234,7 +234,7 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
   revealTargets.forEach(el => el.classList.add('reveal'));
 
   // Containers de stagger: aplica --i em cada filho
-  const staggerContainers = document.querySelectorAll('.stats, .species, .specs, .timeline, .gallery, .video-grid, .team, .gantt, .diff-list');
+  const staggerContainers = document.querySelectorAll('.stats, .species, .specs, .timeline, .gallery, .video-grid, .frentes, .equipe, .gantt, .diff-list');
   staggerContainers.forEach(container => {
     container.classList.add('stagger');
     let i = 0;
