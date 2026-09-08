@@ -1209,22 +1209,34 @@
         </ol>
 
         <!--
-          Caderno oficial do diário de obra.
-          Basta colocar o arquivo em assets/docs/diario-de-obra.pdf que o visualizador
-          se monta sozinho. Enquanto não existir, aparece um aviso no lugar.
+          Documentos completos, lidos dentro da própria página.
+          Cada botão em .pdf-abas aponta para um arquivo em assets/docs/.
+          Para acrescentar outro documento, basta copiar um <button> e ajustar
+          data-pdf e data-titulo. O visualizador carrega só o que for aberto.
+          Documento sem arquivo publicado fica desativado, sem quebrar o resto.
         -->
         <h3 class="section-h3" id="diario-caderno">Caderno completo</h3>
         <p class="lede-inline">
-          O diário de obra oficial, com as folhas de registro, as assinaturas e as
-          responsabilidades formais de cada integrante. Dá para ler aqui mesmo ou baixar.
+          Os dois documentos oficiais do trabalho, na íntegra: o diário de obra com o
+          relatório fotográfico e as assinaturas, e a monografia em formato ABNT.
+          Dá para ler aqui mesmo ou baixar.
         </p>
-        <figure class="pdf-box"
-                data-pdf="assets/docs/diario-de-obra.pdf"
-                data-titulo="Diário de obra · TCC Edificações 2026">
-          <p class="pdf-vazio">
-            O caderno entra aqui assim que <code>diario-de-obra.pdf</code> for colocado
-            na pasta <code>assets/docs/</code>.
-          </p>
+
+        <div class="pdf-abas" role="tablist" aria-label="Documentos do TCC">
+          <button type="button" role="tab" aria-selected="true"
+                  data-pdf="assets/docs/diario-de-obra.pdf"
+                  data-titulo="Diário de obra com relatório fotográfico">
+            Diário de obra
+          </button>
+          <button type="button" role="tab" aria-selected="false"
+                  data-pdf="assets/docs/tcc-churrasqueira.pdf"
+                  data-titulo="TCC · Churrasqueira (formato ABNT)">
+            Monografia (ABNT)
+          </button>
+        </div>
+
+        <figure class="pdf-box" data-pdf-alvo>
+          <p class="pdf-vazio">Carregando documento…</p>
         </figure>
       </div>
     </section>

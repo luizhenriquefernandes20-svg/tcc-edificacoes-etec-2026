@@ -725,56 +725,105 @@ function loadModelViewer() {
   }
 })();
 
-// Visualizador de PDF embutido: monta só se o arquivo existir de fato
-document.querySelectorAll('.pdf-box[data-pdf]').forEach(async box => {
-  const url = box.dataset.pdf;
-  const titulo = box.dataset.titulo || 'Documento';
+// Visualizador de PDF embutido
+// navigator.pdfViewerEnabled === false diz que o navegador não abre PDF na página
+// (iOS Safari, alguns Android). Nesses casos vale mais oferecer o link direto.
+const PDF_EMBUTE = navigator.pdfViewerEnabled !== false;
 
+function formatarTamanho(bytes) {
+  if (!bytes) return '';
+  return bytes > 1024 * 1024
+    ? (bytes / 1048576).toFixed(1).replace('.', ',') + ' MB'
+    : Math.round(bytes / 1024) + ' KB';
+}
+
+// Desenha um documento dentro da caixa. Devolve false se o arquivo não existir.
+async function montarPdf(box, url, titulo) {
   let tamanho = '';
   try {
     const r = await fetch(url, { method: 'HEAD' });
-    if (!r.ok) return; // mantém o aviso de "ainda não publicado"
-    const bytes = Number(r.headers.get('content-length'));
-    if (bytes > 0) {
-      tamanho = bytes > 1024 * 1024
-        ? (bytes / 1048576).toFixed(1).replace('.', ',') + ' MB'
-        : Math.round(bytes / 1024) + ' KB';
-    }
-  } catch { return; }
-
-  // navigator.pdfViewerEnabled === false diz que o navegador não abre PDF embutido
-  // (iOS Safari, alguns Android). Nesse caso vale mais oferecer o link direto.
-  const embute = navigator.pdfViewerEnabled !== false;
+    if (!r.ok) return false;
+    tamanho = formatarTamanho(Number(r.headers.get('content-length')));
+  } catch { return false; }
 
   const barra = document.createElement('div');
   barra.className = 'pdf-barra';
-  barra.innerHTML =
-    `<span class="pdf-nome">${titulo}${tamanho ? ' · PDF, ' + tamanho : ' · PDF'}</span>` +
-    `<span class="pdf-acoes">` +
-      `<a href="${url}" target="_blank" rel="noopener">Abrir em nova aba ↗</a>` +
-      `<a href="${url}" download>Baixar ↓</a>` +
-    `</span>`;
 
-  box.innerHTML = '';
-  box.appendChild(barra);
+  const nome = document.createElement('span');
+  nome.className = 'pdf-nome';
+  nome.textContent = titulo + (tamanho ? ' · PDF, ' + tamanho : ' · PDF');
 
-  if (embute) {
+  const acoes = document.createElement('span');
+  acoes.className = 'pdf-acoes';
+  const novaAba = document.createElement('a');
+  novaAba.href = url; novaAba.target = '_blank'; novaAba.rel = 'noopener';
+  novaAba.textContent = 'Abrir em nova aba ↗';
+  const baixar = document.createElement('a');
+  baixar.href = url; baixar.download = '';
+  baixar.textContent = 'Baixar ↓';
+  acoes.append(novaAba, baixar);
+  barra.append(nome, acoes);
+
+  box.replaceChildren(barra);
+
+  if (PDF_EMBUTE) {
     const frame = document.createElement('iframe');
     frame.className = 'pdf-frame';
     frame.src = url + '#view=FitH';
     frame.title = titulo;
-    frame.loading = 'lazy';
     box.appendChild(frame);
   } else {
     const aviso = document.createElement('p');
     aviso.className = 'pdf-sem-suporte';
-    aviso.innerHTML =
-      'Este navegador não abre PDF dentro da página. ' +
-      `<a href="${url}" target="_blank" rel="noopener">Abrir o documento ↗</a>`;
+    const link = document.createElement('a');
+    link.href = url; link.target = '_blank'; link.rel = 'noopener';
+    link.textContent = 'Abrir o documento ↗';
+    aviso.append('Este navegador não abre PDF dentro da página. ', link);
     box.appendChild(aviso);
   }
 
   box.classList.add('is-pronto');
+  return true;
+}
+
+// Caixa com vários documentos: as abas trocam o que está aberto,
+// e só o documento escolhido é carregado.
+(() => {
+  const abas = document.querySelector('.pdf-abas');
+  const box = document.querySelector('[data-pdf-alvo]');
+  if (!abas || !box) return;
+
+  const botoes = [...abas.querySelectorAll('button[data-pdf]')];
+  if (!botoes.length) return;
+
+  const abrir = async btn => {
+    botoes.forEach(b => b.setAttribute('aria-selected', String(b === btn)));
+    box.className = 'pdf-box';
+    box.innerHTML = '<p class="pdf-vazio">Carregando documento…</p>';
+    const ok = await montarPdf(box, btn.dataset.pdf, btn.dataset.titulo || btn.textContent.trim());
+    if (!ok) {
+      btn.disabled = true;
+      btn.title = 'Documento ainda não publicado';
+      const p = document.createElement('p');
+      p.className = 'pdf-vazio';
+      const code = document.createElement('code');
+      code.textContent = btn.dataset.pdf;
+      p.append('Este documento ainda não foi publicado. Coloque o arquivo em ', code, '.');
+      box.replaceChildren(p);
+    }
+  };
+
+  abas.addEventListener('click', e => {
+    const btn = e.target.closest('button[data-pdf]');
+    if (btn && !btn.disabled) abrir(btn);
+  });
+
+  abrir(botoes[0]);
+})();
+
+// Caixa com um documento só (formato antigo, ainda aceito)
+document.querySelectorAll('.pdf-box[data-pdf]').forEach(async box => {
+  await montarPdf(box, box.dataset.pdf, box.dataset.titulo || 'Documento');
 });
 
 // Legendas das fotos da maquete. A chave é o número do arquivo

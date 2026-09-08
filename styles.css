@@ -1416,6 +1416,42 @@ a:hover { color: var(--accent-dark); }
 }
 
 /* ---------- VISUALIZADOR DE PDF ---------- */
+.pdf-abas {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--line-2);
+  margin-bottom: -1px;
+}
+.pdf-abas button {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 11px 18px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  background: transparent;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: color var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+.pdf-abas button:hover:not(:disabled):not([aria-selected="true"]) {
+  color: var(--ink);
+  background: var(--paper-2);
+}
+.pdf-abas button[aria-selected="true"] {
+  color: var(--ink);
+  background: var(--surface);
+  border-color: var(--line-2);
+}
+.section.alt .pdf-abas button[aria-selected="true"] { background: var(--paper); }
+.pdf-abas button:disabled {
+  color: var(--ink-3);
+  cursor: default;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
 .pdf-box {
   margin: 0 0 12px;
   border: 1px solid var(--line-2);
