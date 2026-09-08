@@ -1,5 +1,7 @@
 node_modules/
 tools/
+# cópia intocada do modelo, guardada só para poder refazer o ajuste da cobertura
+assets/model/*.original.glb
 package-lock.json
 package.json
 PENDING.md

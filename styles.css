@@ -1509,12 +1509,77 @@ a:hover { color: var(--accent-dark); }
 .section.alt .pdf-acoes a { background: var(--paper-2); }
 .pdf-acoes a:hover { border-color: var(--accent); color: var(--accent); }
 
-.pdf-frame {
-  display: block;
-  width: 100%;
-  height: clamp(460px, 78vh, 900px);
-  border: 0;
+/* palco onde a página é desenhada */
+.pdf-palco {
+  height: clamp(460px, 74vh, 880px);
+  overflow: auto;
   background: var(--paper-2);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section.alt .pdf-palco { background: var(--surface); }
+.pdf-tela {
+  display: block;
+  max-width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 14px -4px rgba(30, 31, 33, .22);
+}
+.pdf-box:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* controles próprios, no lugar da barra do navegador */
+.pdf-controles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 10px 16px;
+  border-top: 1px solid var(--line-2);
+  background: var(--paper-2);
+}
+.section.alt .pdf-controles { background: var(--surface); }
+.pdf-nav, .pdf-zoom { display: inline-flex; align-items: center; gap: 6px; }
+.pdf-controles button {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line-2);
+  cursor: pointer;
+  transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.section.alt .pdf-controles button { background: var(--paper-2); }
+.pdf-controles button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.pdf-controles button:disabled { color: var(--line-2); cursor: default; }
+.pdf-campo {
+  width: 52px;
+  height: 30px;
+  padding: 0 6px;
+  font-family: var(--mono);
+  font-size: 12px;
+  text-align: center;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line-2);
+  font-variant-numeric: tabular-nums;
+}
+.section.alt .pdf-campo { background: var(--paper-2); }
+.pdf-campo::-webkit-outer-spin-button,
+.pdf-campo::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.pdf-campo { -moz-appearance: textfield; }
+.pdf-contador {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 .pdf-sem-suporte {
   margin: 0;
@@ -1530,7 +1595,8 @@ a:hover { color: var(--accent-dark); }
 }
 
 @media (max-width: 640px) {
-  .pdf-frame { height: 62vh; }
+  .pdf-palco { height: 58vh; padding: 10px; }
+  .pdf-controles { padding: 9px 12px; gap: 10px; }
   .pdf-barra { padding: 10px 12px; }
   .pdf-nome { font-size: 10.5px; }
 }
@@ -2846,7 +2912,7 @@ abbr[title] {
   .diff, .risk-grid > *:nth-child(3n+1) { page-break-inside: avoid; }
 
   /* o PDF embutido não se imprime: vira uma linha com o endereço */
-  .pdf-frame { display: none; }
+  .pdf-palco, .pdf-controles { display: none; }
   .pdf-box { break-inside: avoid; box-shadow: none; }
   .pdf-barra { border-bottom: 0; }
 

@@ -725,10 +725,19 @@ function loadModelViewer() {
   }
 })();
 
-// Visualizador de PDF embutido
-// navigator.pdfViewerEnabled === false diz que o navegador não abre PDF na página
-// (iOS Safari, alguns Android). Nesses casos vale mais oferecer o link direto.
-const PDF_EMBUTE = navigator.pdfViewerEnabled !== false;
+// Visualizador de PDF próprio, desenhado com PDF.js em vez do leitor embutido
+// do navegador — que traz a barra escura do Chrome e destoa do resto do site.
+let pdfjsPromessa = null;
+function carregarPdfjs() {
+  if (pdfjsPromessa) return pdfjsPromessa;
+  pdfjsPromessa = import('./assets/js/pdf.min.mjs')
+    .then(lib => {
+      lib.GlobalWorkerOptions.workerSrc = 'assets/js/pdf.worker.min.mjs';
+      return lib;
+    })
+    .catch(() => null);
+  return pdfjsPromessa;
+}
 
 function formatarTamanho(bytes) {
   if (!bytes) return '';
@@ -746,6 +755,7 @@ async function montarPdf(box, url, titulo) {
     tamanho = formatarTamanho(Number(r.headers.get('content-length')));
   } catch { return false; }
 
+  // ---- barra superior, comum a todos os caminhos ----
   const barra = document.createElement('div');
   barra.className = 'pdf-barra';
 
@@ -763,26 +773,133 @@ async function montarPdf(box, url, titulo) {
   baixar.textContent = 'Baixar ↓';
   acoes.append(novaAba, baixar);
   barra.append(nome, acoes);
-
   box.replaceChildren(barra);
 
-  if (PDF_EMBUTE) {
-    const frame = document.createElement('iframe');
-    frame.className = 'pdf-frame';
-    frame.src = url + '#view=FitH';
-    frame.title = titulo;
-    box.appendChild(frame);
-  } else {
+  const lib = await carregarPdfjs();
+
+  // Sem a biblioteca, oferece o documento em vez de deixar um quadro vazio
+  if (!lib) {
     const aviso = document.createElement('p');
     aviso.className = 'pdf-sem-suporte';
     const link = document.createElement('a');
     link.href = url; link.target = '_blank'; link.rel = 'noopener';
     link.textContent = 'Abrir o documento ↗';
-    aviso.append('Este navegador não abre PDF dentro da página. ', link);
+    aviso.append('Não foi possível montar o leitor aqui. ', link);
     box.appendChild(aviso);
+    box.classList.add('is-pronto');
+    return true;
   }
 
-  box.classList.add('is-pronto');
+  const palco = document.createElement('div');
+  palco.className = 'pdf-palco';
+  const tela = document.createElement('canvas');
+  tela.className = 'pdf-tela';
+  palco.appendChild(tela);
+
+  const rodape = document.createElement('div');
+  rodape.className = 'pdf-controles';
+  rodape.innerHTML = '';
+
+  const botao = (rotulo, titulo) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = rotulo;
+    b.title = titulo;
+    b.setAttribute('aria-label', titulo);
+    return b;
+  };
+  const anterior = botao('←', 'Página anterior');
+  const proxima = botao('→', 'Próxima página');
+  const menos = botao('−', 'Diminuir zoom');
+  const mais = botao('+', 'Aumentar zoom');
+
+  const contador = document.createElement('span');
+  contador.className = 'pdf-contador';
+
+  const campo = document.createElement('input');
+  campo.type = 'number'; campo.min = '1'; campo.className = 'pdf-campo';
+  campo.setAttribute('aria-label', 'Ir para a página');
+
+  const navegacao = document.createElement('span');
+  navegacao.className = 'pdf-nav';
+  navegacao.append(anterior, campo, contador, proxima);
+
+  const zoom = document.createElement('span');
+  zoom.className = 'pdf-zoom';
+  zoom.append(menos, mais);
+
+  rodape.append(navegacao, zoom);
+  box.append(palco, rodape);
+
+  let doc, pagina = 1, escala = 1, desenhando = false;
+  const ctx = tela.getContext('2d', { alpha: false });
+
+  async function desenhar() {
+    if (!doc || desenhando) return;
+    desenhando = true;
+    try {
+      const pg = await doc.getPage(pagina);
+      const natural = pg.getViewport({ scale: 1 });
+      // largura do palco manda: o documento sempre cabe na coluna
+      const base = (palco.clientWidth - 32) / natural.width;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const vp = pg.getViewport({ scale: base * escala * dpr });
+      tela.width = Math.floor(vp.width);
+      tela.height = Math.floor(vp.height);
+      tela.style.width = Math.floor(vp.width / dpr) + 'px';
+      tela.style.height = Math.floor(vp.height / dpr) + 'px';
+      await pg.render({ canvasContext: ctx, viewport: vp }).promise;
+      contador.textContent = `de ${doc.numPages}`;
+      campo.value = pagina;
+      anterior.disabled = pagina <= 1;
+      proxima.disabled = pagina >= doc.numPages;
+      menos.disabled = escala <= 0.6;
+      mais.disabled = escala >= 3;
+    } finally { desenhando = false; }
+  }
+
+  const irPara = n => {
+    const alvo = Math.max(1, Math.min(doc.numPages, n));
+    if (alvo === pagina) return;
+    pagina = alvo;
+    palco.scrollTop = 0;
+    desenhar();
+  };
+
+  anterior.addEventListener('click', () => irPara(pagina - 1));
+  proxima.addEventListener('click', () => irPara(pagina + 1));
+  campo.addEventListener('change', () => irPara(Number(campo.value) || 1));
+  menos.addEventListener('click', () => { escala = Math.max(0.6, escala - 0.25); desenhar(); });
+  mais.addEventListener('click', () => { escala = Math.min(3, escala + 0.25); desenhar(); });
+
+  // setas do teclado só quando o leitor está em foco
+  box.tabIndex = 0;
+  box.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') { irPara(pagina - 1); e.preventDefault(); }
+    if (e.key === 'ArrowRight') { irPara(pagina + 1); e.preventDefault(); }
+  });
+
+  let redimensionando;
+  window.addEventListener('resize', () => {
+    clearTimeout(redimensionando);
+    redimensionando = setTimeout(desenhar, 180);
+  }, { passive: true });
+
+  try {
+    doc = await lib.getDocument(url).promise;
+    campo.max = doc.numPages;
+    await desenhar();
+    box.classList.add('is-pronto');
+  } catch {
+    const aviso = document.createElement('p');
+    aviso.className = 'pdf-sem-suporte';
+    const link = document.createElement('a');
+    link.href = url; link.target = '_blank'; link.rel = 'noopener';
+    link.textContent = 'Abrir o documento ↗';
+    aviso.append('Não foi possível abrir este documento aqui. ', link);
+    box.replaceChildren(barra, aviso);
+    box.classList.add('is-pronto');
+  }
   return true;
 }
 
