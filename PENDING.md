@@ -53,12 +53,16 @@ conferir nome por nome antes da banca — principalmente grafias como
 "Jenifer Abigail", "Hadassa Francini", "Ivaneide Pereira Sobreira" e
 "Pedrito de Jesus Santos".
 
-### 3. URL do site pro QR code (crítico)
-O QR aponta pra `https://tcc-etec-2026-edificacoes.vercel.app` por padrão.
-Após publicar, regenerar com a URL real:
-```bash
-node tools/gen-qr.mjs "https://SUA-URL-REAL.vercel.app"
-```
+### 3. Conferir as medidas do texto contra o modelo do Revit (importante)
+O modelo 3D agora é o do projeto executivo, e duas medidas do texto não batem com ele:
+
+- A página diz **4,12 × 3,20 m** como "dimensões do espaço em planta". No Revit isso é
+  a **área coberta**; o piso inteiro mede 4,12 × 8,34 m. Vale decidir qual das duas o
+  texto quer citar e ajustar a legenda.
+- A página diz **2,70 m** de altura total com chaminé. No modelo a chaminé sobe
+  **3,15 m** acima do piso.
+
+Conferir com o projeto impresso qual valor vale antes da banca.
 
 ### 4. Plantas de instalações prediais (importante)
 A seção "Instalações prediais" (`#tec-instalacoes`) já existe com os dois botões de download,

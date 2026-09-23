@@ -1,0 +1,44 @@
+;; Exporta a vista 3D do projeto (DWG do Revit) em um STL por camada.
+;; Rodar pelo PowerShell — no Git Bash os argumentos /i e /s viram caminhos:
+;;   & "C:\Program Files\Autodesk\AutoCAD 2027ccoreconsole.exe" `
+;;       /i C:\cadtmp\m.dwg /s C:\cadtmp\export-stl.scr /l en-US
+;; Depois:  python tools/stl_para_glb.py C:/cadtmp/stl saida.glb
+;; Os STL saem em C:/cadtmp/stl — criar a pasta antes.
+;; O console não encerra sozinho: quando o último STL aparecer, pode fechar.
+FILEDIA
+0
+(vl-load-com)
+(setvar "FACETRES" 2)
+(setvar "CMDECHO" 0)
+(defun expl (e) (command "_.EXPLODE" e) (if (> (getvar "CMDACTIVE") 0) (command)) t)
+(defun stl (s a) (command "_.STLOUT" s "" "_Y" a) (if (> (getvar "CMDACTIVE") 0) (command)) t)
+(princ "\n### apagando vegetacao ###")
+(setq ss (ssget "_X" '((0 . "INSERT") (8 . "Vegeta*"))))
+(if ss (command "_.ERASE" ss ""))
+(setq n 0)
+(while (and (< n 12) (setq ss (ssget "_X" '((0 . "INSERT")))))
+  (princ (strcat "\n### volta " (itoa n) ": " (itoa (sslength ss)) " insert(s) ###"))
+  (setq i 0)
+  (while (< i (sslength ss))
+    (vl-catch-all-apply 'expl (list (ssname ss i)))
+    (setq i (1+ i)))
+  (setq n (1+ n)))
+(princ "\n### explodido ###")
+(foreach par (list
+      (cons "Pisos"                    "Pisos")
+      (cons "Paredes"                  "Paredes")
+      (cons "Telhados"                 "Telhados")
+      (cons "Quadro estrutural"        "Quadro estrutural")
+      (cons "Pilares estruturais"      "Pilares estruturais")
+      (cons "Mobili*rio"               "Mobiliario")
+      (cons "Pe*as hidrossanit*rias"   "Pecas hidrossanitarias")
+      (cons "Lumin*rias"               "Luminarias")
+      (cons "Modelos gen*ricos"        "Modelos genericos"))
+  (setq ss (ssget "_X" (list (cons 0 "3DSOLID") (cons 8 (car par)))))
+  (if ss
+    (progn
+      (princ (strcat "\n### " (cdr par) ": " (itoa (sslength ss)) " solido(s) ###"))
+      (setq r (vl-catch-all-apply 'stl (list ss (strcat "C:/cadtmp/stl/" (cdr par) ".stl"))))
+      (if (vl-catch-all-error-p r) (princ (strcat "  ERRO: " (vl-catch-all-error-message r)))))
+    (princ (strcat "\n### " (cdr par) ": vazio ###"))))
+(princ "\n### FIM ###")
